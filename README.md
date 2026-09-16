@@ -21,6 +21,10 @@
 - Git;
 - GitHub.
 
+## Ссылка на опубликованный проект
+
+GitHub Pages: https://uusuri.github.io/kr1-html-css-shop/
+
 ## Автор
 
 ФИО: Куницкий Алексей Алексеевич
