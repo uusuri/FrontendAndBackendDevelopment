@@ -23,7 +23,7 @@
 
 ## Ссылка на опубликованный проект
 
-GitHub Pages: https://uusuri.github.io/kr1-html-css-shop/
+GitHub Pages: https://uusuri.github.io/FrontendAndBackendDevelopment/
 
 ## Автор
 
