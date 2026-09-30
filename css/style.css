@@ -214,7 +214,6 @@ a:focus-visible {
 .breadcrumbs__current::before {
   content: " / ";
   color: var(--color-muted);
-}
 /* ===============================
    7. Первый экран и разделы
 =============================== */
