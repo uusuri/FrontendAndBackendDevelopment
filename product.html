@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Изображения, цены и таблицы характеристик блокнота Study, настольной лампы и подставки для ноутбука.">
+  <title>Описание и характеристики товаров — ShopProject</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="site-header__inner container">
+      <a class="site-header__logo" href="index.html">ShopProject</a>
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="product.html" aria-current="page">Товары</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="page-main container">
+    <p class="success-message" id="success-message" role="status" hidden>Форма успешно отправлена! Учебная проверка пройдена; данные на сервер не отправлялись.</p>
+    <h1 class="page-main__title">Описание товаров</h1>
+    <nav class="product-navigation" aria-label="Выбор товара">
+      <a href="#notebook">Блокнот</a>
+      <a href="#lamp">Лампа</a>
+      <a href="#stand">Подставка</a>
+    </nav>
+    <article class="product-detail" id="notebook">
+      <div class="product-detail__overview">
+        <img class="product-detail__image" src="images/notebook.svg" alt="Блокнот Study" width="500" height="360">
+        <div class="product-detail__summary">
+          <p class="product-detail__category">Канцелярия</p>
+          <h2 class="product-detail__title">Блокнот Study</h2>
+          <p>Блокнот в твёрдой обложке для конспектов и планов.</p>
+          <p class="product-detail__price">1000 руб.</p>
+          <div class="product-detail__actions">
+            <button class="button" type="button" data-product="Блокнот Study">Оставить заявку</button>
+            <a href="order.html">Перейти к форме</a>
+          </div>
+        </div>
+      </div>
+      <table class="spec-table">
+        <caption class="spec-table__caption">Характеристики: Блокнот Study</caption>
+        <thead><tr><th scope="col">Параметр</th><th scope="col">Значение</th></tr></thead>
+        <tbody>
+            <tr><th scope="row">Формат</th><td>А5</td></tr>
+            <tr><th scope="row">Количество листов</th><td>120</td></tr>
+            <tr><th scope="row">Разметка</th><td>В клетку</td></tr>
+            <tr><th scope="row">Обложка</th><td>Твёрдая</td></tr>
+        </tbody>
+      </table>
+    </article>
+    <article class="product-detail" id="lamp">
+      <div class="product-detail__overview">
+        <img class="product-detail__image" src="images/lamp.svg" alt="Настольная лампа Study" width="500" height="360">
+        <div class="product-detail__summary">
+          <p class="product-detail__category">Освещение</p>
+          <h2 class="product-detail__title">Настольная лампа Study</h2>
+          <p>Компактная лампа с поворотным плафоном для рабочего стола.</p>
+          <p class="product-detail__price">1500 руб.</p>
+          <div class="product-detail__actions">
+            <button class="button" type="button" data-product="Настольная лампа Study">Оставить заявку</button>
+            <a href="order.html">Перейти к форме</a>
+          </div>
+        </div>
+      </div>
+      <table class="spec-table">
+        <caption class="spec-table__caption">Характеристики: Настольная лампа Study</caption>
+        <thead><tr><th scope="col">Параметр</th><th scope="col">Значение</th></tr></thead>
+        <tbody>
+            <tr><th scope="row">Материал</th><td>Металл</td></tr>
+            <tr><th scope="row">Высота</th><td>35 см</td></tr>
+            <tr><th scope="row">Цоколь</th><td>E27</td></tr>
+            <tr><th scope="row">Питание</th><td>220 В</td></tr>
+        </tbody>
+      </table>
+    </article>
+    <article class="product-detail" id="stand">
+      <div class="product-detail__overview">
+        <img class="product-detail__image" src="images/stand.svg" alt="Подставка для ноутбука" width="500" height="360">
+        <div class="product-detail__summary">
+          <p class="product-detail__category">Аксессуары</p>
+          <h2 class="product-detail__title">Подставка для ноутбука</h2>
+          <p>Подставка с наклоном для удобного размещения ноутбука.</p>
+          <p class="product-detail__price">2000 руб.</p>
+          <div class="product-detail__actions">
+            <button class="button" type="button" data-product="Подставка для ноутбука">Оставить заявку</button>
+            <a href="order.html">Перейти к форме</a>
+          </div>
+        </div>
+      </div>
+      <table class="spec-table">
+        <caption class="spec-table__caption">Характеристики: Подставка для ноутбука</caption>
+        <thead><tr><th scope="col">Параметр</th><th scope="col">Значение</th></tr></thead>
+        <tbody>
+            <tr><th scope="row">Материал</th><td>Алюминий</td></tr>
+            <tr><th scope="row">Диагональ ноутбука</th><td>До 15,6 дюйма</td></tr>
+            <tr><th scope="row">Угол наклона</th><td>15°</td></tr>
+            <tr><th scope="row">Максимальная нагрузка</th><td>5 кг</td></tr>
+        </tbody>
+      </table>
+    </article>
+  </main>
+  <footer class="site-footer" id="contacts">
+    <div class="site-footer__inner container">
+      <p class="site-footer__text">&copy; 2026 ShopProject · Учебный интернет-магазин</p>
+      <p class="site-footer__text">Дисциплина: Фронтенд и бэкенд разработка</p>
+      <a class="site-footer__link" href="contacts.html">Контактная информация</a>
+    </div>
+  </footer>
+  <dialog class="order-dialog" id="order-dialog" aria-labelledby="order-dialog-title">
+    <h2 class="order-dialog__title" id="order-dialog-title">Оформление заявки</h2>
+  <form class="order-form" id="order-form" action="#" method="post" novalidate aria-describedby="order-note">
+    <p class="order-form__note" id="order-note">Поля со звёздочкой обязательны. Это учебная форма: данные не отправляются и не сохраняются.</p>
+    <input id="selected-product" name="selected-product" type="hidden">
+    <div class="order-form__field">
+      <label class="order-form__label" for="order-name">Имя *</label>
+      <input class="order-form__input" id="order-name" name="name" type="text" minlength="2" autocomplete="given-name" placeholder="Введите ваше имя" required>
+    </div>
+    <div class="order-form__field">
+      <label class="order-form__label" for="order-email">E-mail *</label>
+      <input class="order-form__input" id="order-email" name="email" type="email" autocomplete="email" placeholder="example@mail.ru" required>
+    </div>
+    <div class="order-form__field">
+      <label class="order-form__label" for="order-phone">Телефон *</label>
+      <input class="order-form__input" id="order-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (900) 000-00-00" pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$" aria-describedby="phone-hint" required>
+      <small class="order-form__hint" id="phone-hint">Формат: +7 (900) 000-00-00</small>
+    </div>
+    <div class="order-form__field">
+      <label class="order-form__label" for="order-date">Дата связи</label>
+      <input class="order-form__input" id="order-date" name="date" type="date">
+    </div>
+    <div class="order-form__field">
+      <label class="order-form__label" for="order-topic">Тема заявки *</label>
+      <select class="order-form__input" id="order-topic" name="topic" required>
+        <option value="">Выберите тему</option>
+        <option value="product">Заказ товара</option>
+        <option value="consultation">Консультация</option>
+        <option value="delivery">Доставка</option>
+      </select>
+    </div>
+    <div class="order-form__field">
+      <label class="order-form__label" for="order-comment">Комментарий</label>
+      <textarea class="order-form__input" id="order-comment" name="comment" rows="4" placeholder="Укажите дополнительную информацию"></textarea>
+    </div>
+    <div class="order-form__field">
+      <label class="order-form__agreement" for="order-agreement">
+        <input class="order-form__checkbox" id="order-agreement" name="agreement" type="checkbox" required>
+        Я согласен на обработку данных *
+      </label>
+    </div>
+    <div class="order-form__actions">
+      <button class="button button--secondary" type="button" id="close-order-dialog">Закрыть</button>
+      <button class="button" type="submit">Отправить заявку</button>
+    </div>
+  </form>
+  </dialog>
+</body>
+</html>
