@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Учебный магазин товаров для учёбы и рабочего места: каталог, характеристики и форма заявки.">
-  <title>Товары для учёбы — ShopProject</title>
+  <meta name="description" content="Каталог учебного магазина: канцелярия, освещение и аксессуары для рабочего места.">
+  <title>Каталог — ShopProject</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/main.js" defer></script>
 </head>
@@ -14,8 +14,8 @@
       <a class="site-header__logo" href="index.html">ShopProject</a>
       <nav class="site-nav" aria-label="Основная навигация">
         <ul class="site-nav__list">
-          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="index.html" aria-current="page">Главная</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="catalog.html" aria-current="page">Каталог</a></li>
           <li class="site-nav__item"><a class="site-nav__link" href="product.html">Товары</a></li>
           <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
           <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
@@ -25,27 +25,27 @@
   </header>
   <main class="page-main container">
     <p class="success-message" id="success-message" role="status" hidden>Форма успешно отправлена! Учебная проверка пройдена; данные на сервер не отправлялись.</p>
-    <section class="hero">
-      <h1 class="hero__title">Товары для учёбы и рабочего места</h1>
-      <p class="hero__description">Блокнот для конспектов, настольный свет и удобная подставка для ноутбука. Выберите то, что пригодится каждый день.</p>
-      <a class="button" href="catalog.html">Перейти в каталог</a>
-      <nav class="hero__navigation" aria-label="Разделы главной страницы">
-        <a href="#advantages">Преимущества</a>
-        <a href="#popular">Популярные товары</a>
-        <a href="#contacts">Контакты</a>
-      </nav>
-    </section>
-    <section class="section" id="advantages">
-      <h2 class="section__title">Преимущества</h2>
-      <ul class="advantages-list">
-        <li class="advantages-list__item">Необходимые товары для рабочего места в одном каталоге.</li>
-        <li class="advantages-list__item">Описания, цены и характеристики доступны до оформления заявки.</li>
-        <li class="advantages-list__item">В заявке можно выбрать товар и указать удобную дату связи.</li>
-      </ul>
-    </section>
-    <section class="section" id="popular">
-      <h2 class="section__title">Популярные товары</h2>
-      <div class="product-grid">
+    <h1 class="page-main__title">Каталог товаров</h1>
+    <div class="catalog-layout">
+      <aside class="catalog-filter" aria-labelledby="filter-title">
+        <h2 class="catalog-filter__title" id="filter-title">Категории и фильтры</h2>
+        <p class="catalog-filter__note" id="filter-note">Статический макет: фильтрация пока не применяется.</p>
+        <fieldset class="catalog-filter__group" aria-describedby="filter-note">
+          <legend class="catalog-filter__legend">Категория</legend>
+          <label class="catalog-filter__option" for="category-all"><input id="category-all" type="radio" name="category" value="all" checked> Все товары</label>
+          <label class="catalog-filter__option" for="category-stationery"><input id="category-stationery" type="radio" name="category" value="stationery"> Канцелярия</label>
+          <label class="catalog-filter__option" for="category-light"><input id="category-light" type="radio" name="category" value="light"> Освещение</label>
+          <label class="catalog-filter__option" for="category-accessories"><input id="category-accessories" type="radio" name="category" value="accessories"> Аксессуары</label>
+        </fieldset>
+        <div class="catalog-filter__field">
+          <label class="catalog-filter__label" for="max-price">Цена до, руб.</label>
+          <input class="catalog-filter__input" id="max-price" name="max-price" type="number" min="0" placeholder="2000">
+        </div>
+        <button class="button" type="button" disabled>Применить фильтры</button>
+      </aside>
+      <section class="section" aria-labelledby="catalog-title">
+        <h2 class="section__title" id="catalog-title">Все товары</h2>
+        <div class="product-grid product-grid--catalog">
     <article class="product-card product-card--featured">
       <span class="product-card__badge">Хит</span>
       <img class="product-card__image" src="images/notebook.svg" alt="Блокнот Study" width="500" height="360">
@@ -80,16 +80,9 @@
         <button class="button product-card__button" type="button" data-product="Подставка для ноутбука">Заказать</button>
       </div>
     </article>
-      </div>
-    </section>
-    <aside class="aside-info">
-      <h2 class="aside-info__title">Информация для студентов</h2>
-      <p>Магазин является учебным проектом. Товары, цены и характеристики приведены для демонстрации интерфейса; реальные заказы не принимаются.</p>
-    </aside>
-    <section class="section">
-      <h2 class="section__title">О проекте</h2>
-      <p>Многостраничный сайт разработан в рамках дисциплины «Фронтенд и бэкенд разработка». Здесь используются HTML, общий CSS-файл и минимальная логика формы и модального окна.</p>
-    </section>
+        </div>
+      </section>
+    </div>
   </main>
   <footer class="site-footer" id="contacts">
     <div class="site-footer__inner container">
