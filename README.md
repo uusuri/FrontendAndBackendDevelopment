@@ -23,14 +23,14 @@
 
 ## Автор
 
-ФИО: Малыхин Арсений Евгеньевич
+ФИО: Куницкий Алексей Алексеевич
 Группа: ЭФБО-05-25
 
 Создана базовая структура проекта.
 
 ## Ссылка на опубликованный проект
 
-GitHub Pages: https://arsius2000.github.io/FrontendAndBackendDevelopment/index.html
+GitHub Pages: https://uusuri.github.io/FrontendAndBackendDevelopment/index.html
 
 ## Постановка контрольной работы №1
 
