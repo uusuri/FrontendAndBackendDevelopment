@@ -152,7 +152,7 @@ a:focus-visible {
 }
 
 .site-nav__item {
-  margin-bottom: var(--space-sm);
+  margin-bottom: 0;
 }
 
 .site-nav__link {
@@ -276,6 +276,7 @@ a:focus-visible {
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
+  margin-bottom: 0;
   padding: var(--space-md);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
@@ -313,7 +314,7 @@ a:focus-visible {
   color: var(--color-danger);
 }
 
-.product-card__button {
+.product-card .button {
   margin-top: auto;
   align-self: flex-start;
 }
