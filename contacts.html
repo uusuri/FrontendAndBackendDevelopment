@@ -3,43 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Контактная информация учебного интернет-магазина.">
-  <title>Контакты — Учебный интернет-магазин</title>
+  <meta name="description" content="Контактная информация учебного проекта Study и переход к форме заявки.">
+  <title>Контакты — Study</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Контакты — Учебный интернет-магазин">
-  <meta property="og:description" content="Контактная информация учебного интернет-магазина.">
+  <meta property="og:title" content="Контакты — Study">
+  <meta property="og:description" content="Контактная информация учебного проекта Study и переход к форме заявки.">
   <meta property="og:image" content="https://uusuri.github.io/FrontendAndBackendDevelopment/images/preview.gif">
 </head>
 <body>
-  <header class="site-header" id="top">
-    <div class="site-header__inner">
-      <a class="site-header__logo" href="index.html">ShopProject</a>
-      <nav class="site-nav" aria-label="Основная навигация">
-        <ul class="site-nav__list">
-          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="product.html">Товары</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
-          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="contacts.html" aria-current="page">Контакты</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="index.html#advantages">Преимущества</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="index.html#popular">Популярные товары</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="index.html#contacts">Обратная связь</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<header class="site-header" id="top">
+  <div class="site-header__inner">
+    <a class="site-header__logo" href="index.html">Study<span class="site-header__tagline">вещи для рабочего стола</span></a>
+    <nav class="site-nav" aria-label="Основная навигация"><ul class="site-nav__list"><li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+<li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+<li class="site-nav__item"><a class="site-nav__link" href="category.html">Канцелярия</a></li>
+<li class="site-nav__item"><a class="site-nav__link" href="about.html">О проекте</a></li>
+<li class="site-nav__item"><a class="site-nav__link" href="guide.html">Как выбрать</a></li>
+<li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="contacts.html" aria-current="page">Контакты</a></li></ul></nav>
+    <a class="button button--secondary site-header__action" href="order.html">Оставить заявку</a>
+  </div>
+</header>
+<main class="site-main">
 
-  <main class="site-main">
-    <nav class="breadcrumbs" aria-label="Хлебные крошки">
-      <a class="breadcrumbs__link" href="index.html">Главная</a>
-      <span class="breadcrumbs__current">Контакты</span>
-    </nav>
+<nav class="breadcrumbs" aria-label="Хлебные крошки"><a class="breadcrumbs__link" href="index.html">Главная</a><span class="breadcrumbs__current" aria-current="page">Контакты</span></nav>
+
 
     <section class="section">
       <h1 class="section__title">Контакты</h1>
       <p class="section__text">
-        Здесь размещается контактная информация учебного интернет-магазина.
+        Контактная информация демонстрационного магазина Study. Указанные данные используются только в учебном проекте.
       </p>
 
       <ul class="contacts-list">
@@ -56,12 +50,24 @@
       </p>
       <a class="button button--primary" href="order.html">Перейти к форме</a>
     </section>
-  </main>
 
-  <footer class="site-footer" id="contacts">
-    <p class="site-footer__text">&copy; 2026 Учебный проект. Все права защищены.</p>
-    <p class="site-footer__text">Дисциплина: Фронтенд и бэкенд разработка</p>
-    <p class="site-footer__text"><a href="contacts.html">Контактная информация</a></p>
-  </footer>
+</main>
+<footer class="site-footer" id="contacts">
+  <div class="site-footer__inner">
+    <div><a class="site-footer__logo" href="index.html">Study</a><p class="site-footer__text">Вещи для рабочего стола.<br>Учебный интернет-магазин, 2026.</p></div>
+    <nav class="site-footer__nav" aria-label="Дополнительная навигация">
+      <a class="site-footer__link" href="product.html">Описание товаров</a>
+      <a class="site-footer__link" href="order.html">Оформление заявки</a>
+      <a class="site-footer__link" href="contacts.html">Контактная информация</a>
+    </nav>
+    <nav class="site-footer__nav" aria-label="Разделы главной страницы">
+      <a class="site-footer__link" href="index.html#advantages">Наш подход</a>
+      <a class="site-footer__link" href="index.html#popular">Популярные товары</a>
+      <a class="site-footer__link" href="index.html#contacts">Обратная связь</a>
+    </nav>
+  </div>
+  <p class="site-footer__course">Фронтенд и бэкенд разработка · РТУ МИРЭА</p>
+</footer>
+
 </body>
 </html>

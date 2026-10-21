@@ -3,52 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Каталог товаров учебного интернет-магазина.">
-  <title>Каталог товаров — Учебный интернет-магазин</title>
+  <meta name="description" content="Девять товаров Study: блокноты, планеры, ручки, светильники и аксессуары для стола.">
+  <title>Каталог товаров — Study</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Каталог товаров — Учебный интернет-магазин">
-  <meta property="og:description" content="Каталог товаров учебного интернет-магазина.">
+  <meta property="og:title" content="Каталог товаров — Study">
+  <meta property="og:description" content="Девять товаров Study: блокноты, планеры, ручки, светильники и аксессуары для стола.">
   <meta property="og:image" content="https://uusuri.github.io/FrontendAndBackendDevelopment/images/preview.gif">
 </head>
 <body>
-  <header class="site-header" id="top">
-    <div class="site-header__inner">
-      <a class="site-header__logo" href="index.html">ShopProject</a>
-      <nav class="site-nav" aria-label="Основная навигация">
-        <ul class="site-nav__list">
-          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
-          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="catalog.html" aria-current="page">Каталог</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="product.html">Товары</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="index.html#advantages">Преимущества</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="index.html#popular">Популярные товары</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="index.html#contacts">Обратная связь</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<header class="site-header" id="top">
+  <div class="site-header__inner">
+    <a class="site-header__logo" href="index.html">Study<span class="site-header__tagline">вещи для рабочего стола</span></a>
+    <nav class="site-nav" aria-label="Основная навигация"><ul class="site-nav__list"><li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+<li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="catalog.html" aria-current="page">Каталог</a></li>
+<li class="site-nav__item"><a class="site-nav__link" href="category.html">Канцелярия</a></li>
+<li class="site-nav__item"><a class="site-nav__link" href="about.html">О проекте</a></li>
+<li class="site-nav__item"><a class="site-nav__link" href="guide.html">Как выбрать</a></li>
+<li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li></ul></nav>
+    <a class="button button--secondary site-header__action" href="order.html">Оставить заявку</a>
+  </div>
+</header>
+<main class="site-main">
 
-  <main class="site-main">
-    <nav class="breadcrumbs" aria-label="Хлебные крошки">
-      <a class="breadcrumbs__link" href="index.html">Главная</a>
-      <span class="breadcrumbs__current">Каталог</span>
-    </nav>
-
-    <section class="section">
-      <h1 class="section__title">Каталог товаров</h1>
-      <p class="section__text">
-        На этой странице представлен учебный каталог товаров.
-        Слева расположена форма фильтров, справа — сетка товаров.
-      </p>
-    </section>
-
-    <section class="catalog-layout">
-      <aside class="catalog-filters">
-        <h2 class="catalog-filters__title">Фильтры</h2>
-
-        <form class="filters-form" action="#" method="get">
+<nav class="breadcrumbs" aria-label="Хлебные крошки"><a class="breadcrumbs__link" href="index.html">Главная</a><span class="breadcrumbs__current" aria-current="page">Каталог</span></nav><section class="page-intro"><p class="page-intro__eyebrow">КОЛЛЕКЦИЯ STUDY</p><h1 class="page-intro__title">Всё для рабочего места</h1><p class="page-intro__text">Девять вещей для учёбы, работы и порядка на столе. Выберите категорию или посмотрите весь ассортимент.</p></section><div class="catalog-layout"><aside class="catalog-filters"><h2 class="catalog-filters__title">Категории</h2><nav class="category-nav" aria-label="Категории каталога"><a class="category-nav__link" href="category.html">Канцелярия<span class="category-nav__count">3</span></a><a class="category-nav__link" href="catalog.html#lighting">Освещение<span class="category-nav__count">3</span></a><a class="category-nav__link" href="catalog.html#organization">Организация стола<span class="category-nav__count">3</span></a></nav><h2 class="catalog-filters__title">Фильтры</h2><form class="filters-form" action="#" method="get">
           <fieldset class="filters-form__group">
             <legend class="filters-form__legend">Категория</legend>
 
@@ -79,42 +58,84 @@
           </fieldset>
 
           <button class="button button--primary filters-form__button" type="submit">Применить</button>
-        </form>
-      </aside>
+        </form></aside><div class="catalog-products"><section class="section catalog-products__section" id="stationery"><div class="section__heading"><h2 class="catalog-products__title">Канцелярия</h2><span class="section__meta">3 товара</span></div><div class="products-grid"><article class="product-card" data-item="notebook">
+  <p class="product-card__category">Канцелярия</p>
+  <h3 class="product-card__title">Блокнот Study</h3>
+  <p class="product-card__description">Твёрдая обложка, 120 листов и место для каждой новой идеи.</p>
+  <p class="product-card__price">1 000 руб.</p>
+  <a class="button button--secondary product-card__button" href="product.html#notebook">Подробнее <span aria-hidden="true">↗</span></a>
+</article>
+<article class="product-card" data-item="planner">
+  <p class="product-card__category">Канцелярия</p>
+  <h3 class="product-card__title">Планер на неделю</h3>
+  <p class="product-card__description">Недатированные листы: задачи, встречи и фокус на неделю.</p>
+  <p class="product-card__price">650 руб.</p>
+  <a class="button button--secondary product-card__button" href="product.html#planner">Подробнее <span aria-hidden="true">↗</span></a>
+</article>
+<article class="product-card" data-item="pens">
+  <p class="product-card__category">Канцелярия</p>
+  <h3 class="product-card__title">Набор ручек Note</h3>
+  <p class="product-card__description">Три цвета для записей, важных мыслей и пометок.</p>
+  <p class="product-card__price">390 руб.</p>
+  <a class="button button--secondary product-card__button" href="product.html#pens">Подробнее <span aria-hidden="true">↗</span></a>
+</article></div></section><section class="section catalog-products__section" id="lighting"><div class="section__heading"><h2 class="catalog-products__title">Освещение</h2><span class="section__meta">3 товара</span></div><div class="products-grid"><article class="product-card" data-item="lamp">
+  <p class="product-card__category">Освещение</p>
+  <h3 class="product-card__title">Настольная лампа Study</h3>
+  <p class="product-card__description">Поворотный плафон направляет свет на рабочую поверхность.</p>
+  <p class="product-card__price">1 500 руб.</p>
+  <a class="button button--secondary product-card__button" href="product.html#lamp">Подробнее <span aria-hidden="true">↗</span></a>
+</article>
+<article class="product-card" data-item="light-bar">
+  <p class="product-card__category">Освещение</p>
+  <h3 class="product-card__title">Светильник Line</h3>
+  <p class="product-card__description">Узкая световая панель для компактного рабочего места.</p>
+  <p class="product-card__price">2 400 руб.</p>
+  <a class="button button--secondary product-card__button" href="product.html#light-bar">Подробнее <span aria-hidden="true">↗</span></a>
+</article>
+<article class="product-card" data-item="clip-light">
+  <p class="product-card__category">Освещение</p>
+  <h3 class="product-card__title">Лампа Clip</h3>
+  <p class="product-card__description">Крепление-прищепка для полки или края стола.</p>
+  <p class="product-card__price">1 200 руб.</p>
+  <a class="button button--secondary product-card__button" href="product.html#clip-light">Подробнее <span aria-hidden="true">↗</span></a>
+</article></div></section><section class="section catalog-products__section" id="organization"><div class="section__heading"><h2 class="catalog-products__title">Организация стола</h2><span class="section__meta">3 товара</span></div><div class="products-grid"><article class="product-card" data-item="stand">
+  <p class="product-card__category">Организация стола</p>
+  <h3 class="product-card__title">Подставка для ноутбука</h3>
+  <p class="product-card__description">Наклонная опора для ноутбука и свободного места на столе.</p>
+  <p class="product-card__price">2 000 руб.</p>
+  <a class="button button--secondary product-card__button" href="product.html#stand">Подробнее <span aria-hidden="true">↗</span></a>
+</article>
+<article class="product-card" data-item="organizer">
+  <p class="product-card__category">Организация стола</p>
+  <h3 class="product-card__title">Органайзер Desk</h3>
+  <p class="product-card__description">Отдельные секции для ручек, заметок и мелочей.</p>
+  <p class="product-card__price">890 руб.</p>
+  <a class="button button--secondary product-card__button" href="product.html#organizer">Подробнее <span aria-hidden="true">↗</span></a>
+</article>
+<article class="product-card" data-item="desk-mat">
+  <p class="product-card__category">Организация стола</p>
+  <h3 class="product-card__title">Коврик для стола</h3>
+  <p class="product-card__description">Единая поверхность для клавиатуры, мыши и записей.</p>
+  <p class="product-card__price">1 100 руб.</p>
+  <a class="button button--secondary product-card__button" href="product.html#desk-mat">Подробнее <span aria-hidden="true">↗</span></a>
+</article></div></section></div></div>
+</main>
+<footer class="site-footer" id="contacts">
+  <div class="site-footer__inner">
+    <div><a class="site-footer__logo" href="index.html">Study</a><p class="site-footer__text">Вещи для рабочего стола.<br>Учебный интернет-магазин, 2026.</p></div>
+    <nav class="site-footer__nav" aria-label="Дополнительная навигация">
+      <a class="site-footer__link" href="product.html">Описание товаров</a>
+      <a class="site-footer__link" href="order.html">Оформление заявки</a>
+      <a class="site-footer__link" href="contacts.html">Контактная информация</a>
+    </nav>
+    <nav class="site-footer__nav" aria-label="Разделы главной страницы">
+      <a class="site-footer__link" href="index.html#advantages">Наш подход</a>
+      <a class="site-footer__link" href="index.html#popular">Популярные товары</a>
+      <a class="site-footer__link" href="index.html#contacts">Обратная связь</a>
+    </nav>
+  </div>
+  <p class="site-footer__course">Фронтенд и бэкенд разработка · РТУ МИРЭА</p>
+</footer>
 
-      <section class="catalog-products">
-        <h2 class="catalog-products__title">Список товаров</h2>
-
-        <div class="products-grid">
-          <article class="product-card">
-            <h3 class="product-card__title">Товар 1</h3>
-            <p class="product-card__description">Краткое описание учебного товара.</p>
-            <p class="product-card__price">Цена: 1000 руб.</p>
-            <a class="button button--primary product-card__button" href="product.html#notebook">Подробнее</a>
-          </article>
-
-          <article class="product-card product-card--discount">
-            <h3 class="product-card__title">Товар 2</h3>
-            <p class="product-card__description">Краткое описание учебного товара.</p>
-            <p class="product-card__price">Цена: 1500 руб.</p>
-            <a class="button button--primary product-card__button" href="product.html#lamp">Подробнее</a>
-          </article>
-
-          <article class="product-card">
-            <h3 class="product-card__title">Товар 3</h3>
-            <p class="product-card__description">Краткое описание учебного товара.</p>
-            <p class="product-card__price">Цена: 2000 руб.</p>
-            <a class="button button--primary product-card__button" href="product.html#stand">Подробнее</a>
-          </article>
-        </div>
-      </section>
-    </section>
-  </main>
-
-  <footer class="site-footer" id="contacts">
-    <p class="site-footer__text">&copy; 2026 Учебный проект. Все права защищены.</p>
-    <p class="site-footer__text">Дисциплина: Фронтенд и бэкенд разработка</p>
-    <p class="site-footer__text"><a href="contacts.html">Контактная информация</a></p>
-  </footer>
 </body>
 </html>

@@ -3,106 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Учебный интернет-магазин ShopProject: преимущества, популярные товары и оформление заявки.">
-  <title>Учебный интернет-магазин</title>
+  <meta name="description" content="Study: канцелярия, освещение и аксессуары для удобного рабочего места.">
+  <title>Вещи для рабочего стола — Study</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/main.js" defer></script>
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Учебный интернет-магазин">
-  <meta property="og:description" content="Учебный frontend-проект интернет-магазина.">
+  <meta property="og:title" content="Вещи для рабочего стола — Study">
+  <meta property="og:description" content="Study: канцелярия, освещение и аксессуары для удобного рабочего места.">
   <meta property="og:image" content="https://uusuri.github.io/FrontendAndBackendDevelopment/images/preview.gif">
 </head>
 <body>
-  <header class="site-header" id="top">
-    <div class="site-header__inner">
-      <a class="site-header__logo" href="index.html">ShopProject</a>
-      <nav class="site-nav" aria-label="Основная навигация">
-        <ul class="site-nav__list">
-          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="index.html" aria-current="page">Главная</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="product.html">Товары</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="index.html#advantages">Преимущества</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="index.html#popular">Популярные товары</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="index.html#contacts">Обратная связь</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main class="site-main">
-    <section class="hero">
-      <h1 class="hero__title">Учебный интернет-магазин</h1>
-      <p class="hero__text">
-        Это стартовая страница учебного frontend-проекта.
-        В дальнейшем на её основе будет разработан многостраничный сайт
-        интернет-магазина или каталога услуг.
-      </p>
-      <a class="button button--primary hero__button" href="#popular">Перейти к товарам</a>
-    </section>
-
-    <section class="section" id="advantages">
-      <h2 class="section__title">Преимущества проекта</h2>
-
-      <ul class="advantages-list">
-        <li class="advantages-list__item">понятная HTML-структура;</li>
-        <li class="advantages-list__item">семантические блоки страницы;</li>
-        <li class="advantages-list__item">подключение внешнего CSS-файла;</li>
-        <li class="advantages-list__item">подготовка к разработке многостраничного сайта.</li>
-      </ul>
-    </section>
-
-    <section class="section" id="popular">
-      <h2 class="section__title">Популярные товары</h2>
-
-      <div class="products-grid">
-        <article class="product-card product-card--featured">
-          <h3 class="product-card__title">Товар 1</h3>
-          <p class="product-card__description">Краткое описание учебного товара.</p>
-          <p class="product-card__price">Цена: 1000 руб.</p>
-          <button class="button button--primary product-card__button" type="button" data-product="Товар 1">
-            Заказать
-          </button>
-        </article>
-
-        <article class="product-card">
-          <h3 class="product-card__title">Товар 2</h3>
-          <p class="product-card__description">Краткое описание учебного товара.</p>
-          <p class="product-card__price">Цена: 1500 руб.</p>
-          <button class="button button--primary product-card__button" type="button" data-product="Товар 2">
-            Заказать
-          </button>
-        </article>
-
-        <article class="product-card">
-          <h3 class="product-card__title">Товар 3</h3>
-          <p class="product-card__description">Краткое описание учебного товара.</p>
-          <p class="product-card__price">Цена: 2000 руб.</p>
-          <button class="button button--primary product-card__button" type="button" data-product="Товар 3">
-            Заказать
-          </button>
-        </article>
-      </div>
-    </section>
-
-    <aside class="aside-info">
-      <h2 class="aside-info__title">Информация для студентов</h2>
-      <p class="aside-info__text">
-        В проекте используются формы, модальное окно, несколько страниц,
-        Flexbox и CSS Grid. Адаптивная версия сайта будет разработана
-        на следующих практических занятиях.
-      </p>
-    </aside>
-  </main>
-
-  <footer class="site-footer" id="contacts">
-    <p class="site-footer__text">&copy; 2026 Учебный проект. Все права защищены.</p>
-    <p class="site-footer__text">Дисциплина: Фронтенд и бэкенд разработка</p>
-    <p class="site-footer__text"><a href="contacts.html">Контактная информация</a></p>
-  </footer>
-
-  <dialog class="order-dialog" id="order-dialog" aria-labelledby="order-dialog-title">
+<header class="site-header" id="top">
+  <div class="site-header__inner">
+    <a class="site-header__logo" href="index.html">Study<span class="site-header__tagline">вещи для рабочего стола</span></a>
+    <nav class="site-nav" aria-label="Основная навигация"><ul class="site-nav__list"><li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="index.html" aria-current="page">Главная</a></li>
+<li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+<li class="site-nav__item"><a class="site-nav__link" href="category.html">Канцелярия</a></li>
+<li class="site-nav__item"><a class="site-nav__link" href="about.html">О проекте</a></li>
+<li class="site-nav__item"><a class="site-nav__link" href="guide.html">Как выбрать</a></li>
+<li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li></ul></nav>
+    <a class="button button--secondary site-header__action" href="order.html">Оставить заявку</a>
+  </div>
+</header>
+<main class="site-main">
+<p class="success-message" id="success-message" role="status" hidden>Заявка проверена. Это учебная форма: данные на сервер не отправлялись.</p>
+<section class="hero">
+  <div class="hero__content"><p class="hero__eyebrow">ДЛЯ УЧЁБЫ И РАБОТЫ</p><h1 class="hero__title">Место для<br>хороших идей.</h1><p class="hero__text">Бумага для мыслей, свет для вечерних задач и порядок на столе. Соберите рабочее место, за которым приятно начинать.</p><a class="button button--primary hero__button" href="catalog.html">Смотреть каталог <span aria-hidden="true">→</span></a><a class="hero__link" href="#popular">Начать с популярных товаров</a></div>
+  <figure class="hero__visual"><img class="hero__image" src="images/notebook.svg" alt="Синий блокнот Study в твёрдой обложке" width="500" height="360"><figcaption class="hero__caption"><span>Блокнот Study / A5</span><span>1 000 руб.</span></figcaption></figure>
+</section>
+<section class="section"><div class="section__heading"><div><p class="section__eyebrow">ТРИ КАТЕГОРИИ</p><h2 class="section__title">Что нужно вашему столу?</h2></div><a class="section__link" href="catalog.html">Весь каталог →</a></div><div class="category-grid"><a class="category-card" href="category.html"><span class="category-card__number">01</span><h3 class="category-card__title">Канцелярия</h3><p class="category-card__text">Для мыслей на бумаге</p><span class="category-card__count">3 товара <span aria-hidden="true">↗</span></span></a><a class="category-card" href="catalog.html#lighting"><span class="category-card__number">02</span><h3 class="category-card__title">Освещение</h3><p class="category-card__text">Свет для вашего ритма</p><span class="category-card__count">3 товара <span aria-hidden="true">↗</span></span></a><a class="category-card" href="catalog.html#organization"><span class="category-card__number">03</span><h3 class="category-card__title">Организация стола</h3><p class="category-card__text">Всё на своём месте</p><span class="category-card__count">3 товара <span aria-hidden="true">↗</span></span></a></div></section>
+<section class="section" id="popular"><div class="section__heading"><div><p class="section__eyebrow">С ЧЕГО НАЧАТЬ</p><h2 class="section__title">Популярные товары</h2></div><span class="section__meta">Бумага · Свет · Порядок</span></div><div class="products-grid"><article class="product-card" data-item="notebook">
+  <p class="product-card__category">Канцелярия</p>
+  <h3 class="product-card__title">Блокнот Study</h3>
+  <p class="product-card__description">Твёрдая обложка, 120 листов и место для каждой новой идеи.</p>
+  <p class="product-card__price">1 000 руб.</p>
+  <button class="button button--primary product-card__button" type="button" data-product="Блокнот Study">Заказать</button>
+</article>
+<article class="product-card" data-item="lamp">
+  <p class="product-card__category">Освещение</p>
+  <h3 class="product-card__title">Настольная лампа Study</h3>
+  <p class="product-card__description">Поворотный плафон направляет свет на рабочую поверхность.</p>
+  <p class="product-card__price">1 500 руб.</p>
+  <button class="button button--primary product-card__button" type="button" data-product="Настольная лампа Study">Заказать</button>
+</article>
+<article class="product-card" data-item="stand">
+  <p class="product-card__category">Организация стола</p>
+  <h3 class="product-card__title">Подставка для ноутбука</h3>
+  <p class="product-card__description">Наклонная опора для ноутбука и свободного места на столе.</p>
+  <p class="product-card__price">2 000 руб.</p>
+  <button class="button button--primary product-card__button" type="button" data-product="Подставка для ноутбука">Заказать</button>
+</article></div></section>
+<section class="section" id="advantages"><div class="section__heading"><div><p class="section__eyebrow">НАШ ПОДХОД</p><h2 class="section__title">Меньше лишнего. Больше места для дела.</h2></div></div><ul class="advantages-list"><li class="advantages-list__item"><strong class="advantages-list__title">Понятный выбор</strong>Три категории помогают быстро найти нужную вещь.</li><li class="advantages-list__item"><strong class="advantages-list__title">Детали до покупки</strong>Размеры, материалы и характеристики собраны рядом с товаром.</li><li class="advantages-list__item"><strong class="advantages-list__title">Один рабочий ритм</strong>Предметы для записей, освещения и организации сочетаются между собой.</li></ul></section>
+<aside class="aside-info"><div><p class="aside-info__eyebrow">НЕ ЗНАЕТЕ, С ЧЕГО НАЧАТЬ?</p><h2 class="aside-info__title">Соберите свой рабочий набор</h2><p class="aside-info__text">Небольшой гид по выбору блокнота, света и аксессуаров.</p></div><a class="button button--secondary" href="guide.html">Открыть гид →</a></aside>
+</main>
+<footer class="site-footer" id="contacts">
+  <div class="site-footer__inner">
+    <div><a class="site-footer__logo" href="index.html">Study</a><p class="site-footer__text">Вещи для рабочего стола.<br>Учебный интернет-магазин, 2026.</p></div>
+    <nav class="site-footer__nav" aria-label="Дополнительная навигация">
+      <a class="site-footer__link" href="product.html">Описание товаров</a>
+      <a class="site-footer__link" href="order.html">Оформление заявки</a>
+      <a class="site-footer__link" href="contacts.html">Контактная информация</a>
+    </nav>
+    <nav class="site-footer__nav" aria-label="Разделы главной страницы">
+      <a class="site-footer__link" href="index.html#advantages">Наш подход</a>
+      <a class="site-footer__link" href="index.html#popular">Популярные товары</a>
+      <a class="site-footer__link" href="index.html#contacts">Обратная связь</a>
+    </nav>
+  </div>
+  <p class="site-footer__course">Фронтенд и бэкенд разработка · РТУ МИРЭА</p>
+</footer>
+<dialog class="order-dialog" id="order-dialog" aria-labelledby="order-dialog-title">
     <h2 class="order-dialog__title" id="order-dialog-title">Оформление заявки</h2>
 
     <form class="order-form" id="order-form" action="#" method="post" novalidate>
@@ -200,9 +170,5 @@
       </div>
     </form>
   </dialog>
-
-  <p class="success-message" id="success-message" hidden>
-    Форма успешно отправлена!
-  </p>
 </body>
 </html>

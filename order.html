@@ -3,47 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Учебная форма заявки: выберите товар и тему, укажите контактные данные и комментарий.">
-  <title>Оформление заявки — ShopProject</title>
+  <meta name="description" content="Учебная форма заявки Study: выберите один из девяти товаров и заполните контактные данные.">
+  <title>Оформление заявки — Study</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/main.js" defer></script>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Оформление заявки — Study">
+  <meta property="og:description" content="Учебная форма заявки Study: выберите один из девяти товаров и заполните контактные данные.">
+  <meta property="og:image" content="https://uusuri.github.io/FrontendAndBackendDevelopment/images/preview.gif">
 </head>
 <body>
-  <header class="site-header" id="top">
-    <div class="site-header__inner">
-      <a class="site-header__logo" href="index.html">ShopProject</a>
-      <nav class="site-nav" aria-label="Основная навигация">
-        <ul class="site-nav__list">
-          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="product.html">Товары</a></li>
-          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="order.html" aria-current="page">Заявка</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="index.html#advantages">Преимущества</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="index.html#popular">Популярные товары</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="index.html#contacts">Обратная связь</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main class="site-main container">
-    <nav class="breadcrumbs" aria-label="Хлебные крошки">
-      <a class="breadcrumbs__link" href="index.html">Главная</a>
-      <span class="breadcrumbs__current" aria-current="page">Заявка</span>
-    </nav>
-    <p class="success-message" id="success-message" role="status" hidden>Форма успешно отправлена! Учебная проверка пройдена; данные на сервер не отправлялись.</p>
-    <section class="section order-section">
+<header class="site-header" id="top">
+  <div class="site-header__inner">
+    <a class="site-header__logo" href="index.html">Study<span class="site-header__tagline">вещи для рабочего стола</span></a>
+    <nav class="site-nav" aria-label="Основная навигация"><ul class="site-nav__list"><li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+<li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+<li class="site-nav__item"><a class="site-nav__link" href="category.html">Канцелярия</a></li>
+<li class="site-nav__item"><a class="site-nav__link" href="about.html">О проекте</a></li>
+<li class="site-nav__item"><a class="site-nav__link" href="guide.html">Как выбрать</a></li>
+<li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li></ul></nav>
+    <a class="button button--secondary site-header__action" href="order.html">Оставить заявку</a>
+  </div>
+</header>
+<main class="site-main">
+<p class="success-message" id="success-message" role="status" hidden>Заявка проверена. Это учебная форма: данные на сервер не отправлялись.</p>
+<nav class="breadcrumbs" aria-label="Хлебные крошки"><a class="breadcrumbs__link" href="index.html">Главная</a><span class="breadcrumbs__current" aria-current="page">Заявка</span></nav><section class="section order-section">
       <h1 class="site-main__title">Оформление заявки</h1>
   <form class="order-form" id="order-form" action="#" method="post" novalidate aria-describedby="order-note">
     <p class="order-form__note" id="order-note">Поля со звёздочкой обязательны. Это учебная форма: данные не отправляются и не сохраняются.</p>
     <div class="order-form__field">
       <label class="order-form__label" for="selected-product">Товар *</label>
-      <select class="order-form__select" id="selected-product" name="selected-product" required>
-        <option value="">Выберите товар</option>
-        <option value="Блокнот Study">Блокнот Study</option>
-        <option value="Настольная лампа Study">Настольная лампа Study</option>
-        <option value="Подставка для ноутбука">Подставка для ноутбука</option>
-      </select>
+      <select class="order-form__select" id="selected-product" name="selected-product" required><option value="">Выберите товар</option><option value="Блокнот Study">Блокнот Study</option>
+<option value="Планер на неделю">Планер на неделю</option>
+<option value="Набор ручек Note">Набор ручек Note</option>
+<option value="Настольная лампа Study">Настольная лампа Study</option>
+<option value="Светильник Line">Светильник Line</option>
+<option value="Лампа Clip">Лампа Clip</option>
+<option value="Подставка для ноутбука">Подставка для ноутбука</option>
+<option value="Органайзер Desk">Органайзер Desk</option>
+<option value="Коврик для стола">Коврик для стола</option></select>
     </div>
     <div class="order-form__field">
       <label class="order-form__label" for="order-name">Имя *</label>
@@ -86,12 +84,23 @@
     </div>
   </form>
     </section>
-  </main>
-  <footer class="site-footer" id="contacts">
-    <p class="site-footer__text">&copy; 2026 Учебный проект. Все права защищены.</p>
-    <p class="site-footer__text">Дисциплина: Фронтенд и бэкенд разработка</p>
-    <p class="site-footer__text"><a href="contacts.html">Контактная информация</a></p>
-  </footer>
+</main>
+<footer class="site-footer" id="contacts">
+  <div class="site-footer__inner">
+    <div><a class="site-footer__logo" href="index.html">Study</a><p class="site-footer__text">Вещи для рабочего стола.<br>Учебный интернет-магазин, 2026.</p></div>
+    <nav class="site-footer__nav" aria-label="Дополнительная навигация">
+      <a class="site-footer__link" href="product.html">Описание товаров</a>
+      <a class="site-footer__link" href="order.html">Оформление заявки</a>
+      <a class="site-footer__link" href="contacts.html">Контактная информация</a>
+    </nav>
+    <nav class="site-footer__nav" aria-label="Разделы главной страницы">
+      <a class="site-footer__link" href="index.html#advantages">Наш подход</a>
+      <a class="site-footer__link" href="index.html#popular">Популярные товары</a>
+      <a class="site-footer__link" href="index.html#contacts">Обратная связь</a>
+    </nav>
+  </div>
+  <p class="site-footer__course">Фронтенд и бэкенд разработка · РТУ МИРЭА</p>
+</footer>
 
 </body>
 </html>
