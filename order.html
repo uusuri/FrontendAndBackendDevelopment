@@ -33,12 +33,12 @@
     </nav>
     <p class="success-message" id="success-message" role="status" hidden>Форма успешно отправлена! Учебная проверка пройдена; данные на сервер не отправлялись.</p>
     <section class="section order-section">
-      <h1 class="page-main__title">Оформление заявки</h1>
+      <h1 class="site-main__title">Оформление заявки</h1>
   <form class="order-form" id="order-form" action="#" method="post" novalidate aria-describedby="order-note">
     <p class="order-form__note" id="order-note">Поля со звёздочкой обязательны. Это учебная форма: данные не отправляются и не сохраняются.</p>
     <div class="order-form__field">
       <label class="order-form__label" for="selected-product">Товар *</label>
-      <select class="order-form__input" id="selected-product" name="selected-product" required>
+      <select class="order-form__select" id="selected-product" name="selected-product" required>
         <option value="">Выберите товар</option>
         <option value="Блокнот Study">Блокнот Study</option>
         <option value="Настольная лампа Study">Настольная лампа Study</option>
@@ -64,7 +64,7 @@
     </div>
     <div class="order-form__field">
       <label class="order-form__label" for="order-topic">Тема заявки *</label>
-      <select class="order-form__input" id="order-topic" name="topic" required>
+      <select class="order-form__select" id="order-topic" name="topic" required>
         <option value="">Выберите тему</option>
         <option value="product">Заказ товара</option>
         <option value="consultation">Консультация</option>
@@ -73,7 +73,7 @@
     </div>
     <div class="order-form__field">
       <label class="order-form__label" for="order-comment">Комментарий</label>
-      <textarea class="order-form__input" id="order-comment" name="comment" rows="4" placeholder="Укажите дополнительную информацию"></textarea>
+      <textarea class="order-form__textarea" id="order-comment" name="comment" rows="4" placeholder="Укажите дополнительную информацию"></textarea>
     </div>
     <div class="order-form__field">
       <label class="order-form__agreement" for="order-agreement">

@@ -314,7 +314,7 @@ a:focus-visible {
   color: var(--color-danger);
 }
 
-.product-card .button {
+.product-card__button {
   margin-top: auto;
   align-self: flex-start;
 }
