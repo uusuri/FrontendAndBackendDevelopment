@@ -11,15 +11,22 @@
 - `index.html` — главная страница;
 - `product.html` — описание и характеристики товаров;
 - `order.html` — отдельная форма заявки;
+- `catalog.html` — каталог из девяти товаров в трёх категориях;
+- `category.html` — отдельная категория «Канцелярия»;
+- `about.html` — концепция и назначение проекта;
+- `guide.html` — гид по выбору вещей для рабочего места;
+- `contacts.html` — контактная информация;
 - `css/style.css` — файл стилей;
+- `js/main.js` — файл JavaScript;
 - `images/` — папка для изображений;
-- `.gitignore` — список файлов, исключённых из Git;
-- `README.md` — описание проекта.
+- `README.md` — описание проекта;
+- `.gitignore` — список файлов, исключённых из Git.
 
 ## Используемые технологии
 
 - HTML;
 - CSS;
+- JavaScript;
 - Git;
 - GitHub.
 
@@ -99,21 +106,6 @@ GitHub Pages: https://uusuri.github.io/FrontendAndBackendDevelopment/index.html
 - визуальная подсветка ошибочных полей через `aria-invalid`;
 - структурированный файл `css/style.css`.
 
-## Структура проекта
-
-- `index.html` — главная страница;
-- `product.html` — описание и характеристики товаров;
-- `order.html` — отдельная форма заявки;
-- `catalog.html` — каталог из девяти товаров в трёх категориях;
-- `category.html` — отдельная категория «Канцелярия»;
-- `about.html` — концепция и назначение проекта;
-- `guide.html` — гид по выбору вещей для рабочего места;
-- `contacts.html` — контактная информация;
-- `css/style.css` — файл стилей;
-- `js/main.js` — файл JavaScript;
-- `images/` — папка для изображений;
-- `README.md` — описание проекта;
-- `.gitignore` — список файлов, исключённых из Git.
 
 ## Дополнительные элементы
 
@@ -123,14 +115,14 @@ GitHub Pages: https://uusuri.github.io/FrontendAndBackendDevelopment/index.html
 
 В проекте используются:
 
-- Flexbox для основного меню: `justify-content: center`, `align-items: center`, `flex-wrap: wrap` и `gap: 16px`;
-- Flexbox внутри карточек: `flex-direction: column`, `gap: 8px`, кнопки прижаты вниз через `margin-top: auto`;
+- Flexbox для основного меню: `justify-content: center`, `align-items: center`, `flex-wrap: wrap` и `gap: 4px`;
+- Flexbox внутри карточек: `flex-direction: column`, `gap: 12px`, кнопки прижаты вниз через `margin-top: auto`;
 - CSS Grid для карточек: `grid-template-columns: repeat(3, minmax(0, 1fr))` и `gap: 24px`;
 - CSS Grid для каталога: колонки `220px minmax(0, 1fr)`, именованные области `filters` и `products`.
 
 Форма фильтров содержит категории и диапазон цен. По заданию это HTML/CSS-макет: фильтрация товаров не реализована. Медиазапросы в практике 6 не добавлялись.
 
-Проверка в браузере: пять страниц, переходы по меню и якорям, три формы заявки и модальные окна; отдельно проверены вычисленные стили Flex/Grid и выравнивание кнопок при разной длине описаний.
+Проверка в браузере: восемь страниц, переходы по меню и якорям, три формы заявки и модальные окна; отдельно проверены вычисленные стили Flex/Grid и выравнивание кнопок при разной длине описаний.
 
 ### Результат аудита БЭМ
 
