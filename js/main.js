@@ -1,5 +1,5 @@
 const orderDialog = document.getElementById('order-dialog');
-const orderButtons = document.querySelectorAll('.product-card__button');
+const orderButtons = document.querySelectorAll('button[data-product]');
 const closeDialogButton = document.getElementById('close-order-dialog');
 const selectedProductInput = document.getElementById('selected-product');
 orderButtons.forEach((button) => {
@@ -7,20 +7,19 @@ orderButtons.forEach((button) => {
     const productName = button.dataset.product;
 
     selectedProductInput.value = productName;
-    console.log(productName);
     orderDialog.showModal();
   });
 });
 
-closeDialogButton.addEventListener('click', () => {
-  orderDialog.close();
+closeDialogButton?.addEventListener('click', () => {
+  orderDialog?.close();
 });
 
 const orderForm = document.getElementById('order-form');
 
 const successMessage = document.getElementById('success-message');
 
-orderForm.addEventListener('submit', (event) => {
+orderForm?.addEventListener('submit', (event) => {
   event.preventDefault();
 
   const formElements = Array.from(orderForm.elements);
@@ -46,5 +45,5 @@ orderForm.addEventListener('submit', (event) => {
 
   orderForm.reset();
 
-  orderDialog.close();
+  orderDialog?.close();
 });

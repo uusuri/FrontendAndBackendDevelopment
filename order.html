@@ -10,7 +10,7 @@
 </head>
 <body>
   <header class="site-header" id="top">
-    <div class="site-header__inner container">
+    <div class="site-header__inner">
       <a class="site-header__logo" href="index.html">ShopProject</a>
       <nav class="site-nav" aria-label="Основная навигация">
         <ul class="site-nav__list">
@@ -19,11 +19,18 @@
           <li class="site-nav__item"><a class="site-nav__link" href="product.html">Товары</a></li>
           <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="order.html" aria-current="page">Заявка</a></li>
           <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html#advantages">Преимущества</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html#popular">Популярные товары</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html#contacts">Обратная связь</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  <main class="page-main container">
+  <main class="site-main container">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <a class="breadcrumbs__link" href="index.html">Главная</a>
+      <span class="breadcrumbs__current" aria-current="page">Заявка</span>
+    </nav>
     <p class="success-message" id="success-message" role="status" hidden>Форма успешно отправлена! Учебная проверка пройдена; данные на сервер не отправлялись.</p>
     <section class="section order-section">
       <h1 class="page-main__title">Оформление заявки</h1>
@@ -75,17 +82,15 @@
       </label>
     </div>
     <div class="order-form__actions">
-      <button class="button" type="submit">Отправить заявку</button>
+      <button class="button button--primary" type="submit">Отправить заявку</button>
     </div>
   </form>
     </section>
   </main>
   <footer class="site-footer" id="contacts">
-    <div class="site-footer__inner container">
-      <p class="site-footer__text">&copy; 2026 ShopProject · Учебный интернет-магазин</p>
-      <p class="site-footer__text">Дисциплина: Фронтенд и бэкенд разработка</p>
-      <a class="site-footer__link" href="contacts.html">Контактная информация</a>
-    </div>
+    <p class="site-footer__text">&copy; 2026 Учебный проект. Все права защищены.</p>
+    <p class="site-footer__text">Дисциплина: Фронтенд и бэкенд разработка</p>
+    <p class="site-footer__text"><a href="contacts.html">Контактная информация</a></p>
   </footer>
 
 </body>

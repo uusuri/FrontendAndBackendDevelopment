@@ -182,6 +182,11 @@ a:focus-visible {
    5. Основная область и подвал
 =============================== */
 
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
 .site-main {
   padding: var(--space-lg);
 }
@@ -214,6 +219,8 @@ a:focus-visible {
 .breadcrumbs__current::before {
   content: " / ";
   color: var(--color-muted);
+}
+
 /* ===============================
    7. Первый экран и разделы
 =============================== */

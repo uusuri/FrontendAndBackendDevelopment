@@ -10,7 +10,7 @@
 </head>
 <body>
   <header class="site-header" id="top">
-    <div class="site-header__inner container">
+    <div class="site-header__inner">
       <a class="site-header__logo" href="index.html">ShopProject</a>
       <nav class="site-nav" aria-label="Основная навигация">
         <ul class="site-nav__list">
@@ -19,11 +19,18 @@
           <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="product.html" aria-current="page">Товары</a></li>
           <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
           <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html#advantages">Преимущества</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html#popular">Популярные товары</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html#contacts">Обратная связь</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  <main class="page-main container">
+  <main class="site-main container">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <a class="breadcrumbs__link" href="index.html">Главная</a>
+      <span class="breadcrumbs__current" aria-current="page">Товары</span>
+    </nav>
     <p class="success-message" id="success-message" role="status" hidden>Форма успешно отправлена! Учебная проверка пройдена; данные на сервер не отправлялись.</p>
     <h1 class="page-main__title">Описание товаров</h1>
     <nav class="product-navigation" aria-label="Выбор товара">
@@ -40,7 +47,7 @@
           <p>Блокнот в твёрдой обложке для конспектов и планов.</p>
           <p class="product-detail__price">1000 руб.</p>
           <div class="product-detail__actions">
-            <button class="button" type="button" data-product="Блокнот Study">Оставить заявку</button>
+            <button class="button button--primary" type="button" data-product="Блокнот Study">Оставить заявку</button>
             <a href="order.html">Перейти к форме</a>
           </div>
         </div>
@@ -65,7 +72,7 @@
           <p>Компактная лампа с поворотным плафоном для рабочего стола.</p>
           <p class="product-detail__price">1500 руб.</p>
           <div class="product-detail__actions">
-            <button class="button" type="button" data-product="Настольная лампа Study">Оставить заявку</button>
+            <button class="button button--primary" type="button" data-product="Настольная лампа Study">Оставить заявку</button>
             <a href="order.html">Перейти к форме</a>
           </div>
         </div>
@@ -90,7 +97,7 @@
           <p>Подставка с наклоном для удобного размещения ноутбука.</p>
           <p class="product-detail__price">2000 руб.</p>
           <div class="product-detail__actions">
-            <button class="button" type="button" data-product="Подставка для ноутбука">Оставить заявку</button>
+            <button class="button button--primary" type="button" data-product="Подставка для ноутбука">Оставить заявку</button>
             <a href="order.html">Перейти к форме</a>
           </div>
         </div>
@@ -108,11 +115,9 @@
     </article>
   </main>
   <footer class="site-footer" id="contacts">
-    <div class="site-footer__inner container">
-      <p class="site-footer__text">&copy; 2026 ShopProject · Учебный интернет-магазин</p>
-      <p class="site-footer__text">Дисциплина: Фронтенд и бэкенд разработка</p>
-      <a class="site-footer__link" href="contacts.html">Контактная информация</a>
-    </div>
+    <p class="site-footer__text">&copy; 2026 Учебный проект. Все права защищены.</p>
+    <p class="site-footer__text">Дисциплина: Фронтенд и бэкенд разработка</p>
+    <p class="site-footer__text"><a href="contacts.html">Контактная информация</a></p>
   </footer>
   <dialog class="order-dialog" id="order-dialog" aria-labelledby="order-dialog-title">
     <h2 class="order-dialog__title" id="order-dialog-title">Оформление заявки</h2>
@@ -157,7 +162,7 @@
     </div>
     <div class="order-form__actions">
       <button class="button button--secondary" type="button" id="close-order-dialog">Закрыть</button>
-      <button class="button" type="submit">Отправить заявку</button>
+      <button class="button button--primary" type="submit">Отправить заявку</button>
     </div>
   </form>
   </dialog>
