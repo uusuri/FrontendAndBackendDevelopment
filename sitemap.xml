@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://uusuri.github.io/FrontendAndBackendDevelopment/</loc>
-  </url>
-  <url>
-    <loc>https://uusuri.github.io/FrontendAndBackendDevelopment/catalog.html</loc>
-  </url>
-  <url>
-    <loc>https://uusuri.github.io/FrontendAndBackendDevelopment/contacts.html</loc>
-  </url>
-  <url>
-    <loc>https://uusuri.github.io/FrontendAndBackendDevelopment/product.html</loc>
-  </url>
-  <url>
-    <loc>https://uusuri.github.io/FrontendAndBackendDevelopment/order.html</loc>
-  </url>
+  <url><loc>https://uusuri.github.io/FrontendAndBackendDevelopment/index.html</loc></url>
+  <url><loc>https://uusuri.github.io/FrontendAndBackendDevelopment/catalog.html</loc></url>
+  <url><loc>https://uusuri.github.io/FrontendAndBackendDevelopment/category.html</loc></url>
+  <url><loc>https://uusuri.github.io/FrontendAndBackendDevelopment/product.html</loc></url>
+  <url><loc>https://uusuri.github.io/FrontendAndBackendDevelopment/order.html</loc></url>
+  <url><loc>https://uusuri.github.io/FrontendAndBackendDevelopment/contacts.html</loc></url>
+  <url><loc>https://uusuri.github.io/FrontendAndBackendDevelopment/about.html</loc></url>
+  <url><loc>https://uusuri.github.io/FrontendAndBackendDevelopment/guide.html</loc></url>
 </urlset>
