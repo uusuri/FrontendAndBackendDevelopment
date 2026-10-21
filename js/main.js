@@ -1,3 +1,13 @@
+const siteHeader = document.querySelector('.site-header');
+
+if (siteHeader) {
+  const updateHeaderHeight = () => {
+    document.documentElement.style.setProperty('--header-height', `${siteHeader.offsetHeight}px`);
+  };
+  updateHeaderHeight();
+  new ResizeObserver(updateHeaderHeight).observe(siteHeader);
+}
+
 const orderDialog = document.getElementById('order-dialog');
 const orderButtons = document.querySelectorAll('button[data-product]');
 const closeDialogButton = document.getElementById('close-order-dialog');
