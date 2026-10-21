@@ -32,23 +32,26 @@
   <figure class="hero__visual"><img class="hero__image" src="images/notebook.svg" alt="Синий блокнот Study в твёрдой обложке" width="500" height="360"><figcaption class="hero__caption"><span>Блокнот Study / A5</span><span>1 000 руб.</span></figcaption></figure>
 </section>
 <section class="section"><div class="section__heading"><div><p class="section__eyebrow">ТРИ КАТЕГОРИИ</p><h2 class="section__title">Что нужно вашему столу?</h2></div><a class="section__link" href="catalog.html">Весь каталог →</a></div><div class="category-grid"><a class="category-card" href="category.html"><span class="category-card__number">01</span><h3 class="category-card__title">Канцелярия</h3><p class="category-card__text">Для мыслей на бумаге</p><span class="category-card__count">3 товара <span aria-hidden="true">↗</span></span></a><a class="category-card" href="catalog.html#lighting"><span class="category-card__number">02</span><h3 class="category-card__title">Освещение</h3><p class="category-card__text">Свет для вашего ритма</p><span class="category-card__count">3 товара <span aria-hidden="true">↗</span></span></a><a class="category-card" href="catalog.html#organization"><span class="category-card__number">03</span><h3 class="category-card__title">Организация стола</h3><p class="category-card__text">Всё на своём месте</p><span class="category-card__count">3 товара <span aria-hidden="true">↗</span></span></a></div></section>
-<section class="section" id="popular"><div class="section__heading"><div><p class="section__eyebrow">С ЧЕГО НАЧАТЬ</p><h2 class="section__title">Популярные товары</h2></div><span class="section__meta">Бумага · Свет · Порядок</span></div><div class="products-grid"><article class="product-card" data-item="notebook">
+<section class="section" id="popular"><div class="section__heading"><div><p class="section__eyebrow">С ЧЕГО НАЧАТЬ</p><h2 class="section__title">Популярные товары</h2></div><span class="section__meta">Бумага · Свет · Порядок</span></div><div class="products-grid"><article class="product-card product-card--featured" data-item="notebook">
+  <div class="product-card__media"><img class="product-card__image" src="images/notebook.svg" alt="Блокнот Study — иллюстрация товара" width="500" height="360" loading="lazy" decoding="async"><span class="product-card__badge">Выбор Study</span></div>
   <p class="product-card__category">Канцелярия</p>
-  <h3 class="product-card__title">Блокнот Study</h3>
+  <h3 class="product-card__title"><a class="product-card__title-link" href="product.html#notebook">Блокнот Study</a></h3>
   <p class="product-card__description">Твёрдая обложка, 120 листов и место для каждой новой идеи.</p>
   <p class="product-card__price">1 000 руб.</p>
   <button class="button button--primary product-card__button" type="button" data-product="Блокнот Study">Заказать</button>
 </article>
-<article class="product-card" data-item="lamp">
+<article class="product-card product-card--discount" data-item="lamp">
+  <div class="product-card__media"><img class="product-card__image" src="images/lamp.svg" alt="Настольная лампа Study — иллюстрация товара" width="500" height="360" loading="lazy" decoding="async"><span class="product-card__badge">Скидка</span></div>
   <p class="product-card__category">Освещение</p>
-  <h3 class="product-card__title">Настольная лампа Study</h3>
+  <h3 class="product-card__title"><a class="product-card__title-link" href="product.html#lamp">Настольная лампа Study</a></h3>
   <p class="product-card__description">Поворотный плафон направляет свет на рабочую поверхность.</p>
-  <p class="product-card__price">1 500 руб.</p>
+  <p class="product-card__price"><del class="product-card__old-price" aria-label="Цена до скидки">1 800 руб.</del> 1 500 руб.</p>
   <button class="button button--primary product-card__button" type="button" data-product="Настольная лампа Study">Заказать</button>
 </article>
-<article class="product-card" data-item="stand">
+<article class="product-card product-card--featured" data-item="stand">
+  <div class="product-card__media"><img class="product-card__image" src="images/stand.svg" alt="Подставка для ноутбука — иллюстрация товара" width="500" height="360" loading="lazy" decoding="async"><span class="product-card__badge">Выбор Study</span></div>
   <p class="product-card__category">Организация стола</p>
-  <h3 class="product-card__title">Подставка для ноутбука</h3>
+  <h3 class="product-card__title"><a class="product-card__title-link" href="product.html#stand">Подставка для ноутбука</a></h3>
   <p class="product-card__description">Наклонная опора для ноутбука и свободного места на столе.</p>
   <p class="product-card__price">2 000 руб.</p>
   <button class="button button--primary product-card__button" type="button" data-product="Подставка для ноутбука">Заказать</button>
@@ -170,5 +173,6 @@
       </div>
     </form>
   </dialog>
+<a class="back-to-top" href="#top" aria-label="Вернуться к началу страницы"><span aria-hidden="true">↑</span> Наверх</a>
 </body>
 </html>
