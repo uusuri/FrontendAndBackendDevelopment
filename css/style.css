@@ -5,22 +5,22 @@
 :root {
   /* Основные цвета проекта */
 
-  --color-bg: #fffefa;
+  --color-bg: #fffaf0;
 
-  --color-text: #172e46;
+  --color-text: #303e2f;
 
-  --color-muted: #536574;
-  --color-primary: #0057b8;
-  --color-primary-dark: #003f86;
+  --color-muted: #606b58;
+  --color-primary: #49663e;
+  --color-primary-dark: #344c2c;
 
-  --color-border: #d8dfe4;
+  --color-border: #d4d9c7;
 
-  --color-surface: #f4f2ed;
+  --color-surface: #f0e8da;
 
-  --color-surface-accent: #eaf1f8;
-  --color-danger: #b00020;
-  --color-success: #168a2f;
-  --color-success-bg: #eefaf0;
+  --color-surface-accent: #e3edcf;
+  --color-danger: #a33b35;
+  --color-success: #49663e;
+  --color-success-bg: #edf3e4;
   --color-white: #ffffff;
 
   /* Отступы */
@@ -653,9 +653,9 @@ a:focus-visible {
 .site-footer__logo { font: 32px Georgia, serif; color: var(--color-bg); text-decoration: none; }
 .site-footer__logo:hover { color: white; }
 .site-footer__nav { display: grid; align-content: start; gap: 12px; }
-.site-footer__link { color: #dce9f8; font-size: 14px; }
+.site-footer__link { color: #e3edcf; font-size: 14px; }
 .site-footer__link:hover { color: white; }
-.site-footer__course { max-width: var(--container-width); margin: 32px auto 0; padding-top: 24px; border-top: 1px solid #4b5f72; color: #c8d3df; font-size: 12px; }
+.site-footer__course { max-width: var(--container-width); margin: 32px auto 0; padding-top: 24px; border-top: 1px solid #65715a; color: #d5ddc9; font-size: 12px; }
 
 /* 14. Изображения, варианты карточек и подробные описания */
 .product-card__media {
@@ -683,10 +683,10 @@ a:focus-visible {
   font-size: 11px;
   font-weight: 700;
 }
-.product-card--featured { background-color: #f4f8fe; }
+.product-card--featured { background-color: #f0f5e6; }
 .product-card--discount .product-card__badge { background-color: var(--color-danger); }
-.product-card--new { border-color: #17725b; }
-.product-card--new .product-card__badge { background-color: #17725b; }
+.product-card--new { border-color: #536f45; }
+.product-card--new .product-card__badge { background-color: #536f45; }
 .product-card__old-price { display: block; font-size: 13px; font-weight: 400; color: var(--color-muted); }
 .product-card__title-link { color: inherit; text-decoration: none; }
 .product-card__title-link:hover { text-decoration: underline; }
@@ -718,7 +718,7 @@ a:focus-visible {
   font-size: 14px;
   font-weight: 700;
   text-decoration: none;
-  box-shadow: 0 4px 16px rgb(23 46 70 / 12%);
+  box-shadow: 0 4px 16px rgb(48 62 47 / 12%);
 }
 .back-to-top:hover { color: var(--color-white); background-color: var(--color-primary); }
 .back-to-top:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 3px; }
