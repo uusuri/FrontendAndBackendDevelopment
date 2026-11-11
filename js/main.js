@@ -51,3 +51,27 @@ orderForm?.addEventListener('submit', (event) => {
 
   successMessage.scrollIntoView();
 });
+const panels = document.querySelectorAll('[data-panel]');
+document.querySelectorAll('[data-group]').forEach(button => {
+  button.addEventListener('click', () => {
+    panels.forEach(panel => panel.hidden = panel.dataset.panel !== button.dataset.group);
+    document.querySelectorAll('[data-group]').forEach(tab => {
+      tab.classList.toggle('active', tab === button);
+      tab.setAttribute('aria-pressed', String(tab === button));
+    });
+  });
+});
+const picker = document.querySelector('#specimen');
+if (picker) {
+  const selectSpecies = () => {
+    const slug = location.hash.slice(1);
+    if ([...picker.options].some(o => o.value === slug)) picker.value = slug;
+    document.querySelectorAll('[data-species]').forEach(article => article.hidden = article.dataset.species !== picker.value);
+    if (slug === picker.value) document.querySelector('#inside').scrollIntoView();
+  };
+  picker.addEventListener('change', () => {location.hash = picker.value;});
+  window.addEventListener('hashchange', selectSpecies);
+  selectSpecies();
+}
+const footer = document.querySelector('.foot');
+new ResizeObserver(() => document.documentElement.style.setProperty('--footer-height', footer.offsetHeight + 'px')).observe(footer);
