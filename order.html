@@ -1,63 +1,47 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Заявка — Флора</title><meta name="description" content="Учебная форма заказа комнатных растений."><link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css"><link rel="stylesheet" href="css/custom.css"><script defer src="vendor/bootstrap/bootstrap.bundle.min.js"></script><script defer src="js/main.js"></script></head><body id="top">
-<header class="site-header sticky-top"><nav class="navbar navbar-expand-lg container py-3" aria-label="Основная навигация"><a class="navbar-brand" href="index.html">Флора<span class="brand-note">ботаническая лавка</span></a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Меню"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="main-nav"><ul class="navbar-nav mx-lg-auto"><li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li><li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li><li class="nav-item"><a class="nav-link" href="category.html">Лиственные</a></li><li class="nav-item"><a class="nav-link" href="guide.html">Гид</a></li><li class="nav-item"><a class="nav-link" href="about.html">О нас</a></li><li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li></ul><a href="order.html" class="btn btn-outline-success">Оставить заявку</a></div></nav></header>
-<main class="container py-4"><header class="intro"><p class="eyebrow">Ботаническая лавка</p><h1>Оформление заявки</h1><p>Выберите растение и укажите, как с вами связаться.</p></header><div class="alert alert-success" id="success-message" role="status" hidden>Заявка проверена. Данные на сервер не отправлены.</div><div class="form-panel"><form class="order-form" id="order-form" action="#" method="post" novalidate aria-describedby="order-note">
-    <p class="order-form__note" id="order-note">Поля со звёздочкой обязательны. Это учебная форма: данные не отправляются и не сохраняются.</p>
-    <div class="mb-3">
-      <label class="form-label" for="selected-product">Товар *</label>
-      <select class="form-select" id="selected-product" name="selected-product" required><option value="">Выберите растение</option><option value="ficus">Фикус эластика</option><option value="fern">Нефролепис</option><option value="pothos">Эпипремнум</option><option value="aloe">Алоэ вера</option><option value="echeveria">Эхеверия</option><option value="jade">Крассула</option><option value="anthurium">Антуриум</option><option value="violet">Узамбарская фиалка</option><option value="peace">Спатифиллум</option></select>
-    </div>
-    <div class="mb-3">
-      <label class="form-label" for="order-name">Имя *</label>
-      <input class="form-control" id="order-name" name="name" type="text" minlength="2" autocomplete="given-name" placeholder="Введите ваше имя" required>
-    </div>
-    <div class="mb-3">
-      <label class="form-label" for="order-email">E-mail *</label>
-      <div class="input-group"><span class="input-group-text">@</span><input class="form-control" id="order-email" name="email" type="email" autocomplete="email" placeholder="example@mail.ru" required></div>
-    </div>
-    <div class="mb-3">
-      <label class="form-label" for="order-phone">Телефон *</label>
-      <input class="form-control" id="order-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (900) 000-00-00" pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$" aria-describedby="phone-hint" required>
-      <small class="form-text" id="phone-hint">Формат: +7 (900) 000-00-00</small>
-    </div>
-    <div class="mb-3">
-      <label class="form-label" for="order-date">Дата связи</label>
-      <input class="form-control" id="order-date" name="date" type="date">
-    </div>
-    <div class="mb-3">
-      <label class="form-label" for="order-topic">Тема заявки *</label>
-      <select class="form-select" id="order-topic" name="topic" required>
-        <option value="">Выберите тему</option>
-        <option value="product">Заказ товара</option>
-        <option value="consultation">Консультация</option>
-        <option value="delivery">Доставка</option>
-      </select>
-    </div>
-    <div class="mb-3">
-      <label class="form-label" for="order-comment">Комментарий</label>
-      <textarea class="form-control" id="order-comment" name="comment" rows="4" placeholder="Укажите дополнительную информацию"></textarea>
-    </div>
-    <div class="mb-3">
-      <label class="form-check form-check-label" for="order-agreement">
-        <input class="form-check-input" id="order-agreement" name="agreement" type="checkbox" required>
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Заявка — Зеленая комната</title><meta name="description" content="Заявка. Ботаническая коллекция магазина Зеленая комната."><link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css"><link rel="stylesheet" href="css/custom.css"><script defer src="vendor/bootstrap/bootstrap.bundle.min.js"></script><script defer src="js/main.js"></script></head><body id="top"><header class="site-header sticky-top"><nav class="navbar navbar-expand-lg container wrap" aria-label="Основная навигация"><a class="navbar-brand" href="index.html"><span class="mark" aria-hidden="true">✳</span> Зеленая комната</a><button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-label="Меню" aria-expanded="false" aria-controls="main-nav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="main-nav"><ul class="navbar-nav mx-lg-auto"><li><a class="nav-link" href="index.html">Главная</a></li><li><a class="nav-link" href="catalog.html">Каталог</a></li><li><a class="nav-link" href="category.html">Лиственные</a></li><li><a class="nav-link" href="guide.html">Гид</a></li><li><a class="nav-link" href="about.html">О нас</a></li><li><a class="nav-link" href="contacts.html">Контакты</a></li></ul><a class="btn btn-success" href="order.html">Заявка <span aria-hidden="true">↗</span></a></div></nav></header><main><section class="screen lead-screen"><div class="container wrap spread"><div class="lead-copy"><p class="kicker">ЗК / 05　 —　 Бюро заявок</p><h1>Ваш выбор.</h1><p class="lede">Оставьте учебную заявку на растение или консультацию. Данные не отправляются на сервер.</p><a class="btn btn-success" href="#inside">Заполнить форму <span aria-hidden="true">↗</span></a></div><figure class="folio"><img src="images/photos/anthurium.jpg" alt="Антуриум" class="portrait"><figcaption>BOTANICAL FILE <b>№ 07</b></figcaption></figure></div></section><section id="inside" class="screen second order-screen"><div class="container wrap"><div class="alert alert-success" id="success-message" role="status" hidden>Заявка проверена. Данные не отправлены.</div><form action="#" aria-describedby="order-note" class="order-form" id="order-form" method="post" novalidate="">
+<p class="order-form__note" id="order-note">Поля со звёздочкой обязательны. Это учебная форма: данные не отправляются и не сохраняются.</p>
+<div class="mb-3">
+<label class="form-label" for="selected-product">Товар *</label>
+<select class="form-select" id="selected-product" name="selected-product" required=""><option value="">Выберите растение</option><option value="ficus">Фикус эластика</option><option value="fern">Нефролепис</option><option value="pothos">Эпипремнум</option><option value="aloe">Алоэ вера</option><option value="echeveria">Эхеверия</option><option value="jade">Крассула</option><option value="anthurium">Антуриум</option><option value="violet">Узамбарская фиалка</option><option value="peace">Спатифиллум</option></select>
+</div>
+<div class="mb-3">
+<label class="form-label" for="order-name">Имя *</label>
+<input autocomplete="given-name" class="form-control" id="order-name" minlength="2" name="name" placeholder="Введите ваше имя" required="" type="text"/>
+</div>
+<div class="mb-3">
+<label class="form-label" for="order-email">E-mail *</label>
+<div class="input-group"><span class="input-group-text">@</span><input autocomplete="email" class="form-control" id="order-email" name="email" placeholder="example@mail.ru" required="" type="email"/></div>
+</div>
+<div class="mb-3">
+<label class="form-label" for="order-phone">Телефон *</label>
+<input aria-describedby="phone-hint" autocomplete="tel" class="form-control" id="order-phone" inputmode="tel" name="phone" pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$" placeholder="+7 (900) 000-00-00" required="" type="tel"/>
+<small class="form-text" id="phone-hint">Формат: +7 (900) 000-00-00</small>
+</div>
+<div class="mb-3">
+<label class="form-label" for="order-date">Дата связи</label>
+<input class="form-control" id="order-date" name="date" type="date"/>
+</div>
+<div class="mb-3">
+<label class="form-label" for="order-topic">Тема заявки *</label>
+<select class="form-select" id="order-topic" name="topic" required="">
+<option value="">Выберите тему</option>
+<option value="product">Заказ товара</option>
+<option value="consultation">Консультация</option>
+<option value="delivery">Доставка</option>
+</select>
+</div>
+<div class="mb-3">
+<label class="form-label" for="order-comment">Комментарий</label>
+<textarea class="form-control" id="order-comment" name="comment" placeholder="Укажите дополнительную информацию" rows="4"></textarea>
+</div>
+<div class="mb-3">
+<label class="form-check form-check-label" for="order-agreement">
+<input class="form-check-input" id="order-agreement" name="agreement" required="" type="checkbox"/>
         Я согласен на обработку данных *
       </label>
-    </div>
-    <div class="order-form__actions">
-      <button class="btn btn-success" type="submit">Отправить заявку</button>
-    </div>
-  </form></div></main><footer class="site-footer" id="contacts">
-  <div class="site-footer__inner">
-    <div><a class="site-footer__logo" href="index.html">Флора</a><p class="site-footer__text">Комнатные растения.<br>Учебный интернет-магазин, 2026.</p></div>
-    <nav class="site-footer__nav" aria-label="Дополнительная навигация">
-      <a class="site-footer__link" href="product.html">Описание товаров</a>
-      <a class="site-footer__link" href="order.html">Оформление заявки</a>
-      <a class="site-footer__link" href="contacts.html">Контактная информация</a>
-    </nav>
-    <nav class="site-footer__nav" aria-label="Разделы главной страницы">
-      <a class="site-footer__link" href="index.html#advantages">Наш подход</a>
-      <a class="site-footer__link" href="index.html#popular">Популярные товары</a>
-      <a class="site-footer__link" href="index.html#contacts">Обратная связь</a>
-    </nav>
-  </div>
-  <p class="site-footer__course">Фронтенд и бэкенд разработка · РТУ МИРЭА</p>
-</footer><a class="back-to-top" href="#top" aria-label="Вернуться к началу страницы"><span aria-hidden="true">↑</span> Наверх</a></body></html>
+</div>
+<div class="order-form__actions">
+<button class="btn btn-success" type="submit">Отправить заявку</button>
+</div>
+</form></div></section></main><footer class="foot"><div class="container wrap"><b>✳ Зеленая комната</b><a href="about.html#inside">Авторы фото</a><a href="#top">Наверх ↑</a></div></footer></body></html>
