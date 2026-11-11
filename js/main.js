@@ -8,22 +8,16 @@ if (siteHeader) {
   new ResizeObserver(updateHeaderHeight).observe(siteHeader);
 }
 
-const orderDialog = document.getElementById('order-dialog');
-const orderButtons = document.querySelectorAll('button[data-product]');
-const closeDialogButton = document.getElementById('close-order-dialog');
-const selectedProductInput = document.getElementById('selected-product');
-orderButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    const productName = button.dataset.product;
-
-    selectedProductInput.value = productName;
-    orderDialog.showModal();
-  });
+const modal = document.getElementById('reserve');
+modal?.addEventListener('show.bs.modal', (event) => {
+  const button = event.relatedTarget;
+  const item = button.closest('article');
+  document.getElementById('chosen').textContent = item.querySelector('h2, h3').textContent;
+  document.getElementById('continue').href = 'order.html?plant=' + encodeURIComponent(button.dataset.product);
 });
-
-closeDialogButton?.addEventListener('click', () => {
-  orderDialog?.close();
-});
+const select = document.getElementById('selected-product');
+const plant = new URLSearchParams(location.search).get('plant');
+if (select && plant && Array.from(select.options).some(option => option.value === plant)) select.value = plant;
 
 const orderForm = document.getElementById('order-form');
 
@@ -55,5 +49,5 @@ orderForm?.addEventListener('submit', (event) => {
 
   orderForm.reset();
 
-  orderDialog?.close();
+  successMessage.scrollIntoView();
 });
