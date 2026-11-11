@@ -51,16 +51,58 @@ orderForm?.addEventListener('submit', (event) => {
 
   successMessage.scrollIntoView();
 });
-const panels = document.querySelectorAll('[data-panel]');
-document.querySelectorAll('[data-group]').forEach(button => {
-  button.addEventListener('click', () => {
-    panels.forEach(panel => panel.hidden = panel.dataset.panel !== button.dataset.group);
-    document.querySelectorAll('[data-group]').forEach(tab => {
-      tab.classList.toggle('active', tab === button);
-      tab.setAttribute('aria-pressed', String(tab === button));
+const search = document.getElementById('plant-search');
+if (search) {
+  const cards = [...document.querySelectorAll('[data-category]')];
+  const scopes = [...document.querySelectorAll('[data-scope]')];
+  const key = 'green-room:favorites';
+  let saved = new Set();
+  try {
+    const stored = JSON.parse(localStorage.getItem(key));
+    if (Array.isArray(stored)) saved = new Set(stored.filter(id => cards.some(c => c.querySelector('[data-save]').dataset.save === id)));
+  } catch { /* Storage may be unavailable in private browsing. */ }
+  let scope = '0';
+  const normalize = text => text.toLocaleLowerCase('ru').replaceAll('ё', 'е').trim();
+  function render() {
+    const query = normalize(search.value);
+    let count = 0;
+    for (const card of cards) {
+      const button = card.querySelector('[data-save]');
+      const name = card.querySelector('h3').textContent;
+      const marked = saved.has(button.dataset.save);
+      button.textContent = marked ? '♥' : '♡';
+      button.setAttribute('aria-pressed', String(marked));
+      button.setAttribute('aria-label', (marked ? 'Убрать из избранного: ' : 'В избранное: ') + name);
+      const inScope = scope === 'all' || scope === card.dataset.category || (scope === 'saved' && marked);
+      card.hidden = !inScope || !normalize(name + ' ' + card.querySelector('small').textContent).includes(query);
+      if (!card.hidden) count++;
+    }
+    scopes.forEach(b => {
+      b.classList.toggle('active', b.dataset.scope === scope);
+      b.setAttribute('aria-pressed', String(b.dataset.scope === scope));
     });
+    document.getElementById('saved-count').textContent = saved.size;
+    document.getElementById('search-status').textContent = count ? 'Найдено: ' + count : scope === 'saved' && !saved.size ? 'Пока пусто. Нажмите сердце на фото растения.' : 'Ничего не найдено. Попробуйте другое название или категорию.';
+  }
+  scopes.forEach(b => b.addEventListener('click', () => {
+    scope = b.dataset.scope;
+    document.querySelector('.catalog-deck').scrollLeft = 0;
+    render();
+  }));
+  search.addEventListener('input', () => {
+    if (scope !== 'saved') scope = 'all';
+    document.querySelector('.catalog-deck').scrollLeft = 0;
+    render();
   });
-});
+  cards.forEach(card => card.querySelector('[data-save]').addEventListener('click', event => {
+    const id = event.currentTarget.dataset.save;
+    if (saved.has(id)) saved.delete(id); else saved.add(id);
+    try { localStorage.setItem(key, JSON.stringify([...saved])); } catch { /* Keep the selection for this visit. */ }
+    render();
+    if (scope === 'saved' && card.hidden) document.querySelector('[data-scope="saved"]').focus();
+  }));
+  render();
+}
 const picker = document.querySelector('#specimen');
 if (picker) {
   const selectSpecies = () => {
