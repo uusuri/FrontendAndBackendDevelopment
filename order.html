@@ -1,93 +1,53 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Учебная форма заявки Study: выберите один из девяти товаров и заполните контактные данные.">
-  <title>Оформление заявки — Study</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js" defer></script>
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Оформление заявки — Study">
-  <meta property="og:description" content="Учебная форма заявки Study: выберите один из девяти товаров и заполните контактные данные.">
-  <meta property="og:image" content="https://uusuri.github.io/FrontendAndBackendDevelopment/images/preview.gif">
-</head>
-<body id="top">
-<header class="site-header">
-  <div class="site-header__inner">
-    <a class="site-header__logo" href="index.html">Study<span class="site-header__tagline">вещи для рабочего стола</span></a>
-    <nav class="site-nav" aria-label="Основная навигация"><ul class="site-nav__list"><li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
-<li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
-<li class="site-nav__item"><a class="site-nav__link" href="category.html">Канцелярия</a></li>
-<li class="site-nav__item"><a class="site-nav__link" href="about.html">О проекте</a></li>
-<li class="site-nav__item"><a class="site-nav__link" href="guide.html">Как выбрать</a></li>
-<li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li></ul></nav>
-    <a class="button button--secondary site-header__action" href="order.html">Оставить заявку</a>
-  </div>
-</header>
-<main class="site-main">
-<p class="success-message" id="success-message" role="status" hidden>Заявка проверена. Это учебная форма: данные на сервер не отправлялись.</p>
-<nav class="breadcrumbs" aria-label="Хлебные крошки"><a class="breadcrumbs__link" href="index.html">Главная</a><span class="breadcrumbs__current" aria-current="page">Заявка</span></nav><section class="section order-section">
-      <h1 class="site-main__title">Оформление заявки</h1>
-  <form class="order-form" id="order-form" action="#" method="post" novalidate aria-describedby="order-note">
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Заявка — Флора</title><meta name="description" content="Учебная форма заказа комнатных растений."><link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css"><link rel="stylesheet" href="css/custom.css"><script defer src="vendor/bootstrap/bootstrap.bundle.min.js"></script><script defer src="js/main.js"></script></head><body id="top">
+<header class="site-header sticky-top"><nav class="navbar navbar-expand-lg container py-3" aria-label="Основная навигация"><a class="navbar-brand" href="index.html">Флора<span class="brand-note">ботаническая лавка</span></a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Меню"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="main-nav"><ul class="navbar-nav mx-lg-auto"><li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li><li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li><li class="nav-item"><a class="nav-link" href="category.html">Лиственные</a></li><li class="nav-item"><a class="nav-link" href="guide.html">Гид</a></li><li class="nav-item"><a class="nav-link" href="about.html">О нас</a></li><li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li></ul><a href="order.html" class="btn btn-outline-success">Оставить заявку</a></div></nav></header>
+<main class="container py-4"><header class="intro"><p class="eyebrow">Ботаническая лавка</p><h1>Оформление заявки</h1><p>Выберите растение и укажите, как с вами связаться.</p></header><div class="alert alert-success" id="success-message" role="status" hidden>Заявка проверена. Данные на сервер не отправлены.</div><div class="form-panel"><form class="order-form" id="order-form" action="#" method="post" novalidate aria-describedby="order-note">
     <p class="order-form__note" id="order-note">Поля со звёздочкой обязательны. Это учебная форма: данные не отправляются и не сохраняются.</p>
-    <div class="order-form__field">
-      <label class="order-form__label" for="selected-product">Товар *</label>
-      <select class="order-form__select" id="selected-product" name="selected-product" required><option value="">Выберите товар</option><option value="Блокнот Study">Блокнот Study</option>
-<option value="Планер на неделю">Планер на неделю</option>
-<option value="Набор ручек Note">Набор ручек Note</option>
-<option value="Настольная лампа Study">Настольная лампа Study</option>
-<option value="Светильник Line">Светильник Line</option>
-<option value="Лампа Clip">Лампа Clip</option>
-<option value="Подставка для ноутбука">Подставка для ноутбука</option>
-<option value="Органайзер Desk">Органайзер Desk</option>
-<option value="Коврик для стола">Коврик для стола</option></select>
+    <div class="mb-3">
+      <label class="form-label" for="selected-product">Товар *</label>
+      <select class="form-select" id="selected-product" name="selected-product" required><option value="">Выберите растение</option><option value="ficus">Фикус эластика</option><option value="fern">Нефролепис</option><option value="pothos">Эпипремнум</option><option value="aloe">Алоэ вера</option><option value="echeveria">Эхеверия</option><option value="jade">Крассула</option><option value="anthurium">Антуриум</option><option value="violet">Узамбарская фиалка</option><option value="peace">Спатифиллум</option></select>
     </div>
-    <div class="order-form__field">
-      <label class="order-form__label" for="order-name">Имя *</label>
-      <input class="order-form__input" id="order-name" name="name" type="text" minlength="2" autocomplete="given-name" placeholder="Введите ваше имя" required>
+    <div class="mb-3">
+      <label class="form-label" for="order-name">Имя *</label>
+      <input class="form-control" id="order-name" name="name" type="text" minlength="2" autocomplete="given-name" placeholder="Введите ваше имя" required>
     </div>
-    <div class="order-form__field">
-      <label class="order-form__label" for="order-email">E-mail *</label>
-      <input class="order-form__input" id="order-email" name="email" type="email" autocomplete="email" placeholder="example@mail.ru" required>
+    <div class="mb-3">
+      <label class="form-label" for="order-email">E-mail *</label>
+      <div class="input-group"><span class="input-group-text">@</span><input class="form-control" id="order-email" name="email" type="email" autocomplete="email" placeholder="example@mail.ru" required></div>
     </div>
-    <div class="order-form__field">
-      <label class="order-form__label" for="order-phone">Телефон *</label>
-      <input class="order-form__input" id="order-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (900) 000-00-00" pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$" aria-describedby="phone-hint" required>
-      <small class="order-form__hint" id="phone-hint">Формат: +7 (900) 000-00-00</small>
+    <div class="mb-3">
+      <label class="form-label" for="order-phone">Телефон *</label>
+      <input class="form-control" id="order-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (900) 000-00-00" pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$" aria-describedby="phone-hint" required>
+      <small class="form-text" id="phone-hint">Формат: +7 (900) 000-00-00</small>
     </div>
-    <div class="order-form__field">
-      <label class="order-form__label" for="order-date">Дата связи</label>
-      <input class="order-form__input" id="order-date" name="date" type="date">
+    <div class="mb-3">
+      <label class="form-label" for="order-date">Дата связи</label>
+      <input class="form-control" id="order-date" name="date" type="date">
     </div>
-    <div class="order-form__field">
-      <label class="order-form__label" for="order-topic">Тема заявки *</label>
-      <select class="order-form__select" id="order-topic" name="topic" required>
+    <div class="mb-3">
+      <label class="form-label" for="order-topic">Тема заявки *</label>
+      <select class="form-select" id="order-topic" name="topic" required>
         <option value="">Выберите тему</option>
         <option value="product">Заказ товара</option>
         <option value="consultation">Консультация</option>
         <option value="delivery">Доставка</option>
       </select>
     </div>
-    <div class="order-form__field">
-      <label class="order-form__label" for="order-comment">Комментарий</label>
-      <textarea class="order-form__textarea" id="order-comment" name="comment" rows="4" placeholder="Укажите дополнительную информацию"></textarea>
+    <div class="mb-3">
+      <label class="form-label" for="order-comment">Комментарий</label>
+      <textarea class="form-control" id="order-comment" name="comment" rows="4" placeholder="Укажите дополнительную информацию"></textarea>
     </div>
-    <div class="order-form__field">
-      <label class="order-form__agreement" for="order-agreement">
-        <input class="order-form__checkbox" id="order-agreement" name="agreement" type="checkbox" required>
+    <div class="mb-3">
+      <label class="form-check form-check-label" for="order-agreement">
+        <input class="form-check-input" id="order-agreement" name="agreement" type="checkbox" required>
         Я согласен на обработку данных *
       </label>
     </div>
     <div class="order-form__actions">
-      <button class="button button--primary" type="submit">Отправить заявку</button>
+      <button class="btn btn-success" type="submit">Отправить заявку</button>
     </div>
-  </form>
-    </section>
-</main>
-<footer class="site-footer" id="contacts">
+  </form></div></main><footer class="site-footer" id="contacts">
   <div class="site-footer__inner">
-    <div><a class="site-footer__logo" href="index.html">Study</a><p class="site-footer__text">Вещи для рабочего стола.<br>Учебный интернет-магазин, 2026.</p></div>
+    <div><a class="site-footer__logo" href="index.html">Флора</a><p class="site-footer__text">Комнатные растения.<br>Учебный интернет-магазин, 2026.</p></div>
     <nav class="site-footer__nav" aria-label="Дополнительная навигация">
       <a class="site-footer__link" href="product.html">Описание товаров</a>
       <a class="site-footer__link" href="order.html">Оформление заявки</a>
@@ -100,8 +60,4 @@
     </nav>
   </div>
   <p class="site-footer__course">Фронтенд и бэкенд разработка · РТУ МИРЭА</p>
-</footer>
-
-<a class="back-to-top" href="#top" aria-label="Вернуться к началу страницы"><span aria-hidden="true">↑</span> Наверх</a>
-</body>
-</html>
+</footer><a class="back-to-top" href="#top" aria-label="Вернуться к началу страницы"><span aria-hidden="true">↑</span> Наверх</a></body></html>
