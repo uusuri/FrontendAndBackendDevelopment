@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Интерактивная диагностика комнатных растений: укажите симптомы и условия ухода, чтобы узнать возможные причины проблем и способы проверки.">
+    <title>Диагностика растений — Зеленая комната</title>
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/diagnostic.css">
+    <script defer src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script defer src="js/main.js"></script>
+</head>
+<body id="top">
+    <!-- Ссылки в верхнем меню можно отредактировать самостоятельно. -->
+    <header class="site-header sticky-top">
+        <nav class="navbar navbar-expand-lg container wrap" aria-label="Основная навигация">
+            <a class="navbar-brand" href="index.html"><span class="mark" aria-hidden="true">✳</span> Зеленая комната</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                    aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main-nav">
+                <ul class="navbar-nav mx-lg-auto">
+                    <li><a class="nav-link" href="index.html">Главная</a></li>
+                    <li><a class="nav-link" href="catalog.html">Каталог</a></li>
+                    <li><a class="nav-link" href="guide.html">Гид</a></li>
+                     <li>
+                        <a class="nav-link" href="diagnostic.html">
+                            Диагностика
+                        </a>
+                    </li>
+                    <li><a class="nav-link" href="about.html">О нас</a></li>
+
+                    <li><a class="nav-link" href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="screen lead-screen diagnostic-hero">
+            <div class="container wrap spread">
+                <div class="lead-copy">
+                    <p class="kicker">ЗК / 09 — Помощь растениям</p>
+                    <h1>Что с вашим растением?</h1>
+                    <p class="lede">Листья желтеют, сохнут или опадают? Опишите симптомы и условия ухода — мы подскажем возможные причины и первые шаги.</p>
+                    <a class="btn btn-success" href="#diagnostic">Начать диагностику <span aria-hidden="true">↗</span></a>
+                </div>
+                <figure class="folio">
+                    <img src="images/photos/fern.jpg" alt="Зелёные листья нефролеписа" class="portrait">
+                    <figcaption>PLANT HEALTH <b>№ 01</b></figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="diagnostic-intro" id="diagnostic-how">
+            <div class="container wrap">
+                <p class="kicker">Ботанический помощник / Как это работает</p>
+                <h2>Разобраться — проще, чем кажется.</h2>
+                <p class="diagnostic-intro-copy">Не каждый жёлтый лист означает болезнь, а увядание может быть связано как с недостатком воды, так и с повреждёнными корнями. Этот инструмент сопоставляет симптомы с условиями содержания и предлагает, что проверить в первую очередь.</p>
+                <div class="diagnostic-steps">
+                    <article class="diagnostic-step">
+                        <span class="diagnostic-step-num">01 / Растение</span>
+                        <h3>Выберите вид</h3>
+                        <p>У разных растений потребности во влаге и освещении отличаются.</p>
+                    </article>
+                    <article class="diagnostic-step">
+                        <span class="diagnostic-step-num">02 / Наблюдения</span>
+                        <h3>Отметьте симптомы</h3>
+                        <p>Можно выбрать несколько признаков одновременно — так результат будет полезнее.</p>
+                    </article>
+                    <article class="diagnostic-step">
+                        <span class="diagnostic-step-num">03 / Рекомендации</span>
+                        <h3>Получите план</h3>
+                        <p>Узнайте возможные причины, способы проверки и меры первой помощи.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="diagnostic-section" id="diagnostic">
+            <div class="container wrap">
+                <p class="kicker">Диагностика / Интерактивный помощник</p>
+                <h2>Расскажите, что происходит.</h2>
+                <p class="diagnostic-intro-copy">Выберите растение, отметьте изменения и укажите условия, которые можете оценить. Если чего-то не знаете, оставьте «Не знаю».</p>
+
+                <div class="diagnostic-layout mt-4">
+                    <form class="diagnostic-form" id="diagnostic-form">
+                        <fieldset>
+                            <legend>01. Какое у вас растение?</legend>
+                            <p class="diagnostic-field-hint">Выберите один вид из коллекции.</p>
+                            <label class="form-label" for="diagnostic-plant">Вид растения</label>
+                            <select class="form-select" id="diagnostic-plant" name="plant" required>
+                                <option value="">Выберите растение</option>
+                                <option value="ficus">Фикус эластика</option>
+                                <option value="fern">Нефролепис</option>
+                                <option value="pothos">Эпипремнум</option>
+                                <option value="aloe">Алоэ вера</option>
+                                <option value="echeveria">Эхеверия</option>
+                                <option value="jade">Крассула</option>
+                                <option value="anthurium">Антуриум</option>
+                                <option value="violet">Узамбарская фиалка</option>
+                                <option value="peace">Спатифиллум</option>
+                                <option value="monstera">Монстера</option>
+                                <option value="snake">Сансевиерия</option>
+                                <option value="zamioculcas">Замиокулькас</option>
+                                <option value="chlorophytum">Хлорофитум</option>
+                                <option value="dracaena">Драцена</option>
+                                <option value="begonia">Бегония рекс</option>
+                            </select>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>02. Что вас беспокоит?</legend>
+                            <p class="diagnostic-field-hint">Выберите хотя бы один симптом. Чем точнее наблюдения, тем полезнее подсказки.</p>
+                            <div class="diagnostic-symptoms">
+                                <label class="diagnostic-symptom"><input type="checkbox" name="symptom" value="yellow"><span>Желтеют листья</span></label>
+                                <label class="diagnostic-symptom"><input type="checkbox" name="symptom" value="drytips"><span>Сохнут края или кончики</span></label>
+                                <label class="diagnostic-symptom"><input type="checkbox" name="symptom" value="droop"><span>Листья поникли</span></label>
+                                <label class="diagnostic-symptom"><input type="checkbox" name="symptom" value="spots"><span>Появились пятна</span></label>
+                                <label class="diagnostic-symptom"><input type="checkbox" name="symptom" value="leafdrop"><span>Опадают листья</span></label>
+                                <label class="diagnostic-symptom"><input type="checkbox" name="symptom" value="stretched"><span>Вытягиваются побеги</span></label>
+                                <label class="diagnostic-symptom"><input type="checkbox" name="symptom" value="slow"><span>Почти не растёт</span></label>
+                                <label class="diagnostic-symptom"><input type="checkbox" name="symptom" value="mushy"><span>Мягкий стебель или основание</span></label>
+                                <label class="diagnostic-symptom"><input type="checkbox" name="symptom" value="web"><span>Тонкая паутинка</span></label>
+                                <label class="diagnostic-symptom"><input type="checkbox" name="symptom" value="cotton"><span>Белые ватные комочки</span></label>
+                                <label class="diagnostic-symptom"><input type="checkbox" name="symptom" value="mold"><span>Плесень или запах от грунта</span></label>
+                                <label class="diagnostic-symptom"><input type="checkbox" name="symptom" value="nobloom"><span>Не цветёт</span></label>
+                                <label class="diagnostic-symptom"><input type="checkbox" name="symptom" value="wrinkled"><span>Сморщенные листья</span></label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>03. В каких условиях оно растёт?</legend>
+                            <p class="diagnostic-field-hint">Ответьте по текущей ситуации, а не по привычному графику полива.</p>
+                            <div class="diagnostic-fields">
+                                <div>
+                                    <label for="diagnostic-soil">Грунт сейчас</label>
+                                    <select class="form-select" id="diagnostic-soil" name="soil">
+                                        <option value="unknown">Не знаю</option>
+                                        <option value="wet">Долго остаётся мокрым</option>
+                                        <option value="dry">Очень сухой</option>
+                                        <option value="normal">Слегка влажный / нормально</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="diagnostic-light">Освещение</label>
+                                    <select class="form-select" id="diagnostic-light" name="light">
+                                        <option value="unknown">Не знаю</option>
+                                        <option value="direct">Много прямого солнца</option>
+                                        <option value="diffuse">Яркий рассеянный свет</option>
+                                        <option value="low">Мало света</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="diagnostic-air">Воздух в комнате</label>
+                                    <select class="form-select" id="diagnostic-air" name="air">
+                                        <option value="unknown">Не знаю</option>
+                                        <option value="dry">Сухой, работает отопление</option>
+                                        <option value="normal">Обычная влажность</option>
+                                        <option value="humid">Влажный</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="diagnostic-change">Недавно меняли условия?</label>
+                                    <select class="form-select" id="diagnostic-change" name="change">
+                                        <option value="unknown">Не знаю</option>
+                                        <option value="yes">Да, переставляли / пересаживали</option>
+                                        <option value="no">Нет</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <p class="diagnostic-error" id="diagnostic-error" role="alert" hidden>Выберите хотя бы один симптом.</p>
+                        <div class="diagnostic-form-actions">
+                            <button class="btn btn-success" type="submit">Получить рекомендации ↗</button>
+                            <button class="btn btn-outline-dark" type="reset">Сбросить</button>
+                        </div>
+                    </form>
+
+                    <aside class="diagnostic-aside">
+                        <p class="kicker">Памятка / Перед началом</p>
+                        <h3>Что проверить сразу</h3>
+                        <ul>
+                            <li>Есть ли в горшке отверстия для стока воды?</li>
+                            <li>Насколько влажный грунт на глубине нескольких сантиметров?</li>
+                            <li>Нет ли насекомых на нижней стороне листьев?</li>
+                            <li>Не стоит ли растение на сквозняке или под прямым жарким солнцем?</li>
+                        </ul>
+                        <p class="mb-0">Результат — ориентир, а не точный диагноз. Одни и те же симптомы бывают у разных проблем.</p>
+                    </aside>
+                </div>
+
+                <section class="diagnostic-results" id="diagnostic-results" tabindex="-1" aria-labelledby="diagnostic-results-title" hidden>
+                    <p class="kicker">Результат / Возможные причины</p>
+                    <h2 id="diagnostic-results-title">Что стоит проверить</h2>
+                    <p class="diagnostic-result-context" id="diagnostic-result-context"></p>
+                    <p class="diagnostic-result-intro">Причины ниже расположены по совпадению с выбранными признаками. Это правила-подсказки, а не медицинская или лабораторная диагностика растений; проценты вероятности не вычисляются.</p>
+                    <div id="diagnostic-alert" class="diagnostic-alert" hidden></div>
+                    <div class="diagnostic-result-list" id="diagnostic-result-list"></div>
+                    <p class="diagnostic-disclaimer" id="diagnostic-plant-tip"></p>
+                    <button class="btn btn-outline-dark" id="diagnostic-print" type="button">Распечатать рекомендации</button>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <!-- Создаётся автоматически в js/main.js -->
+    <footer class="foot"></footer>
+
+    <script>
+    (() => {
+        'use strict';
+
+        const PLANTS = {
+            ficus: { name: 'Фикус эластика', type: 'regular', care: 'Яркий рассеянный свет. Полив после подсыхания верхних 3–4 см грунта.' },
+            fern: { name: 'Нефролепис', type: 'moist', care: 'Рассеянный свет, умеренно влажный грунт и повышенная влажность воздуха.' },
+            pothos: { name: 'Эпипремнум', type: 'regular', care: 'Рассеянный свет; полив после подсыхания верхнего слоя грунта.' },
+            aloe: { name: 'Алоэ вера', type: 'succulent', care: 'Очень яркий свет и редкий полив после полного просыхания грунта.' },
+            echeveria: { name: 'Эхеверия', type: 'succulent', care: 'Очень яркое освещение и полностью сухой грунт между поливами.' },
+            jade: { name: 'Крассула', type: 'succulent', care: 'Яркий свет и редкий полив; не допускайте постоянной сырости.' },
+            anthurium: { name: 'Антуриум', type: 'moist', care: 'Яркий рассеянный свет, рыхлый субстрат и умеренная влажность.' },
+            violet: { name: 'Узамбарская фиалка', type: 'moist', care: 'Рассеянный свет; слегка влажный грунт без застоя воды в розетке.' },
+            peace: { name: 'Спатифиллум', type: 'moist', care: 'Рассеянный свет; полив после лёгкого подсыхания верхнего слоя.' },
+            monstera: { name: 'Монстера', type: 'regular', care: 'Яркий рассеянный свет; полив после подсыхания верхних 3–5 см.' },
+            snake: { name: 'Сансевиерия', type: 'succulent', care: 'Яркий или умеренный свет; редкий полив только по сухому грунту.' },
+            zamioculcas: { name: 'Замиокулькас', type: 'succulent', care: 'Умеренный свет; клубни запасают воду, поэтому перелив особенно опасен.' },
+            chlorophytum: { name: 'Хлорофитум', type: 'regular', care: 'Рассеянный свет, полив после подсыхания верхнего слоя.' },
+            dracaena: { name: 'Драцена', type: 'regular', care: 'Рассеянный свет; перед поливом дайте просохнуть заметной части грунта.' },
+            begonia: { name: 'Бегония рекс', type: 'moist', care: 'Яркий рассеянный свет; избегайте застоя воды и длительной сырости листьев.' }
+        };
+
+        const CAUSES = [
+            {
+                id: 'overwater', title: 'Избыточный полив или проблемы с корнями',
+                weights: { yellow: 3, droop: 2, leafdrop: 2, mushy: 7, mold: 4, spots: 1 },
+                summary: 'Если субстрат долго остаётся мокрым, корням может не хватать кислорода. Увядание при влажном грунте — повод проверить корневую систему.',
+                steps: [
+                    'Проверьте влажность грунта и наличие дренажных отверстий.',
+                    'Не поливайте повторно, пока субстрат не достигнет подходящей для этого вида степени просыхания.',
+                    'При размягчении основания, неприятном запахе или ухудшении состояния осмотрите корни на признаки гнили.'
+                ]
+            },
+            {
+                id: 'underwater', title: 'Недостаток доступной влаги',
+                weights: { droop: 4, drytips: 3, wrinkled: 6, leafdrop: 1, slow: 1, yellow: 1 },
+                summary: 'Пересушивание может вызывать потерю тургора, подсыхание тканей и замедление роста. Но схожие признаки встречаются и при повреждении корней.',
+                steps: [
+                    'Проверьте грунт в глубине горшка, а не только сверху.',
+                    'Если он действительно слишком сухой для этого вида, полейте равномерно и дайте лишней воде стечь.',
+                    'Если при нормальной влажности листья продолжают вянуть, оцените состояние корней.'
+                ]
+            },
+            {
+                id: 'lowlight', title: 'Недостаточно света',
+                weights: { stretched: 7, slow: 4, nobloom: 4, yellow: 1, leafdrop: 1 },
+                summary: 'Недостаток света часто приводит к вытягиванию побегов, уменьшению новых листьев и слабому цветению.',
+                steps: [
+                    'Оцените освещённость в течение дня и расстояние до окна.',
+                    'Постепенно переставьте растение в более светлое место, подходящее для его вида.',
+                    'Если естественного света мало, рассмотрите подходящую фитолампу.'
+                ]
+            },
+            {
+                id: 'sunburn', title: 'Солнечный ожог или перегрев',
+                weights: { spots: 5, drytips: 3, yellow: 1, leafdrop: 1 },
+                summary: 'Резкое попадание под интенсивные лучи может вызывать сухие светлые или коричневые пятна, особенно у растений, привыкших к тени.',
+                steps: [
+                    'Вспомните, появились ли повреждения после перестановки к окну или жары.',
+                    'Защитите растение от прямого полуденного солнца, если вид его плохо переносит.',
+                    'Увеличивайте освещённость постепенно; уже повреждённые участки листа не восстановятся.'
+                ]
+            },
+            {
+                id: 'dryair', title: 'Сухой воздух',
+                weights: { drytips: 5, leafdrop: 1, droop: 1 },
+                summary: 'Сухой воздух, особенно рядом с радиатором, нередко приводит к подсыханию кончиков листьев у влаголюбивых видов.',
+                steps: [
+                    'Уберите горшок из потока горячего воздуха.',
+                    'Оцените влажность комнаты, по возможности с помощью гигрометра.',
+                    'Для влаголюбивых растений используйте увлажнитель; постоянное опрыскивание не заменяет его.'
+                ]
+            },
+            {
+                id: 'mites', title: 'Возможен паутинный клещ',
+                weights: { web: 12, spots: 2, yellow: 2, leafdrop: 1 },
+                summary: 'Тонкая паутинка вместе с мелкими светлыми точками на листьях может указывать на клеща, но паутину также оставляют обычные пауки.',
+                steps: [
+                    'Временно отделите растение от остальных.',
+                    'Осмотрите нижнюю сторону листьев с увеличением: ищите движущиеся точки и характерные повреждения.',
+                    'Если вредитель подтверждён, используйте подходящий для него способ обработки строго по инструкции.'
+                ]
+            },
+            {
+                id: 'mealy', title: 'Возможен мучнистый червец',
+                weights: { cotton: 12, slow: 2, yellow: 2, spots: 1 },
+                summary: 'Белые ватоподобные скопления в пазухах листьев и на побегах характерны для мучнистого червеца, но требуют визуального подтверждения.',
+                steps: [
+                    'Изолируйте растение от других экземпляров.',
+                    'Проверьте пазухи листьев, нижние стороны пластин и молодые побеги.',
+                    'При подтверждении вредителя удалите видимые скопления безопасным способом и обработайте по инструкции к разрешённому средству.'
+                ]
+            },
+            {
+                id: 'fungal', title: 'Пятнистость, плесень или поражение тканей',
+                weights: { spots: 5, mold: 5, mushy: 2, yellow: 1 },
+                summary: 'Пятна бывают вызваны инфекциями, механическими повреждениями и ошибками ухода. Плесень на грунте часто связана с избытком влаги.',
+                steps: [
+                    'Отделите растение, если пятна быстро распространяются, и осмотрите другие листья.',
+                    'Исключите застой воды и длительное намокание листвы.',
+                    'Если поражение прогрессирует, обратитесь к специалисту по защите растений для уточнения причины.'
+                ]
+            },
+            {
+                id: 'stress', title: 'Стресс после смены условий',
+                weights: { leafdrop: 5, droop: 2, yellow: 2, slow: 1 },
+                summary: 'Переезд, пересадка, холодный сквозняк или смена освещения могут временно вызывать опадение листьев и задержку роста.',
+                steps: [
+                    'Проверьте, не было ли резкой смены места, температуры или режима ухода.',
+                    'Обеспечьте стабильные условия без лишних пересадок и подкормок.',
+                    'Следите за появлением новых листьев и общим состоянием растения.'
+                ]
+            },
+            {
+                id: 'nutrition', title: 'Недостаток питания или неблагоприятные условия роста',
+                weights: { slow: 4, nobloom: 3, yellow: 2 },
+                summary: 'Замедление роста может быть связано с сезонностью, светом, состоянием корней или питанием. По одному симптому нельзя определить дефицит элемента.',
+                steps: [
+                    'Сначала проверьте свет, влажность, размер горшка и состояние корней.',
+                    'Если растение активно растёт, используйте подходящее удобрение в дозировке производителя.',
+                    'Не увеличивайте концентрацию подкормки в попытке быстро исправить проблему.'
+                ]
+            }
+        ];
+
+        const form = document.getElementById('diagnostic-form');
+        const results = document.getElementById('diagnostic-results');
+        const error = document.getElementById('diagnostic-error');
+        const resultList = document.getElementById('diagnostic-result-list');
+        const alertBox = document.getElementById('diagnostic-alert');
+
+        function diagnose(plant, symptoms, soil, light, air, changed) {
+            return CAUSES.map(cause => {
+                let score = symptoms.reduce((sum, symptom) => sum + (cause.weights[symptom] || 0), 0);
+                if (cause.id === 'overwater') {
+                    if (soil === 'wet') score += 6;
+                    if (soil === 'dry') score -= 4;
+                    if (plant.type === 'succulent' && symptoms.some(s => ['yellow','mushy','mold'].includes(s))) score += 3;
+                }
+                if (cause.id === 'underwater') {
+                    if (soil === 'dry') score += 6;
+                    if (soil === 'wet') score -= 4;
+                    if (plant.type === 'moist' && soil === 'dry') score += 2;
+                }
+                if (cause.id === 'lowlight') {
+                    if (light === 'low') score += 5;
+                    if (light === 'direct') score -= 2;
+                }
+                if (cause.id === 'sunburn') {
+                    if (light === 'direct') score += plant.type === 'succulent' ? 1 : 5;
+                    if (light === 'low') score -= 3;
+                }
+                if (cause.id === 'dryair') {
+                    if (air === 'dry') score += 5;
+                    if (air === 'humid') score -= 2;
+                    if (plant.type === 'moist' && symptoms.includes('drytips')) score += 2;
+                }
+                if (cause.id === 'mites' && air === 'dry' && symptoms.includes('web')) score += 2;
+                if (cause.id === 'fungal' && soil === 'wet') score += 2;
+                if (cause.id === 'stress' && changed === 'yes') score += 5;
+                if (cause.id === 'nutrition' && light === 'low') score -= 2;
+                return { cause, score };
+            })
+            .filter(item => item.score > 0)
+            .sort((a, b) => b.score - a.score)
+            .slice(0, 3);
+        }
+
+        form.addEventListener('submit', event => {
+            event.preventDefault();
+            const plantId = form.elements.plant.value;
+            if (!form.reportValidity()) return;
+            const symptoms = [...form.querySelectorAll('input[name="symptom"]:checked')].map(input => input.value);
+            if (symptoms.length === 0) {
+                error.hidden = false;
+                form.querySelector('input[name="symptom"]').focus();
+                return;
+            }
+            error.hidden = true;
+
+            const plant = PLANTS[plantId];
+            if (!plant) return;
+            const items = diagnose(
+                plant,
+                symptoms,
+                form.elements.soil.value,
+                form.elements.light.value,
+                form.elements.air.value,
+                form.elements.change.value
+            );
+
+            document.getElementById('diagnostic-result-context').textContent =
+                `${plant.name} · выбрано симптомов: ${symptoms.length}`;
+
+            const labels = ['Проверить в первую очередь', 'Ещё одна возможная причина', 'Также стоит учесть'];
+            resultList.innerHTML = items.map(({ cause }, index) => `
+                <article class="diagnostic-result-card">
+                    <span class="diagnostic-rank">${String(index + 1).padStart(2, '0')} / ${labels[index]}</span>
+                    <h3>${cause.title}</h3>
+                    <p>${cause.summary}</p>
+                    <strong>Что делать:</strong>
+                    <ol>${cause.steps.map(step => `<li>${step}</li>`).join('')}</ol>
+                </article>
+            `).join('');
+
+            if (symptoms.some(s => ['web', 'cotton'].includes(s))) {
+                alertBox.innerHTML = '<strong>Сначала осмотрите растение на вредителей.</strong><p>Пока причина не ясна, поставьте его отдельно от других растений и внимательно проверьте обе стороны листьев.</p>';
+                alertBox.hidden = false;
+            } else if (symptoms.includes('mushy') || (symptoms.includes('mold') && form.elements.soil.value === 'wet')) {
+                alertBox.innerHTML = '<strong>Возможно, проблема требует быстрых действий.</strong><p>Если стебель размягчился, появился запах гнили или растение быстро ухудшается, проверьте корни и исключите застой воды.</p>';
+                alertBox.hidden = false;
+            } else {
+                alertBox.hidden = true;
+                alertBox.textContent = '';
+            }
+
+            document.getElementById('diagnostic-plant-tip').textContent =
+                `Напоминание об уходе: ${plant.care} Рекомендации не заменяют осмотр растения специалистом.`;
+            results.hidden = false;
+            requestAnimationFrame(() => results.scrollIntoView({ behavior: 'smooth', block: 'start' }));
+        });
+
+        form.addEventListener('reset', () => {
+            error.hidden = true;
+            results.hidden = true;
+            resultList.innerHTML = '';
+            alertBox.hidden = true;
+        });
+
+        form.addEventListener('change', event => {
+            if (event.target.name === 'symptom') error.hidden = true;
+        });
+
+        document.getElementById('diagnostic-print').addEventListener('click', () => window.print());
+    })();
+    </script>
+</body>
+</html>

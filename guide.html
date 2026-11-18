@@ -1,2 +1,2781 @@
 <!doctype html>
-<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Гид по уходу — Зеленая комната</title><meta name="description" content="Гид по уходу. Ботаническая коллекция магазина Зеленая комната."><link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css"><link rel="stylesheet" href="css/custom.css"><script defer src="vendor/bootstrap/bootstrap.bundle.min.js"></script><script defer src="js/main.js"></script></head><body id="top"><header class="site-header sticky-top"><nav class="navbar navbar-expand-lg container wrap" aria-label="Основная навигация"><a class="navbar-brand" href="index.html"><span class="mark" aria-hidden="true">✳</span> Зеленая комната</a><button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-label="Меню" aria-expanded="false" aria-controls="main-nav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="main-nav"><ul class="navbar-nav mx-lg-auto"><li><a class="nav-link" href="index.html">Главная</a></li><li><a class="nav-link" href="catalog.html">Каталог</a></li><li><a class="nav-link" href="category.html">Лиственные</a></li><li><a class="nav-link" aria-current="page" href="guide.html">Гид</a></li><li><a class="nav-link" href="about.html">О нас</a></li><li><a class="nav-link" href="contacts.html">Контакты</a></li></ul><a class="btn btn-success" href="order.html">Заявка <span aria-hidden="true">↗</span></a></div></nav></header><main><section class="screen lead-screen"><div class="container wrap spread"><div class="lead-copy"><p class="kicker">ЗК / 06　 —　 Заметки</p><h1>Как растёт дом.</h1><p class="lede">Три коротких ответа о месте, воде и выборе горшка.</p><a class="btn btn-success" href="#inside">Читать заметки <span aria-hidden="true">↗</span></a></div><figure class="folio"><img src="images/photos/aloe.jpg" alt="Алоэ вера" class="portrait"><figcaption>BOTANICAL FILE <b>№ 04</b></figcaption></figure></div></section><section id="inside" class="screen second journal"><div class="container wrap"><div class="spread"><div><p class="kicker">Записная книжка / 03 главы</p><h2>Свет.<br>Вода.<br>Кашпо.</h2></div><div class="accordion" id="care"><div class="accordion-item"><h2 class="accordion-header"><button aria-controls="a0" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#a0" data-bs-toggle="collapse">Сколько света получает растение?</button></h2><div class="accordion-collapse collapse" data-bs-parent="#care" id="a0"><div class="accordion-body">Оцените освещение в течение дня. Суккулентам подойдёт яркий подоконник, а папоротнику — место с рассеянным светом.</div></div></div><div class="accordion-item"><h2 class="accordion-header"><button aria-controls="a1" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#a1" data-bs-toggle="collapse">Как понять, пора ли поливать?</button></h2><div class="accordion-collapse collapse" data-bs-parent="#care" id="a1"><div class="accordion-body">Проверьте влажность субстрата перед поливом. У суккулентов он должен успевать просохнуть; папоротнику нужна более равномерная влажность.</div></div></div><div class="accordion-item"><h2 class="accordion-header"><button aria-controls="a2" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#a2" data-bs-toggle="collapse">Как подобрать кашпо?</button></h2><div class="accordion-collapse collapse" data-bs-parent="#care" id="a2"><div class="accordion-body">Сначала измерьте внутренний горшок. Оставьте место, чтобы его можно было вынуть для полива и слить лишнюю воду.</div></div></div></div></div></div></section></main><footer class="foot"><div class="container wrap"><b>✳ Зеленая комната</b><a href="about.html#inside">Авторы фото</a><a href="#top">Наверх ↑</a></div></footer></body></html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Полный гид по уходу — Зеленая комната</title>
+
+    <meta name="description"
+        content="Подробное руководство по уходу за 10 комнатными растениями: освещение, полив, грунт, пересадка, размножение и решение распространённых проблем.">
+
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <script defer src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script defer src="js/main.js"></script>
+
+    <style>
+        /* =====================================
+           СТИЛИ БОЛЬШОГО ГИДА
+        ===================================== */
+
+        .guide-intro,
+        .guide-section,
+        .guide-extra {
+            padding: 75px 0;
+        }
+
+        .guide-intro {
+            background: #e6ebd2;
+        }
+
+        .guide-section {
+            background: var(--paper);
+            border-top: 1px solid var(--line);
+        }
+
+        .guide-section:nth-of-type(even) {
+            background: #e6ebd2;
+        }
+
+        .guide-section,
+        .plant-guide,
+        .guide-extra {
+            scroll-margin-top: 105px;
+        }
+
+        .guide-intro h2,
+        .guide-extra h2 {
+            margin-bottom: 25px;
+        }
+
+        .guide-intro-text {
+            max-width: 850px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .guide-navigation {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 12px;
+            margin-top: 35px;
+        }
+
+        .guide-navigation a {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 115px;
+            padding: 18px;
+            background: var(--paper);
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            text-decoration: none;
+            transition: background .2s, transform .2s;
+        }
+
+        .guide-navigation a:hover {
+            background: var(--lime);
+            transform: translateY(-3px);
+        }
+
+        .guide-navigation span {
+            font: 700 .7rem ui-monospace, monospace;
+            opacity: .65;
+        }
+
+        .guide-navigation strong {
+            font-family: Georgia, serif;
+            font-size: 1.2rem;
+        }
+
+        .plant-guide {
+            padding: 35px 0 70px;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .plant-guide:last-child {
+            border-bottom: 0;
+        }
+
+        .plant-header {
+            display: grid;
+            grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+            align-items: center;
+            gap: 45px;
+            margin-bottom: 35px;
+        }
+
+        .plant-header img {
+            width: 100%;
+            height: 360px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .plant-number {
+            font: 700 .8rem ui-monospace, monospace;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            color: #688031;
+        }
+
+        .plant-name {
+            font-family: Georgia, serif;
+            font-size: clamp(2.5rem, 5vw, 5rem);
+            line-height: 1.05;
+            letter-spacing: -.05em;
+            margin: 16px 0;
+        }
+
+        .plant-latin {
+            font-family: Georgia, serif;
+            font-style: italic;
+            opacity: .7;
+            margin-bottom: 20px;
+        }
+
+        .plant-description {
+            font-size: 1.1rem;
+            line-height: 1.75;
+        }
+
+        .plant-placeholder {
+            min-height: 360px;
+            display: grid;
+            place-items: center;
+            background: #d7e0ba;
+            border-radius: 5px;
+            font-family: Georgia, serif;
+            font-size: clamp(4rem, 10vw, 8rem);
+            color: #557143;
+        }
+
+        .care-facts {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 14px;
+            margin: 30px 0 40px;
+        }
+
+        .care-fact {
+            border: 1px solid var(--line);
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .care-fact small {
+            display: block;
+            font: 700 .7rem ui-monospace, monospace;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            opacity: .65;
+            margin-bottom: 10px;
+        }
+
+        .care-fact strong {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .care-details {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            column-gap: 45px;
+            row-gap: 20px;
+        }
+
+        .care-details h3 {
+            font-family: Georgia, serif;
+            font-size: 1.6rem;
+            margin-bottom: 12px;
+        }
+
+        .care-details p,
+        .care-details li {
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        .care-details ul {
+            padding-left: 20px;
+        }
+
+        .care-details li {
+            margin-bottom: 6px;
+        }
+
+        .care-warning {
+            margin-top: 30px;
+            padding: 22px 25px;
+            border-left: 4px solid #b87815;
+            background: rgba(184, 120, 21, .08);
+            line-height: 1.7;
+        }
+
+        .care-warning strong {
+            display: block;
+            margin-bottom: 7px;
+        }
+
+        .care-warning p {
+            margin: 0;
+        }
+
+        .guide-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+        }
+
+        .guide-table th,
+        .guide-table td {
+            padding: 15px;
+            text-align: left;
+            vertical-align: top;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .guide-table th {
+            font-size: .8rem;
+            text-transform: uppercase;
+            letter-spacing: .04em;
+        }
+
+        .guide-table td {
+            line-height: 1.6;
+        }
+
+        .guide-table a {
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        .guide-note {
+            padding: 25px;
+            border: 1px solid var(--line);
+            background: #e6ebd2;
+            margin: 25px 0;
+            line-height: 1.8;
+        }
+
+        .guide-note p:last-child {
+            margin-bottom: 0;
+        }
+
+        .guide-extra {
+            background: #e6ebd2;
+            border-top: 1px solid var(--line);
+        }
+
+        .guide-extra p,
+        .guide-extra li {
+            line-height: 1.8;
+        }
+
+        .guide-extra h3 {
+            font-family: Georgia, serif;
+            margin: 30px 0 15px;
+        }
+
+        .guide-footer-link {
+            display: inline-block;
+            margin-top: 25px;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+
+        .table-scroll {
+            overflow-x: auto;
+        }
+
+        @media (max-width: 991px) {
+            .guide-navigation {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .plant-header {
+                gap: 25px;
+            }
+        }
+
+        @media (max-width: 767px) {
+
+            .guide-intro,
+            .guide-section,
+            .guide-extra {
+                padding: 40px 0;
+            }
+
+            .guide-navigation {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .plant-header,
+            .care-details {
+                grid-template-columns: 1fr;
+            }
+
+            .plant-header img,
+            .plant-placeholder {
+                height: 260px;
+                min-height: 260px;
+            }
+
+            .care-facts {
+                grid-template-columns: 1fr;
+            }
+
+            .plant-guide {
+                padding-bottom: 45px;
+            }
+
+            .guide-table {
+                min-width: 650px;
+            }
+        }
+    </style>
+</head>
+
+<body id="top">
+
+    <!-- НАВИГАЦИЯ -->
+    <header class="site-header sticky-top">
+        <nav class="navbar navbar-expand-lg container wrap" aria-label="Основная навигация">
+
+            <a class="navbar-brand" href="index.html">
+                <span class="mark" aria-hidden="true">✳</span>
+                Зеленая комната
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                aria-label="Меню" aria-expanded="false" aria-controls="main-nav">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="main-nav">
+                <ul class="navbar-nav mx-lg-auto">
+                    <li>
+                        <a class="nav-link" href="index.html">
+                            Главная
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link" href="catalog.html">
+                            Каталог
+                        </a>
+                    </li>
+
+
+                    <li>
+
+                    <li>
+                        <a class="nav-link" href="guide.html" aria-current="page">
+                            Гид
+                        </a>
+                    </li>
+                     <li>
+                        <a class="nav-link" href="diagnostic.html">
+                            Диагностика
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link" href="about.html">
+                            О нас
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="contacts.html">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ГЛАВНЫЙ ЭКРАН -->
+        <section class="screen lead-screen">
+
+            <div class="container wrap spread">
+
+                <div class="lead-copy">
+                    <p class="kicker">
+                        ЗК / 06 — Ботанический гид
+                    </p>
+
+                    <h1>Как растёт дом.</h1>
+
+                    <p class="lede">
+                        Большое руководство по уходу
+                        за комнатными растениями.
+                        Десять видов, десятки полезных
+                        советов и ответы на главные вопросы.
+                    </p>
+
+                    <a class="btn btn-success" href="#inside">
+                        Изучить гид
+                        <span aria-hidden="true">↗</span>
+                    </a>
+                </div>
+
+                <figure class="folio">
+                    <img src="images/photos/aloe.jpg" alt="Алоэ вера" class="portrait">
+
+                    <figcaption>
+                        BOTANICAL GUIDE
+                        <b>№ 01–10</b>
+                    </figcaption>
+                </figure>
+
+            </div>
+        </section>
+
+        <!-- ВВЕДЕНИЕ -->
+        <section id="inside" class="guide-intro">
+
+            <div class="container wrap">
+
+                <p class="kicker">
+                    Путеводитель / 10 растений
+                </p>
+
+                <h2>Всё начинается с условий.</h2>
+
+                <div class="guide-intro-text">
+                    <p>
+                        У каждого растения собственные требования
+                        к свету, воде, температуре и влажности.
+                        Одни виды хорошо переносят временную
+                        засуху, другим нужен постоянно слегка
+                        влажный грунт. Некоторые любят яркое
+                        солнце, а другие предпочитают
+                        рассеянное освещение.
+                    </p>
+
+                    <p>
+                        Правильный уход не обязательно требует
+                        сложного оборудования. В большинстве
+                        случаев достаточно подходящего места,
+                        горшка с дренажными отверстиями,
+                        качественного субстрата и внимательного
+                        отношения к состоянию растения.
+                    </p>
+
+                    <p>
+                        В этом руководстве собраны рекомендации
+                        по уходу за десятью популярными видами
+                        комнатных растений. Вы узнаете, как
+                        правильно поливать их, когда пересаживать,
+                        чем подкармливать и как замечать
+                        первые признаки проблем.
+                    </p>
+                </div>
+
+                <div class="guide-note">
+                    <strong>Главное правило полива</strong>
+                    <p>
+                        Не поливайте растения строго по календарю.
+                        Скорость высыхания грунта зависит от
+                        сезона, освещения, температуры, размера
+                        горшка и состояния корневой системы.
+                        Перед поливом проверяйте влажность почвы.
+                    </p>
+                </div>
+
+                <h3 class="mt-5">Выберите растение</h3>
+
+                <nav class="guide-navigation" aria-label="Навигация по растениям">
+
+                    <a href="#ficus">
+                        <img src="images/photos/ficus.jpg" alt="Фикус">
+                        <span>01 / 10</span>
+                        <strong>Фикус</strong>
+                    </a>
+
+                    <a href="#fern">
+                        <img src="images/photos/fern.jpg" alt="Нефролепис">
+                        <span>02 / 10</span>
+                        <strong>Нефролепис</strong>
+                    </a>
+
+                    <a href="#pothos">
+                        <img src="images/photos/pothos.jpg" alt="Эпипремнум">
+                        <span>03 / 10</span>
+                        <strong>Эпипремнум</strong>
+                    </a>
+
+                    <a href="#aloe">
+                        <img src="images/photos/aloe.jpg" alt="Алоэ вера">
+                        <span>04 / 10</span>
+                        <strong>Алоэ вера</strong>
+                    </a>
+
+                    <a href="#echeveria">
+                        <img src="images/photos/echeveria.jpg" alt="Эхеверия">
+                        <span>05 / 10</span>
+                        <strong>Эхеверия</strong>
+                    </a>
+
+                    <a href="#jade">
+                        <img src="images/photos/jade.jpg" alt="Крассула">
+                        <span>06 / 10</span>
+                        <strong>Крассула</strong>
+                    </a>
+
+                    <a href="#anthurium">
+                        <img src="images/photos/anthurium.jpg" alt="Антуриум">
+                        <span>07 / 10</span>
+                        <strong>Антуриум</strong>
+                    </a>
+
+                    <a href="#violet">
+                        <img src="images/photos/violet.jpg" alt="Фиалка">
+                        <span>08 / 10</span>
+                        <strong>Фиалка</strong>
+                    </a>
+
+                    <a href="#peace">
+                        <img src="images/photos/peace.jpg" alt="Спатифиллум">
+                        <span>09 / 10</span>
+                        <strong>Спатифиллум</strong>
+                    </a>
+                </nav>
+            </div>
+        </section>
+
+        <!-- КРАТКАЯ ТАБЛИЦА -->
+        <section class="guide-section">
+
+            <div class="container wrap">
+
+                <p class="kicker">
+                    Быстрый справочник
+                </p>
+
+                <h2>Условия с первого взгляда.</h2>
+
+                <p>
+                    Используйте таблицу для быстрого сравнения.
+                    Подробные рекомендации для каждого растения
+                    находятся ниже.
+                </p>
+
+                <div class="table-scroll">
+                    <table class="guide-table">
+                        <thead>
+                            <tr>
+                                <th>Растение</th>
+                                <th>Освещение</th>
+                                <th>Полив</th>
+                                <th>Влажность воздуха</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td><a href="#ficus">Фикус</a></td>
+                                <td>Яркий рассеянный свет</td>
+                                <td>После подсыхания верхних 3–4 см</td>
+                                <td>Умеренная</td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="#fern">Нефролепис</a></td>
+                                <td>Рассеянный свет</td>
+                                <td>Поддерживать лёгкую влажность</td>
+                                <td>Повышенная</td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="#pothos">Эпипремнум</a></td>
+                                <td>Рассеянный свет</td>
+                                <td>После подсыхания верхнего слоя</td>
+                                <td>Обычная комнатная</td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="#aloe">Алоэ вера</a></td>
+                                <td>Очень яркий свет</td>
+                                <td>После полного просыхания</td>
+                                <td>Низкая</td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="#echeveria">Эхеверия</a></td>
+                                <td>Очень яркий свет</td>
+                                <td>После полного просыхания</td>
+                                <td>Низкая</td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="#jade">Крассула</a></td>
+                                <td>Яркий свет</td>
+                                <td>После просыхания грунта</td>
+                                <td>Низкая или умеренная</td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="#anthurium">Антуриум</a></td>
+                                <td>Яркий рассеянный свет</td>
+                                <td>После лёгкого подсыхания</td>
+                                <td>Повышенная</td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="#violet">Фиалка</a></td>
+                                <td>Яркий рассеянный свет</td>
+                                <td>После подсыхания поверхности</td>
+                                <td>Умеренная</td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="#peace">Спатифиллум</a></td>
+                                <td>Рассеянный свет</td>
+                                <td>После подсыхания верхнего слоя</td>
+                                <td>Умеренная или повышенная</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- =====================================
+             01. ФИКУС
+        ===================================== -->
+
+        <section class="guide-section">
+            <div class="container wrap">
+
+                <article class="plant-guide" id="ficus">
+
+                    <div class="plant-header">
+
+                        <div>
+                            <span class="plant-number">
+                                Растение 01 / 10
+                            </span>
+
+                            <h2 class="plant-name">
+                                Фикус эластика
+                            </h2>
+
+                            <p class="plant-latin">
+                                Ficus elastica
+                            </p>
+
+                            <p class="plant-description">
+                                Фикус эластика — декоративное
+                                вечнозелёное растение с крупными,
+                                плотными и глянцевыми листьями.
+                                В комнатных условиях он способен
+                                вырасти в высокое деревце
+                                и стать выразительным акцентом
+                                интерьера.
+                            </p>
+                        </div>
+
+                        <img src="images/photos/ficus.jpg" alt="Фикус эластика" loading="lazy">
+                    </div>
+
+                    <div class="care-facts">
+                        <div class="care-fact">
+                            <small>Освещение</small>
+                            <strong>Яркий рассеянный свет</strong>
+                        </div>
+
+                        <div class="care-fact">
+                            <small>Температура</small>
+                            <strong>18–27 °C</strong>
+                        </div>
+
+                        <div class="care-fact">
+                            <small>Сложность ухода</small>
+                            <strong>Невысокая</strong>
+                        </div>
+                    </div>
+
+                    <div class="care-details">
+
+                        <div>
+                            <h3>Освещение</h3>
+                            <p>
+                                Фикусу подходит место рядом
+                                с восточным или западным окном.
+                                Яркий рассеянный свет помогает
+                                растению формировать крупные
+                                листья и сохранять насыщенную
+                                окраску.
+                            </p>
+
+                            <p>
+                                Прямые солнечные лучи в жаркие
+                                часы могут вызвать ожоги.
+                                При недостатке света рост
+                                замедляется, а новые листья
+                                становятся мельче.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Полив</h3>
+                            <p>
+                                Поливайте фикус после того,
+                                как верхние 3–4 сантиметра
+                                субстрата просохнут.
+                                Используйте воду комнатной
+                                температуры.
+                            </p>
+
+                            <p>
+                                Проливайте грунт равномерно,
+                                позволяя лишней воде выйти
+                                через дренажные отверстия.
+                                Воду из поддона необходимо
+                                сливать.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Грунт и пересадка</h3>
+                            <p>
+                                Подойдёт питательный,
+                                воздухопроницаемый субстрат
+                                для декоративно-лиственных
+                                растений с добавлением
+                                перлита или другого
+                                разрыхляющего компонента.
+                            </p>
+
+                            <p>
+                                Молодые растения пересаживают
+                                по мере заполнения горшка
+                                корнями, обычно раз в 1–2 года.
+                                Новый горшок должен быть
+                                немного шире предыдущего.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Подкормка и формирование</h3>
+                            <p>
+                                Весной и летом можно использовать
+                                комплексное удобрение для
+                                декоративно-лиственных растений
+                                согласно инструкции.
+                                В период слабого роста
+                                подкормки сокращают.
+                            </p>
+
+                            <p>
+                                Для более равномерной кроны
+                                периодически поворачивайте
+                                горшок относительно окна.
+                                Пыль с листьев удаляйте
+                                мягкой влажной салфеткой.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Размножение</h3>
+                            <p>
+                                Фикус размножают стеблевыми
+                                черенками или воздушными
+                                отводками. Черенок должен
+                                иметь жизнеспособный узел.
+                                Укоренение проводят в подходящем
+                                влажном субстрате в тепле.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Частые проблемы</h3>
+                            <ul>
+                                <li>Опадение листьев — стресс, холод или резкая смена условий.</li>
+                                <li>Желтизна — возможный перелив или недостаток света.</li>
+                                <li>Коричневые пятна — ожог, холодовое повреждение или проблемы с корнями.</li>
+                                <li>Медленный рост — недостаток освещения или питания.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="care-warning">
+                        <strong>Важно</strong>
+                        <p>
+                            Млечный сок фикуса может раздражать
+                            кожу. Растение токсично при
+                            поедании кошками и собаками.
+                            Обрезку лучше проводить в перчатках.
+                        </p>
+                    </div>
+
+                </article>
+            </div>
+        </section>
+
+        <!-- =====================================
+             02. НЕФРОЛЕПИС
+        ===================================== -->
+
+        <section class="guide-section">
+            <div class="container wrap">
+
+                <article class="plant-guide" id="fern">
+
+                    <div class="plant-header">
+
+                        <div>
+                            <span class="plant-number">
+                                Растение 02 / 10
+                            </span>
+
+                            <h2 class="plant-name">
+                                Нефролепис
+                            </h2>
+
+                            <p class="plant-latin">
+                                Nephrolepis exaltata
+                            </p>
+
+                            <p class="plant-description">
+                                Нефролепис — популярный
+                                комнатный папоротник с длинными
+                                перистыми вайями. Его воздушная
+                                крона подходит для полок,
+                                подвесных кашпо и помещений
+                                с мягким рассеянным освещением.
+                            </p>
+                        </div>
+
+                        <img src="images/photos/fern.jpg" alt="Папоротник нефролепис" loading="lazy">
+                    </div>
+
+                    <div class="care-facts">
+                        <div class="care-fact">
+                            <small>Освещение</small>
+                            <strong>Рассеянный свет</strong>
+                        </div>
+
+                        <div class="care-fact">
+                            <small>Температура</small>
+                            <strong>16–25 °C</strong>
+                        </div>
+
+                        <div class="care-fact">
+                            <small>Сложность ухода</small>
+                            <strong>Средняя</strong>
+                        </div>
+                    </div>
+
+                    <div class="care-details">
+
+                        <div>
+                            <h3>Освещение</h3>
+                            <p>
+                                Папоротник предпочитает
+                                достаточно светлое место
+                                без жёстких прямых лучей.
+                                Особенно хорошо подходит
+                                восточное окно.
+                            </p>
+
+                            <p>
+                                На южном окне растение лучше
+                                размещать за лёгкой занавеской.
+                                В глубокой тени вайи могут
+                                вытягиваться, а крона
+                                постепенно редеть.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Полив</h3>
+                            <p>
+                                В отличие от суккулентов,
+                                нефролепис плохо переносит
+                                полное пересыхание земляного
+                                кома. Поддерживайте субстрат
+                                слегка влажным.
+                            </p>
+
+                            <p>
+                                Поливайте, когда поверхность
+                                грунта начинает подсыхать.
+                                При этом вода не должна
+                                постоянно застаиваться
+                                у корней.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Влажность воздуха</h3>
+                            <p>
+                                Папоротник предпочитает
+                                повышенную влажность воздуха.
+                                В отопительный сезон кончики
+                                листьев нередко подсыхают
+                                из-за сухого микроклимата.
+                            </p>
+
+                            <p>
+                                Для стабильного результата
+                                лучше использовать увлажнитель
+                                воздуха или разместить
+                                растение в более влажном
+                                помещении с хорошей вентиляцией.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Грунт и пересадка</h3>
+                            <p>
+                                Используйте рыхлый,
+                                влагоёмкий и одновременно
+                                воздухопроницаемый субстрат.
+                                Подойдёт смесь на основе
+                                торфа или кокосового волокна
+                                с разрыхлителями.
+                            </p>
+
+                            <p>
+                                Пересаживайте весной,
+                                когда корневая система
+                                заполнит горшок.
+                                Не выбирайте слишком
+                                большой объём.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Подкормка и размножение</h3>
+                            <p>
+                                В период активного роста
+                                используйте слабый раствор
+                                комплексного удобрения.
+                                Избыток солей может повредить
+                                нежные корни.
+                            </p>
+
+                            <p>
+                                Размножать нефролепис
+                                удобнее делением взрослого
+                                куста. Каждая отделённая
+                                часть должна иметь корни
+                                и живые точки роста.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Частые проблемы</h3>
+                            <ul>
+                                <li>Сухие кончики — низкая влажность или избыток солей.</li>
+                                <li>Пожелтение вай — ошибки полива, стресс или старение листьев.</li>
+                                <li>Редкая крона — недостаток света или пересушивание.</li>
+                                <li>Загнивание — постоянный застой воды.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="care-warning">
+                        <strong>На заметку</strong>
+                        <p>
+                            Нефролепис возвышенный обычно
+                            считается нетоксичным для кошек
+                            и собак. Однако поедание любых
+                            растений может вызвать
+                            расстройство пищеварения.
+                        </p>
+                    </div>
+
+                </article>
+            </div>
+        </section>
+
+        <!-- =====================================
+             03. ЭПИПРЕМНУМ
+        ===================================== -->
+
+        <section class="guide-section">
+            <div class="container wrap">
+
+                <article class="plant-guide" id="pothos">
+
+                    <div class="plant-header">
+
+                        <div>
+                            <span class="plant-number">
+                                Растение 03 / 10
+                            </span>
+
+                            <h2 class="plant-name">
+                                Эпипремнум
+                            </h2>
+
+                            <p class="plant-latin">
+                                Epipremnum aureum
+                            </p>
+
+                            <p class="plant-description">
+                                Эпипремнум — быстрорастущая
+                                тропическая лиана с сердцевидными
+                                листьями. Его можно выращивать
+                                в подвесном кашпо или направлять
+                                вверх по опоре.
+                            </p>
+                        </div>
+
+                        <img src="images/photos/pothos.jpg" alt="Эпипремнум золотистый" loading="lazy">
+                    </div>
+
+                    <div class="care-facts">
+                        <div class="care-fact">
+                            <small>Освещение</small>
+                            <strong>Умеренный или яркий рассеянный свет</strong>
+                        </div>
+
+                        <div class="care-fact">
+                            <small>Температура</small>
+                            <strong>18–29 °C</strong>
+                        </div>
+
+                        <div class="care-fact">
+                            <small>Сложность ухода</small>
+                            <strong>Низкая</strong>
+                        </div>
+                    </div>
+
+                    <div class="care-details">
+
+                        <div>
+                            <h3>Освещение</h3>
+                            <p>
+                                Эпипремнум хорошо адаптируется
+                                к разным условиям освещения.
+                                Однако наиболее активный рост
+                                наблюдается при ярком
+                                рассеянном свете.
+                            </p>
+
+                            <p>
+                                Пестролистные сорта могут
+                                терять выраженность рисунка
+                                в недостаточно освещённом
+                                месте. Прямое полуденное
+                                солнце способно обжечь листья.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Полив</h3>
+                            <p>
+                                Поливайте после подсыхания
+                                верхних нескольких сантиметров
+                                грунта. Растение переносит
+                                кратковременную сухость
+                                лучше, чем постоянное
+                                переувлажнение.
+                            </p>
+
+                            <p>
+                                Зимой при уменьшении света
+                                потребление воды снижается,
+                                поэтому частоту полива
+                                следует корректировать.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Грунт и горшок</h3>
+                            <p>
+                                Подойдёт рыхлый субстрат
+                                для ароидных растений.
+                                Для улучшения аэрации
+                                можно добавить перлит,
+                                мелкую кору или другие
+                                структурные компоненты.
+                            </p>
+
+                            <p>
+                                Горшок обязательно должен
+                                иметь дренажные отверстия.
+                                Пересаживайте растение,
+                                когда корням становится тесно.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Формирование</h3>
+                            <p>
+                                Длинные побеги можно
+                                обрезать, стимулируя
+                                ветвление и делая растение
+                                более густым.
+                            </p>
+
+                            <p>
+                                Для получения крупных
+                                листьев лиане полезно
+                                предоставить вертикальную
+                                опору, по которой она
+                                сможет подниматься.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Размножение</h3>
+                            <p>
+                                Эпипремнум легко размножают
+                                стеблевыми черенками.
+                                На каждом черенке должен
+                                находиться хотя бы один узел.
+                            </p>
+
+                            <p>
+                                Черенки можно укоренять
+                                в воде или рыхлом влажном
+                                субстрате. После появления
+                                корней их высаживают
+                                в отдельные горшки.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Частые проблемы</h3>
+                            <ul>
+                                <li>Жёлтые листья — возможный перелив.</li>
+                                <li>Длинные междоузлия — недостаток света.</li>
+                                <li>Коричневые края — пересушка, сухой воздух или накопление солей.</li>
+                                <li>Мягкие стебли — возможное загнивание корней.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="care-warning">
+                        <strong>Важно для владельцев животных</strong>
+                        <p>
+                            Эпипремнум содержит нерастворимые
+                            кристаллы оксалата кальция.
+                            При поедании он может вызывать
+                            раздражение полости рта
+                            у домашних животных.
+                        </p>
+                    </div>
+
+                </article>
+            </div>
+        </section>
+
+        <!-- =====================================
+             04. АЛОЭ ВЕРА
+        ===================================== -->
+
+        <section class="guide-section">
+            <div class="container wrap">
+
+                <article class="plant-guide" id="aloe">
+
+                    <div class="plant-header">
+
+                        <div>
+                            <span class="plant-number">
+                                Растение 04 / 10
+                            </span>
+
+                            <h2 class="plant-name">
+                                Алоэ вера
+                            </h2>
+
+                            <p class="plant-latin">
+                                Aloe vera
+                            </p>
+
+                            <p class="plant-description">
+                                Алоэ вера — суккулент
+                                с мясистыми листьями,
+                                способными накапливать воду.
+                                Растение приспособлено
+                                к относительно засушливым
+                                условиям и предпочитает
+                                яркое освещение.
+                            </p>
+                        </div>
+
+                        <img src="images/photos/aloe.jpg" alt="Алоэ вера" loading="lazy">
+                    </div>
+
+                    <div class="care-facts">
+                        <div class="care-fact">
+                            <small>Освещение</small>
+                            <strong>Очень яркий свет</strong>
+                        </div>
+
+                        <div class="care-fact">
+                            <small>Температура</small>
+                            <strong>18–28 °C</strong>
+                        </div>
+
+                        <div class="care-fact">
+                            <small>Сложность ухода</small>
+                            <strong>Низкая</strong>
+                        </div>
+                    </div>
+
+                    <div class="care-details">
+
+                        <div>
+                            <h3>Освещение</h3>
+                            <p>
+                                Алоэ предпочитает хорошо
+                                освещённое место. Подойдут
+                                южные, юго-восточные
+                                и западные окна.
+                            </p>
+
+                            <p>
+                                После зимы или длительного
+                                содержания в тени растение
+                                необходимо приучать к прямому
+                                солнцу постепенно, чтобы
+                                избежать ожогов.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Полив</h3>
+                            <p>
+                                Перед следующим поливом
+                                субстрат должен полностью
+                                просохнуть.
+                            </p>
+
+                            <p>
+                                Поливайте обильно, но редко.
+                                Лишняя вода должна свободно
+                                стекать из горшка.
+                                Не допускайте длительного
+                                скопления воды между
+                                основаниями листьев.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Грунт и пересадка</h3>
+                            <p>
+                                Используйте субстрат
+                                для кактусов и суккулентов
+                                с высоким содержанием
+                                минеральных компонентов.
+                            </p>
+
+                            <p>
+                                Горшок выбирайте
+                                по размеру корневой системы.
+                                Слишком большой объём
+                                повышает риск длительного
+                                переувлажнения грунта.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Температура и влажность</h3>
+                            <p>
+                                Алоэ хорошо чувствует
+                                себя при обычной комнатной
+                                температуре и не требует
+                                повышенной влажности воздуха.
+                            </p>
+
+                            <p>
+                                Растение необходимо защищать
+                                от заморозков, холодных
+                                сквозняков и длительного
+                                контакта с холодным стеклом.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Подкормка и размножение</h3>
+                            <p>
+                                В период активного роста
+                                можно использовать удобрение
+                                для суккулентов в умеренной
+                                концентрации.
+                            </p>
+
+                            <p>
+                                У взрослого алоэ нередко
+                                появляются дочерние розетки.
+                                Их можно осторожно отделить,
+                                когда они сформируют
+                                собственные корни.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Частые проблемы</h3>
+                            <ul>
+                                <li>Мягкие полупрозрачные листья — вероятный перелив.</li>
+                                <li>Вытягивание розетки — недостаток света.</li>
+                                <li>Сухие сморщенные листья — длительная засуха или повреждение корней.</li>
+                                <li>Пятна после солнца — резкая смена освещения.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="care-warning">
+                        <strong>Важно</strong>
+                        <p>
+                            Несмотря на известное применение
+                            алоэ в косметике, самостоятельное
+                            употребление частей комнатного
+                            растения небезопасно.
+                            Алоэ также токсично для кошек
+                            и собак при поедании.
+                        </p>
+                    </div>
+
+                </article>
+            </div>
+        </section>
+
+        <!-- =====================================
+             05. ЭХЕВЕРИЯ
+        ===================================== -->
+
+        <section class="guide-section">
+            <div class="container wrap">
+
+                <article class="plant-guide" id="echeveria">
+
+                    <div class="plant-header">
+
+                        <div>
+                            <span class="plant-number">
+                                Растение 05 / 10
+                            </span>
+
+                            <h2 class="plant-name">
+                                Эхеверия
+                            </h2>
+
+                            <p class="plant-latin">
+                                Echeveria elegans
+                            </p>
+
+                            <p class="plant-description">
+                                Эхеверия — компактный
+                                суккулент с симметричной
+                                розеткой плотных листьев.
+                                Её главная декоративная
+                                особенность — аккуратная
+                                геометрическая форма.
+                            </p>
+                        </div>
+
+                        <img src="images/photos/echeveria.jpg" alt="Эхеверия" loading="lazy">
+                    </div>
+
+                    <div class="care-facts">
+                        <div class="care-fact">
+                            <small>Освещение</small>
+                            <strong>Максимально яркое</strong>
+                        </div>
+
+                        <div class="care-fact">
+                            <small>Температура</small>
+                            <strong>16–28 °C</strong>
+                        </div>
+
+                        <div class="care-fact">
+                            <small>Сложность ухода</small>
+                            <strong>Низкая при хорошем свете</strong>
+                        </div>
+                    </div>
+
+                    <div class="care-details">
+
+                        <div>
+                            <h3>Освещение</h3>
+                            <p>
+                                Эхеверии необходимо очень
+                                яркое освещение. При его
+                                недостатке розетка теряет
+                                компактную форму, а листья
+                                начинают вытягиваться.
+                            </p>
+
+                            <p>
+                                Подойдёт солнечный подоконник
+                                с постепенной адаптацией
+                                к прямым лучам. Зимой
+                                может потребоваться
+                                дополнительное освещение.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Полив</h3>
+                            <p>
+                                Поливайте только после
+                                полного просыхания грунта.
+                                Эхеверия хранит запас
+                                влаги в листьях и не нуждается
+                                в постоянно влажной почве.
+                            </p>
+
+                            <p>
+                                Старайтесь направлять воду
+                                непосредственно на грунт,
+                                избегая её скопления
+                                в центре розетки.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Грунт</h3>
+                            <p>
+                                Растению необходим
+                                хорошо дренируемый
+                                минеральный субстрат.
+                                Можно использовать смесь
+                                для суккулентов с пемзой,
+                                перлитом или мелким гравием.
+                            </p>
+
+                            <p>
+                                Горшок должен иметь
+                                отверстия для выхода воды.
+                                Не допускайте постоянной
+                                сырости у основания стебля.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Сезонный уход</h3>
+                            <p>
+                                В период активного роста
+                                эхеверия потребляет больше
+                                воды, но грунт всё равно
+                                должен высыхать между
+                                поливами.
+                            </p>
+
+                            <p>
+                                Зимой при прохладном
+                                содержании и слабом
+                                освещении полив значительно
+                                сокращают. Защищайте
+                                растение от заморозков.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Размножение</h3>
+                            <p>
+                                Некоторые эхеверии можно
+                                размножать дочерними
+                                розетками, листьями
+                                и стеблевыми черенками.
+                            </p>
+
+                            <p>
+                                При листовом размножении
+                                используйте здоровый
+                                неповреждённый лист.
+                                Перед размещением на
+                                субстрате дайте месту
+                                отделения подсохнуть.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Частые проблемы</h3>
+                            <ul>
+                                <li>Вытянутая розетка — недостаток света.</li>
+                                <li>Мягкие листья — возможное переувлажнение.</li>
+                                <li>Ожоги — слишком резкий переход на яркое солнце.</li>
+                                <li>Гниль у основания — застой воды или неподходящий субстрат.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="care-warning">
+                        <strong>На заметку</strong>
+                        <p>
+                            Эхеверия элеганс обычно считается
+                            нетоксичной для кошек и собак,
+                            но растение всё равно лучше
+                            защищать от повреждения
+                            домашними животными.
+                        </p>
+                    </div>
+
+                </article>
+            </div>
+        </section>
+
+        <!-- =====================================
+             06. КРАССУЛА
+        ===================================== -->
+
+        <section class="guide-section">
+            <div class="container wrap">
+
+                <article class="plant-guide" id="jade">
+
+                    <div class="plant-header">
+
+                        <div>
+                            <span class="plant-number">
+                                Растение 06 / 10
+                            </span>
+
+                            <h2 class="plant-name">
+                                Крассула
+                            </h2>
+
+                            <p class="plant-latin">
+                                Crassula ovata
+                            </p>
+
+                            <p class="plant-description">
+                                Крассула овата, известная
+                                как денежное дерево, —
+                                долговечный суккулент
+                                с округлыми мясистыми
+                                листьями и постепенно
+                                одревесневающими побегами.
+                            </p>
+                        </div>
+
+                        <img src="images/photos/jade.jpg" alt="Крассула овата" loading="lazy">
+                    </div>
+
+                    <div class="care-facts">
+                        <div class="care-fact">
+                            <small>Освещение</small>
+                            <strong>Яркий свет, некоторое прямое солнце</strong>
+                        </div>
+
+                        <div class="care-fact">
+                            <small>Температура</small>
+                            <strong>17–26 °C</strong>
+                        </div>
+
+                        <div class="care-fact">
+                            <small>Сложность ухода</small>
+                            <strong>Низкая</strong>
+                        </div>
+                    </div>
+
+                    <div class="care-details">
+
+                        <div>
+                            <h3>Освещение</h3>
+                            <p>
+                                Крассула нуждается в большом
+                                количестве света. При хорошем
+                                освещении формируются
+                                короткие междоузлия
+                                и плотная крона.
+                            </p>
+
+                            <p>
+                                На ярком солнце края
+                                некоторых листьев могут
+                                приобретать красноватый
+                                оттенок. К прямым лучам
+                                растение приучают постепенно.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Полив</h3>
+                            <p>
+                                Перед поливом грунт должен
+                                хорошо просохнуть.
+                                Крассула переносит
+                                кратковременную засуху,
+                                но чувствительна
+                                к длительному застою влаги.
+                            </p>
+
+                            <p>
+                                Зимой при прохладном
+                                содержании полив существенно
+                                сокращают. При этом важно
+                                учитывать фактическую
+                                влажность субстрата.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Грунт и горшок</h3>
+                            <p>
+                                Используйте смесь для
+                                суккулентов с хорошей
+                                водопроницаемостью.
+                            </p>
+
+                            <p>
+                                Взрослое растение может
+                                становиться тяжёлым,
+                                поэтому предпочтителен
+                                устойчивый горшок.
+                                Пересаживайте по мере
+                                развития корневой системы.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Формирование кроны</h3>
+                            <p>
+                                Крассула хорошо переносит
+                                формирующую обрезку.
+                                Укорачивание побегов
+                                способствует появлению
+                                новых боковых ветвей.
+                            </p>
+
+                            <p>
+                                Регулярно поворачивайте
+                                горшок для равномерного
+                                освещения кроны.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Размножение</h3>
+                            <p>
+                                Размножать крассулу можно
+                                стеблевыми черенками
+                                и отдельными листьями.
+                            </p>
+
+                            <p>
+                                Срезы перед посадкой
+                                желательно подсушить,
+                                затем поместить черенки
+                                в рыхлый субстрат.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Частые проблемы</h3>
+                            <ul>
+                                <li>Мягкий стебель — возможное загнивание.</li>
+                                <li>Морщинистые листья — недостаток доступной влаги.</li>
+                                <li>Вытянутые побеги — слабое освещение.</li>
+                                <li>Массовое опадение листьев — стресс или ошибки полива.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="care-warning">
+                        <strong>Важно</strong>
+                        <p>
+                            Крассула овата токсична
+                            для кошек и собак.
+                            Размещайте растение
+                            вне доступа домашних животных.
+                        </p>
+                    </div>
+
+                </article>
+            </div>
+        </section>
+
+        <!-- =====================================
+             07. АНТУРИУМ
+        ===================================== -->
+
+        <section class="guide-section">
+            <div class="container wrap">
+
+                <article class="plant-guide" id="anthurium">
+
+                    <div class="plant-header">
+
+                        <div>
+                            <span class="plant-number">
+                                Растение 07 / 10
+                            </span>
+
+                            <h2 class="plant-name">
+                                Антуриум
+                            </h2>
+
+                            <p class="plant-latin">
+                                Anthurium andraeanum
+                            </p>
+
+                            <p class="plant-description">
+                                Антуриум — тропическое растение
+                                с глянцевыми листьями
+                                и яркими декоративными
+                                покрывалами соцветий.
+                                При подходящих условиях
+                                может цвести продолжительное
+                                время.
+                            </p>
+                        </div>
+
+                        <img src="images/photos/anthurium.jpg" alt="Цветущий антуриум" loading="lazy">
+                    </div>
+
+                    <div class="care-facts">
+                        <div class="care-fact">
+                            <small>Освещение</small>
+                            <strong>Яркий рассеянный свет</strong>
+                        </div>
+
+                        <div class="care-fact">
+                            <small>Температура</small>
+                            <strong>18–28 °C</strong>
+                        </div>
+
+                        <div class="care-fact">
+                            <small>Сложность ухода</small>
+                            <strong>Средняя</strong>
+                        </div>
+                    </div>
+
+                    <div class="care-details">
+
+                        <div>
+                            <h3>Освещение и цветение</h3>
+                            <p>
+                                Антуриум предпочитает
+                                яркое освещение без
+                                интенсивного прямого солнца.
+                                При недостатке света
+                                растение может выпускать
+                                листья, но цвести редко.
+                            </p>
+
+                            <p>
+                                Восточное окно или место
+                                рядом с хорошо освещённым
+                                окном часто подходят
+                                для домашнего выращивания.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Полив</h3>
+                            <p>
+                                Поливайте после лёгкого
+                                подсыхания верхнего слоя
+                                субстрата.
+                            </p>
+
+                            <p>
+                                Не допускайте длительного
+                                переувлажнения. Антуриуму
+                                требуется доступ воздуха
+                                к корням, поэтому тяжёлый
+                                постоянно мокрый грунт
+                                ему не подходит.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Влажность воздуха</h3>
+                            <p>
+                                Антуриум предпочитает
+                                умеренно высокую влажность
+                                воздуха, особенно в период
+                                активного роста.
+                            </p>
+
+                            <p>
+                                При сухом воздухе могут
+                                подсыхать кончики листьев.
+                                Увлажнитель помогает
+                                поддерживать более
+                                стабильный микроклимат.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Грунт и пересадка</h3>
+                            <p>
+                                Используйте рыхлую смесь
+                                для ароидных растений.
+                                В её состав могут входить
+                                кора, перлит, кокосовые
+                                компоненты и другие
+                                воздухопроницаемые материалы.
+                            </p>
+
+                            <p>
+                                Пересаживайте аккуратно,
+                                стараясь не повреждать
+                                корни. Новый горшок
+                                не должен быть чрезмерно
+                                большим.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Подкормка и размножение</h3>
+                            <p>
+                                Во время активного роста
+                                можно вносить комплексное
+                                удобрение в рекомендованной
+                                производителем дозировке.
+                            </p>
+
+                            <p>
+                                Взрослые кусты иногда
+                                размножают делением,
+                                сохраняя на каждой части
+                                здоровые корни и точки роста.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Частые проблемы</h3>
+                            <ul>
+                                <li>Отсутствие цветения — часто недостаток света.</li>
+                                <li>Жёлтые листья — возможные ошибки полива.</li>
+                                <li>Сухие кончики — низкая влажность или избыток солей.</li>
+                                <li>Тёмные повреждения — холод, ожоги или проблемы с корнями.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="care-warning">
+                        <strong>Важно</strong>
+                        <p>
+                            Антуриум содержит кристаллы
+                            оксалата кальция.
+                            При поедании растение может
+                            вызвать сильное раздражение
+                            слизистых оболочек.
+                            Держите его подальше
+                            от детей и домашних животных.
+                        </p>
+                    </div>
+
+                </article>
+            </div>
+        </section>
+
+        <!-- =====================================
+             08. ФИАЛКА
+        ===================================== -->
+
+        <section class="guide-section">
+            <div class="container wrap">
+
+                <article class="plant-guide" id="violet">
+
+                    <div class="plant-header">
+
+                        <div>
+                            <span class="plant-number">
+                                Растение 08 / 10
+                            </span>
+
+                            <h2 class="plant-name">
+                                Узамбарская фиалка
+                            </h2>
+
+                            <p class="plant-latin">
+                                Streptocarpus ionanthus
+                            </p>
+
+                            <p class="plant-description">
+                                Узамбарская фиалка —
+                                компактное цветущее
+                                растение с бархатистыми
+                                листьями и нежными цветками.
+                                При правильном уходе
+                                способна цвести многократно
+                                в течение года.
+                            </p>
+                        </div>
+
+                        <img src="images/photos/violet.jpg" alt="Узамбарская фиалка" loading="lazy">
+                    </div>
+
+                    <div class="care-facts">
+                        <div class="care-fact">
+                            <small>Освещение</small>
+                            <strong>Яркий рассеянный свет</strong>
+                        </div>
+
+                        <div class="care-fact">
+                            <small>Температура</small>
+                            <strong>18–24 °C</strong>
+                        </div>
+
+                        <div class="care-fact">
+                            <small>Сложность ухода</small>
+                            <strong>Средняя</strong>
+                        </div>
+                    </div>
+
+                    <div class="care-details">
+
+                        <div>
+                            <h3>Освещение</h3>
+                            <p>
+                                Фиалкам требуется хорошее
+                                рассеянное освещение.
+                                Прямые полуденные лучи
+                                способны повредить
+                                нежные листья.
+                            </p>
+
+                            <p>
+                                При недостатке света
+                                растение может перестать
+                                цвести, а черешки листьев
+                                начнут вытягиваться.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Полив</h3>
+                            <p>
+                                Используйте воду комнатной
+                                температуры. Поливайте
+                                после подсыхания поверхности
+                                грунта, не доводя земляной
+                                ком до сильного пересыхания.
+                            </p>
+
+                            <p>
+                                Можно использовать нижний
+                                полив через поддон,
+                                обязательно сливая
+                                оставшуюся воду.
+                                Не оставляйте воду
+                                в центре розетки.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Грунт и горшок</h3>
+                            <p>
+                                Для фиалок подходит
+                                лёгкий воздухопроницаемый
+                                субстрат.
+                            </p>
+
+                            <p>
+                                Горшок выбирайте
+                                сравнительно небольшой,
+                                поскольку чрезмерный
+                                объём грунта повышает
+                                риск переувлажнения.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Как добиться цветения</h3>
+                            <p>
+                                Обеспечьте стабильную
+                                температуру, достаточный
+                                свет и равномерный полив.
+                            </p>
+
+                            <p>
+                                Удаляйте увядшие цветки
+                                и отмирающие листья.
+                                Подкормки для цветущих
+                                растений применяйте
+                                умеренно.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Размножение</h3>
+                            <p>
+                                Узамбарские фиалки
+                                часто размножают
+                                листовыми черенками.
+                            </p>
+
+                            <p>
+                                Здоровый лист с черешком
+                                укореняют в воде
+                                или лёгком субстрате.
+                                Позже у его основания
+                                появляются молодые
+                                розетки.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Частые проблемы</h3>
+                            <ul>
+                                <li>Нет цветения — недостаток освещения.</li>
+                                <li>Мягкие листья — ошибки полива или повреждение корней.</li>
+                                <li>Пятна — холодная вода, ожоги или повреждения тканей.</li>
+                                <li>Загнивание центра — попадание и застой воды в розетке.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="care-warning">
+                        <strong>На заметку</strong>
+                        <p>
+                            Узамбарская фиалка обычно
+                            считается нетоксичной для
+                            кошек и собак.
+                            При этом лучше не допускать
+                            повреждения растения
+                            домашними животными.
+                        </p>
+                    </div>
+
+                </article>
+            </div>
+        </section>
+
+        <!-- =====================================
+             09. СПАТИФИЛЛУМ
+        ===================================== -->
+
+        <section class="guide-section">
+            <div class="container wrap">
+
+                <article class="plant-guide" id="peace">
+
+                    <div class="plant-header">
+
+                        <div>
+                            <span class="plant-number">
+                                Растение 09 / 10
+                            </span>
+
+                            <h2 class="plant-name">
+                                Спатифиллум
+                            </h2>
+
+                            <p class="plant-latin">
+                                Spathiphyllum
+                            </p>
+
+                            <p class="plant-description">
+                                Спатифиллум — тропическое
+                                декоративное растение
+                                с крупными тёмно-зелёными
+                                листьями и характерными
+                                белыми покрывалами соцветий.
+                                Подходит для помещений
+                                с рассеянным освещением.
+                            </p>
+                        </div>
+
+                        <img src="images/photos/peace.jpg" alt="Спатифиллум" loading="lazy">
+                    </div>
+
+                    <div class="care-facts">
+                        <div class="care-fact">
+                            <small>Освещение</small>
+                            <strong>Рассеянный свет</strong>
+                        </div>
+
+                        <div class="care-fact">
+                            <small>Температура</small>
+                            <strong>18–27 °C</strong>
+                        </div>
+
+                        <div class="care-fact">
+                            <small>Сложность ухода</small>
+                            <strong>Невысокая</strong>
+                        </div>
+                    </div>
+
+                    <div class="care-details">
+
+                        <div>
+                            <h3>Освещение</h3>
+                            <p>
+                                Спатифиллум может
+                                расти при умеренном
+                                освещении, но для
+                                регулярного цветения
+                                ему желательно более
+                                светлое место.
+                            </p>
+
+                            <p>
+                                Лучше всего подходит
+                                яркий рассеянный свет
+                                без прямого жаркого солнца.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Полив</h3>
+                            <p>
+                                Поливайте после лёгкого
+                                подсыхания верхнего слоя
+                                грунта.
+                            </p>
+
+                            <p>
+                                При сильной пересушке
+                                листья могут заметно
+                                поникать. Однако похожая
+                                реакция встречается
+                                и при повреждении корней,
+                                поэтому сначала
+                                проверяйте субстрат.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Влажность воздуха</h3>
+                            <p>
+                                Спатифиллум предпочитает
+                                умеренную или повышенную
+                                влажность воздуха.
+                            </p>
+
+                            <p>
+                                В сухом помещении кончики
+                                листьев могут подсыхать.
+                                Стабильный микроклимат
+                                помогает сохранить
+                                декоративность растения.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Грунт и пересадка</h3>
+                            <p>
+                                Используйте рыхлый
+                                влагоёмкий субстрат
+                                с хорошей аэрацией.
+                            </p>
+
+                            <p>
+                                Пересаживайте по мере
+                                заполнения горшка
+                                корневой системой.
+                                Избегайте повреждения
+                                корней при пересадке.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Подкормка и размножение</h3>
+                            <p>
+                                В период активного роста
+                                применяйте комплексное
+                                удобрение в рекомендованной
+                                дозировке.
+                            </p>
+
+                            <p>
+                                Размножать спатифиллум
+                                удобнее делением взрослого
+                                куста на части с корнями
+                                и точками роста.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Частые проблемы</h3>
+                            <ul>
+                                <li>Поникшие листья — проверьте влажность грунта и корни.</li>
+                                <li>Коричневые кончики — сухой воздух, соли или ошибки полива.</li>
+                                <li>Нет цветения — часто недостаток освещения.</li>
+                                <li>Желтизна — старение листьев либо нарушения ухода.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="care-warning">
+                        <strong>Важно</strong>
+                        <p>
+                            Спатифиллум содержит
+                            нерастворимые оксалаты
+                            кальция и токсичен
+                            при поедании.
+                            Его не следует путать
+                            с настоящими лилиями,
+                            особенно опасными для кошек.
+                        </p>
+                    </div>
+
+                </article>
+            </div>
+        </section>
+
+        <!-- =====================================
+             ОБЩИЕ ПРАВИЛА
+        ===================================== -->
+
+        <section class="guide-extra" id="general-care">
+
+            <div class="container wrap">
+
+                <p class="kicker">
+                    Практика / Основы ухода
+                </p>
+
+                <h2>Шесть правил здорового растения.</h2>
+
+                <div class="row g-4">
+
+                    <div class="col-md-6">
+                        <h3>01. Подберите освещение</h3>
+                        <p>
+                            Прежде чем покупать растение,
+                            определите освещённость места.
+                            Учитывайте ориентацию окна,
+                            расстояние до стекла,
+                            соседние здания и сезон.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h3>02. Проверяйте грунт</h3>
+                        <p>
+                            Не ориентируйтесь только
+                            на количество дней после
+                            предыдущего полива.
+                            Проверяйте влажность грунта
+                            пальцем или деревянной
+                            палочкой на нужной глубине.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h3>03. Используйте дренаж</h3>
+                        <p>
+                            Для большинства комнатных
+                            растений необходим горшок
+                            с отверстиями для стока воды.
+                            Декоративное кашпо без отверстий
+                            лучше использовать как внешнюю
+                            ёмкость.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h3>04. Не перекармливайте</h3>
+                        <p>
+                            Избыток удобрений может
+                            повреждать корни и вызывать
+                            накопление солей в грунте.
+                            Подкармливайте растения
+                            преимущественно в период
+                            активного роста.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h3>05. Регулярно осматривайте</h3>
+                        <p>
+                            Проверяйте нижнюю сторону
+                            листьев, пазухи и молодые
+                            побеги. Раннее обнаружение
+                            вредителей значительно
+                            упрощает борьбу с ними.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h3>06. Избегайте резких перемен</h3>
+                        <p>
+                            Резкое перемещение
+                            из тени на солнце,
+                            сильные сквозняки,
+                            холод и частые пересадки
+                            могут вызывать стресс.
+                            Меняйте условия постепенно.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- =====================================
+             СЕЗОННЫЙ УХОД
+        ===================================== -->
+
+        <section class="guide-section" id="seasonal-care">
+
+            <div class="container wrap">
+
+                <p class="kicker">
+                    Уход / Времена года
+                </p>
+
+                <h2>Как меняется уход в течение года.</h2>
+
+                <div class="care-details">
+
+                    <div>
+                        <h3>Весна</h3>
+
+                        <p>
+                            С увеличением светового дня
+                            у многих растений начинается
+                            более активный рост.
+                        </p>
+
+                        <ul>
+                            <li>Проверяйте состояние корней и необходимость пересадки.</li>
+                            <li>Постепенно возобновляйте подкормки.</li>
+                            <li>Проводите формирующую обрезку подходящих видов.</li>
+                            <li>Проверяйте растения на вредителей.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3>Лето</h3>
+
+                        <p>
+                            При высокой температуре
+                            и ярком освещении грунт
+                            часто просыхает быстрее.
+                        </p>
+
+                        <ul>
+                            <li>Чаще контролируйте влажность субстрата.</li>
+                            <li>Защищайте тенелюбивые растения от полуденного солнца.</li>
+                            <li>Обеспечивайте воздухообмен без сильных сквозняков.</li>
+                            <li>Не оставляйте растения перегреваться за стеклом.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3>Осень</h3>
+
+                        <p>
+                            С уменьшением светового дня
+                            у многих растений замедляется
+                            рост и снижается потребность
+                            в воде.
+                        </p>
+
+                        <ul>
+                            <li>Постепенно сокращайте подкормки.</li>
+                            <li>Пересматривайте режим полива.</li>
+                            <li>Убирайте растения от холодных окон.</li>
+                            <li>При необходимости добавляйте искусственное освещение.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3>Зима</h3>
+
+                        <p>
+                            Зимой условия особенно
+                            зависят от температуры,
+                            отопления и дополнительной
+                            подсветки.
+                        </p>
+
+                        <ul>
+                            <li>Не поливайте по летнему расписанию.</li>
+                            <li>Защищайте корни от переохлаждения.</li>
+                            <li>Следите за влажностью воздуха.</li>
+                            <li>Не размещайте растения вплотную к радиаторам.</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="guide-note">
+                    <strong>Помните</strong>
+                    <p>
+                        В тёплой комнате с фитолампой растение
+                        может активно расти даже зимой.
+                        Поэтому состояние растения и реальные
+                        условия важнее календарного сезона.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- =====================================
+             ДИАГНОСТИКА ПРОБЛЕМ
+        ===================================== -->
+
+        <section class="guide-extra" id="problems">
+
+            <div class="container wrap">
+
+                <p class="kicker">
+                    Диагностика / Проблемы
+                </p>
+
+                <h2>Что пытается сказать растение?</h2>
+
+                <p>
+                    Внешний вид листьев и побегов
+                    помогает заметить проблемы,
+                    но один симптом не всегда
+                    указывает на единственную причину.
+                    Проверяйте сразу несколько условий.
+                </p>
+
+                <div class="table-scroll">
+                    <table class="guide-table">
+
+                        <thead>
+                            <tr>
+                                <th>Симптом</th>
+                                <th>Возможные причины</th>
+                                <th>Что проверить</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Желтеют листья</td>
+                                <td>Перелив, старение листа, недостаток света или питания</td>
+                                <td>Влажность грунта, корни, условия освещения</td>
+                            </tr>
+
+                            <tr>
+                                <td>Сохнут кончики</td>
+                                <td>Сухой воздух, пересушка, избыток солей</td>
+                                <td>Влажность воздуха, качество воды, подкормки</td>
+                            </tr>
+
+                            <tr>
+                                <td>Растение вытягивается</td>
+                                <td>Недостаток освещения</td>
+                                <td>Положение относительно окна и длительность освещения</td>
+                            </tr>
+
+                            <tr>
+                                <td>Листья становятся мягкими</td>
+                                <td>Дефицит воды или повреждение корней</td>
+                                <td>Влажность субстрата и состояние корневой системы</td>
+                            </tr>
+
+                            <tr>
+                                <td>Появляется паутина</td>
+                                <td>Возможное поражение паутинным клещом</td>
+                                <td>Нижнюю сторону листьев, наличие мелких вредителей</td>
+                            </tr>
+
+                            <tr>
+                                <td>Белые ватные скопления</td>
+                                <td>Возможный мучнистый червец</td>
+                                <td>Пазухи листьев и молодые побеги</td>
+                            </tr>
+
+                            <tr>
+                                <td>Не появляются цветы</td>
+                                <td>Недостаток света, неподходящие условия или незрелость растения</td>
+                                <td>Освещение, питание, температурный режим</td>
+                            </tr>
+
+                            <tr>
+                                <td>Появляется неприятный запах от грунта</td>
+                                <td>Переувлажнение и недостаток воздуха у корней</td>
+                                <td>Дренаж, состояние субстрата и корней</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+
+                <h3>Если вы обнаружили вредителей</h3>
+
+                <p>
+                    Изолируйте поражённое растение
+                    от остальной коллекции.
+                    Осмотрите листья с обеих сторон,
+                    стебли и точки роста.
+                    Удалите вредителей безопасным
+                    для конкретного растения способом
+                    и определите их вид.
+                </p>
+
+                <p>
+                    При необходимости используйте
+                    средство, разрешённое для комнатных
+                    растений и подходящее против
+                    обнаруженного вредителя.
+                    Строго следуйте инструкции
+                    производителя и соблюдайте
+                    меры предосторожности.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- =====================================
+             ЧАСТЫЕ ВОПРОСЫ
+        ===================================== -->
+
+        <section class="guide-section" id="faq">
+
+            <div class="container wrap">
+
+                <p class="kicker">
+                    Вопросы / Ответы
+                </p>
+
+                <h2>Часто спрашивают.</h2>
+
+                <div class="accordion" id="care-faq">
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                                Как понять, что пора поливать растение?
+                            </button>
+                        </h3>
+
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#care-faq">
+
+                            <div class="accordion-body">
+                                Проверьте влажность субстрата
+                                на глубине, подходящей
+                                для конкретного вида.
+                                Суккулентам обычно необходимо
+                                полное просыхание грунта,
+                                тогда как папоротникам
+                                требуется более равномерная
+                                влажность. Вес горшка
+                                также может помогать
+                                оценить количество воды.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                                Нужно ли опрыскивать комнатные растения?
+                            </button>
+                        </h3>
+
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#care-faq">
+
+                            <div class="accordion-body">
+                                Опрыскивание не является
+                                обязательной процедурой
+                                для большинства комнатных
+                                растений. Оно лишь ненадолго
+                                повышает локальную влажность.
+                                Для видов, предпочитающих
+                                влажный воздух, обычно
+                                эффективнее увлажнитель.
+                                Не допускайте застоя воды
+                                на чувствительных листьях
+                                и внутри розеток.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                                Когда лучше пересаживать растения?
+                            </button>
+                        </h3>
+
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#care-faq">
+
+                            <div class="accordion-body">
+                                Плановую пересадку многих
+                                комнатных растений удобнее
+                                проводить в период активного
+                                роста, обычно весной.
+                                Ориентируйтесь на состояние
+                                корней, грунта и скорость
+                                его высыхания. Не следует
+                                пересаживать растение
+                                только потому, что прошёл
+                                определённый срок.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                                Нужны ли удобрения зимой?
+                            </button>
+                        </h3>
+
+                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#care-faq">
+
+                            <div class="accordion-body">
+                                Если растение зимой почти
+                                не растёт из-за недостатка
+                                света, подкормки обычно
+                                сокращают или временно
+                                прекращают. При хорошем
+                                искусственном освещении
+                                и активном росте питание
+                                может сохраняться,
+                                но дозировку необходимо
+                                подбирать осторожно.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                                Можно ли выращивать растения без солнечного окна?
+                            </button>
+                        </h3>
+
+                        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#care-faq">
+
+                            <div class="accordion-body">
+                                Да, подходящее искусственное
+                                освещение может обеспечить
+                                растения светом для роста.
+                                Важно учитывать мощность,
+                                расстояние до листьев
+                                и продолжительность
+                                освещения. Обычное
+                                комнатное освещение
+                                не всегда достаточно.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">
+                                Какие растения подойдут начинающим?
+                            </button>
+                        </h3>
+
+                        <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#care-faq">
+
+                            <div class="accordion-body">
+                                Для начинающих часто подходят
+                                эпипремнум, фикус эластика
+                                и крассула. При очень хорошем
+                                освещении можно рассмотреть
+                                алоэ. Выбирайте вид не
+                                только по сложности ухода,
+                                но и по реальным условиям
+                                своего помещения.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq7" aria-expanded="false" aria-controls="faq7">
+                                Что делать сразу после покупки растения?
+                            </button>
+                        </h3>
+
+                        <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#care-faq">
+
+                            <div class="accordion-body">
+                                Осмотрите растение на наличие
+                                вредителей, проверьте
+                                влажность грунта и выберите
+                                подходящее место.
+                                Новое растение желательно
+                                временно держать отдельно
+                                от основной коллекции.
+                                Не спешите одновременно
+                                пересаживать, удобрять
+                                и обрезать его без
+                                необходимости.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <a href="#inside" class="guide-footer-link">
+                    Вернуться к списку растений ↑
+                </a>
+
+            </div>
+        </section>
+
+        <!-- ЗАВЕРШЕНИЕ -->
+        <section class="screen journal">
+
+            <div class="container wrap spread">
+
+                <div>
+                    <p class="kicker">
+                        Зеленая комната / Продолжение
+                    </p>
+
+                    <h2>Пусть растёт.</h2>
+
+                    <p class="lede">
+                        Теперь вы знаете, с чего начинать
+                        уход за комнатными растениями.
+                        Выберите подходящий вид,
+                        создайте для него комфортные
+                        условия и наблюдайте,
+                        как постепенно меняется
+                        ваше пространство.
+                    </p>
+
+                    <a class="btn btn-success" href="catalog.html">
+                        Перейти в каталог
+                        <span aria-hidden="true">↗</span>
+                    </a>
+                </div>
+
+                <figure class="folio">
+                    <img src="images/photos/pothos.jpg" alt="Комнатное растение эпипремнум" class="portrait"
+                        loading="lazy">
+
+                    <figcaption>
+                        BOTANICAL COLLECTION
+                        <b>ЗК / 2026</b>
+                    </figcaption>
+                </figure>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Общий футер создаётся через main.js -->
+    <footer class="foot"></footer>
+
+</body>
+
+</html>
