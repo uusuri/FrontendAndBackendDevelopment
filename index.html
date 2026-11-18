@@ -1,2 +1,413 @@
 <!doctype html>
-<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Магазин комнатных растений — Зеленая комната</title><meta name="description" content="Магазин комнатных растений. Ботаническая коллекция магазина Зеленая комната."><link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css"><link rel="stylesheet" href="css/custom.css"><script defer src="vendor/bootstrap/bootstrap.bundle.min.js"></script><script defer src="js/main.js"></script></head><body id="top"><header class="site-header sticky-top"><nav class="navbar navbar-expand-lg container wrap" aria-label="Основная навигация"><a class="navbar-brand" href="index.html"><span class="mark" aria-hidden="true">✳</span> Зеленая комната</a><button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-label="Меню" aria-expanded="false" aria-controls="main-nav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="main-nav"><ul class="navbar-nav mx-lg-auto"><li><a class="nav-link" aria-current="page" href="index.html">Главная</a></li><li><a class="nav-link" href="catalog.html">Каталог</a></li><li><a class="nav-link" href="category.html">Лиственные</a></li><li><a class="nav-link" href="guide.html">Гид</a></li><li><a class="nav-link" href="about.html">О нас</a></li><li><a class="nav-link" href="contacts.html">Контакты</a></li></ul><a class="btn btn-success" href="order.html">Заявка <span aria-hidden="true">↗</span></a></div></nav></header><main><section class="screen opening"><img src="images/photos/fern.jpg" alt="Нефролепис" class="portrait"><div class="container wrap hero-text"><p class="kicker">Ботанический магазин　 /　 Коллекция 01</p><h1>Зеленая<br><em>комната.</em></h1><p>Девять растений для дома. Выбирайте по свету, размеру и тому, как вам нравится жить.</p><a class="btn btn-success" href="catalog.html">Открыть каталог <span aria-hidden="true">↗</span></a></div><span class="stamp">01 / 03　 ↓</span></section><section id="inside" class="screen second "><div class="container wrap"><p class="kicker">02 / 03　　Из коллекции</p><h2>Три характера</h2><div class="row g-3 deck" tabindex="0" aria-label="Карточки растений"><div class="col-12 col-md-6 col-lg-4"><article class="card h-100 product-card product-card--featured"><div class="plate"><img alt="Фикус эластика" class="card-img-top" height="360" loading="lazy" src="images/photos/ficus.jpg" width="500"/><span class="badge">Выбор редакции</span></div><div class="card-body d-flex flex-column"><small>Ficus elastica</small><h3 class="card-title"><a href="product.html#ficus">Фикус эластика</a></h3><p>Крупные плотные листья с глянцевой поверхностью.</p><div class="mt-auto"><p class="price">2 490 ₽</p><button class="btn btn-success" data-bs-target="#reserve" data-bs-toggle="modal" data-product="ficus" type="button">Выбрать растение</button></div></div></article></div><div class="col-12 col-md-6 col-lg-4"><article class="card h-100 product-card product-card--discount"><div class="plate"><img alt="Эхеверия" class="card-img-top" height="360" loading="lazy" src="images/photos/echeveria.jpg" width="500"/><span class="badge">Скидка</span></div><div class="card-body d-flex flex-column"><small>Echeveria elegans</small><h3 class="card-title"><a href="product.html#echeveria">Эхеверия</a></h3><p>Компактная сизая розетка для солнечного подоконника.</p><div class="mt-auto"><p class="price"><del>990 ₽</del> 790 ₽</p><button class="btn btn-success" data-bs-target="#reserve" data-bs-toggle="modal" data-product="echeveria" type="button">Выбрать растение</button></div></div></article></div><div class="col-12 col-md-6 col-lg-4"><article class="card h-100 product-card product-card--new"><div class="plate"><img alt="Спатифиллум" class="card-img-top" height="360" loading="lazy" src="images/photos/peace.jpg" width="500"/><span class="badge">Новинка</span></div><div class="card-body d-flex flex-column"><small>Spathiphyllum</small><h3 class="card-title"><a href="product.html#peace">Спатифиллум</a></h3><p>Светлые покрывала возвышаются над вытянутыми листьями.</p><div class="mt-auto"><p class="price">1 590 ₽</p><button class="btn btn-success" data-bs-target="#reserve" data-bs-toggle="modal" data-product="peace" type="button">Выбрать растение</button></div></div></article></div></div></div></section><section class="screen journal" id="advantages"><div class="container wrap spread"><figure class="folio"><img src="images/photos/aloe.jpg" alt="Алоэ вера" class="portrait"><figcaption>Полевые заметки <b>№ 03</b></figcaption></figure><div><p class="kicker">03 / 03　　Полевой гид</p><h2>Сначала — свет.</h2><p class="lede">У окна или в глубине комнаты? Начните с места. В гиде разбираем освещение, полив и выбор кашпо.</p><a class="btn btn-success" href="guide.html">Читать гид <span aria-hidden="true">↗</span></a></div></div></section></main><footer class="foot"><div class="container wrap"><b>✳ Зеленая комната</b><a href="about.html#inside">Авторы фото</a><a href="#top">Наверх ↑</a></div></footer><div aria-labelledby="reserve-title" class="modal fade" id="reserve" tabindex="-1"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h2 class="modal-title fs-4" id="reserve-title">Ваша заявка</h2><button aria-label="Закрыть" class="btn-close" data-bs-dismiss="modal" type="button"></button></div><div class="modal-body"><p class="mb-0">Вы выбрали: <strong id="chosen"></strong>.</p></div><div class="modal-footer"><button class="btn btn-outline-success" data-bs-dismiss="modal">Назад</button><a class="btn btn-success" href="order.html" id="continue">Оформить заявку</a></div></div></div></div></body></html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Магазин комнатных растений — Зеленая комната</title>
+    <meta name="description"
+        content="Зеленая комната — магазин комнатных растений для дома и офиса. Подберите растения и узнайте всё об уходе.">
+
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <script defer src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script defer src="js/main.js"></script>
+
+    <style>
+        /* Расширенный футер */
+        .foot {
+            background: #10271e;
+            color: #f3f0df;
+            padding: 56px 0 0;
+        }
+
+        .foot>.wrap.footer-layout {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1.3fr;
+            align-items: start;
+            gap: 40px;
+            min-height: 0;
+        }
+
+        .footer-brand {
+            font-family: Georgia, serif;
+            font-size: 1.7rem;
+            font-weight: bold;
+            letter-spacing: -0.04em;
+            margin-bottom: 16px;
+        }
+
+        .footer-description {
+            font-size: 0.9rem;
+            line-height: 1.7;
+            opacity: 0.8;
+            max-width: 280px;
+        }
+
+        .footer-heading {
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 20px;
+            color: #d9ed8b;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .footer-links a,
+        .footer-contact a {
+            color: inherit;
+            text-decoration: none;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            opacity: 0.85;
+            transition: opacity 0.2s;
+        }
+
+        .footer-links a:hover,
+        .footer-contact a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+        .footer-contact {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .footer-contact-item {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .footer-label {
+            font-size: 0.75rem;
+            opacity: 0.55;
+        }
+
+        .footer-contact-item span:not(.footer-label) {
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+            margin-top: 48px;
+            padding: 22px 0;
+        }
+
+        .footer-bottom-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .footer-bottom p {
+            margin: 0;
+            font-size: 0.8rem;
+            opacity: 0.65;
+        }
+
+        .footer-bottom-links {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .footer-bottom-links a {
+            font-size: 0.8rem;
+            color: inherit;
+            text-decoration: none;
+            opacity: 0.7;
+        }
+
+        .footer-bottom-links a:hover {
+            opacity: 1;
+        }
+
+        @media (max-width: 991px) {
+            .foot>.wrap.footer-layout {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 36px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .foot {
+                padding-top: 36px;
+            }
+
+            .foot>.wrap.footer-layout {
+                grid-template-columns: 1fr 1fr;
+                gap: 32px 20px;
+            }
+
+            .footer-brand {
+                font-size: 1.4rem;
+            }
+
+            .footer-description {
+                font-size: 0.85rem;
+            }
+
+            .footer-bottom-inner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        @media (max-width: 380px) {
+            .foot>.wrap.footer-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body id="top">
+
+    <!-- Шапка -->
+    <header class="site-header sticky-top">
+        <nav class="navbar navbar-expand-lg container wrap" aria-label="Основная навигация">
+
+            <a class="navbar-brand" href="index.html">
+                <span class="mark" aria-hidden="true">✳</span>
+                Зеленая комната
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                aria-label="Меню" aria-expanded="false" aria-controls="main-nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="main-nav">
+                <ul class="navbar-nav mx-lg-auto">
+                    <li>
+                        <a class="nav-link" aria-current="page" href="index.html">Главная</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="catalog.html">Каталог</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="guide.html">Гид</a>
+                    </li>
+                     <li>
+                        <a class="nav-link" href="diagnostic.html">
+                            Диагностика
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="about.html">О нас</a>
+                    </li>
+                     <li>
+                        <a class="nav-link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Главный экран -->
+        <section class="screen opening">
+            <img src="images/photos/fern.jpg" alt="Нефролепис" class="portrait">
+
+            <div class="container wrap hero-text">
+                <p class="kicker">
+                    Ботанический магазин / Коллекция 01
+                </p>
+
+                <h1>
+                    Зеленая<br>
+                    <em>комната.</em>
+                </h1>
+
+                <p>
+                    Комнатные растения для дома и офиса.
+                    Выбирайте по освещению, размеру
+                    и особенностям ухода.
+                </p>
+
+                <a class="btn btn-success" href="catalog.html">
+                    Открыть каталог
+                    <span aria-hidden="true">↗</span>
+                </a>
+            </div>
+
+            <span class="stamp">01 / 03 ↓</span>
+        </section>
+
+        <!-- Коллекция -->
+        <section id="inside" class="screen second">
+            <div class="container wrap">
+
+                <p class="kicker">02 / 03 — Из коллекции</p>
+                <h2>Три характера</h2>
+
+                <div class="row g-3 deck" aria-label="Карточки растений">
+
+                    <!-- Фикус -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="card h-100 product-card product-card--featured">
+
+                            <div class="plate">
+                                <img src="images/photos/ficus.jpg" alt="Фикус эластика" class="card-img-top" width="500"
+                                    height="360" loading="lazy">
+
+                                <span class="badge">
+                                    Выбор редакции
+                                </span>
+                            </div>
+
+                            <div class="card-body d-flex flex-column">
+                                <small>Ficus elastica</small>
+
+                                <h3 class="card-title">
+                                    <a href="product.html#ficus">
+                                        Фикус эластика
+                                    </a>
+                                </h3>
+
+                                <p>
+                                    Крупные плотные листья
+                                    с глянцевой поверхностью.
+                                </p>
+
+                                <div class="mt-auto">
+                                    <p class="price">2 490 ₽</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Эхеверия -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="card h-100 product-card product-card--discount">
+
+                            <div class="plate">
+                                <img src="images/photos/echeveria.jpg" alt="Эхеверия" class="card-img-top" width="500"
+                                    height="360" loading="lazy">
+
+                                <span class="badge">Скидка</span>
+                            </div>
+
+                            <div class="card-body d-flex flex-column">
+                                <small>Echeveria elegans</small>
+
+                                <h3 class="card-title">
+                                    <a href="product.html#echeveria">
+                                        Эхеверия
+                                    </a>
+                                </h3>
+
+                                <p>
+                                    Компактная сизая розетка
+                                    для солнечного подоконника.
+                                </p>
+
+                                <div class="mt-auto">
+                                    <p class="price">
+                                        <del>990 ₽</del> 790 ₽
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Спатифиллум -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="card h-100 product-card product-card--new">
+
+                            <div class="plate">
+                                <img src="images/photos/peace.jpg" alt="Спатифиллум" class="card-img-top" width="500"
+                                    height="360" loading="lazy">
+
+                                <span class="badge">Новинка</span>
+                            </div>
+
+                            <div class="card-body d-flex flex-column">
+                                <small>Spathiphyllum</small>
+
+                                <h3 class="card-title">
+                                    <a href="product.html#peace">
+                                        Спатифиллум
+                                    </a>
+                                </h3>
+
+                                <p>
+                                    Светлые покрывала возвышаются
+                                    над вытянутыми листьями.
+                                </p>
+
+                                <div class="mt-auto">
+                                    <p class="price">1 590 ₽</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Гид -->
+        <section class="screen journal" id="advantages">
+            <div class="container wrap spread">
+
+                <figure class="folio">
+                    <img src="images/photos/aloe.jpg" alt="Алоэ вера" class="portrait">
+
+                    <figcaption>
+                        Полевые заметки
+                        <b>№ 03</b>
+                    </figcaption>
+                </figure>
+
+                <div>
+                    <p class="kicker">
+                        03 / 03 — Полевой гид
+                    </p>
+
+                    <h2>Сначала — свет.</h2>
+
+                    <p class="lede">
+                        У окна или в глубине комнаты?
+                        Начните с места, где будет жить растение.
+                        В нашем гиде разбираем освещение,
+                        полив, влажность воздуха и основные
+                        правила ухода за комнатными растениями.
+                    </p>
+
+                    <p>
+                        Узнайте, как подобрать подходящие условия
+                        для разных видов и сохранить растения
+                        здоровыми и красивыми.
+                    </p>
+
+                    <a class="btn btn-success" href="guide.html">
+                        Читать гид
+                        <span aria-hidden="true">↗</span>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="foot"></footer>
+</body>
+
+</html>
