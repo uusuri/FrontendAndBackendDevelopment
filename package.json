@@ -1,0 +1,28 @@
+{
+  "name": "study-react-work",
+  "version": "1.0.0",
+  "description": "Проект выполняется в рамках дисциплины «Фронтенд и бэкенд разработка».",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "vite build",
+    "dev": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uusuri/FrontendAndBackendDevelopment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/uusuri/FrontendAndBackendDevelopment/issues"
+  },
+  "homepage": "https://github.com/uusuri/FrontendAndBackendDevelopment#readme",
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "vite": "^8.3.8"
+  }
+}
