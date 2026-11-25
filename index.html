@@ -1,413 +1,178 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-
-    <title>Магазин комнатных растений — Зеленая комната</title>
-    <meta name="description"
-        content="Зеленая комната — магазин комнатных растений для дома и офиса. Подберите растения и узнайте всё об уходе.">
-
-    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="css/custom.css">
-
-    <script defer src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
-    <script defer src="js/main.js"></script>
-
-    <style>
-        /* Расширенный футер */
-        .foot {
-            background: #10271e;
-            color: #f3f0df;
-            padding: 56px 0 0;
-        }
-
-        .foot>.wrap.footer-layout {
-            display: grid;
-            grid-template-columns: 1.5fr 1fr 1fr 1.3fr;
-            align-items: start;
-            gap: 40px;
-            min-height: 0;
-        }
-
-        .footer-brand {
-            font-family: Georgia, serif;
-            font-size: 1.7rem;
-            font-weight: bold;
-            letter-spacing: -0.04em;
-            margin-bottom: 16px;
-        }
-
-        .footer-description {
-            font-size: 0.9rem;
-            line-height: 1.7;
-            opacity: 0.8;
-            max-width: 280px;
-        }
-
-        .footer-heading {
-            font-size: 0.85rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            margin-bottom: 20px;
-            color: #d9ed8b;
-        }
-
-        .footer-links {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
-        .footer-links a,
-        .footer-contact a {
-            color: inherit;
-            text-decoration: none;
-            font-size: 0.9rem;
-            line-height: 1.5;
-            opacity: 0.85;
-            transition: opacity 0.2s;
-        }
-
-        .footer-links a:hover,
-        .footer-contact a:hover {
-            opacity: 1;
-            text-decoration: underline;
-        }
-
-        .footer-contact {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-        }
-
-        .footer-contact-item {
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-        }
-
-        .footer-label {
-            font-size: 0.75rem;
-            opacity: 0.55;
-        }
-
-        .footer-contact-item span:not(.footer-label) {
-            font-size: 0.9rem;
-            line-height: 1.5;
-        }
-
-        .footer-bottom {
-            border-top: 1px solid rgba(255, 255, 255, 0.15);
-            margin-top: 48px;
-            padding: 22px 0;
-        }
-
-        .footer-bottom-inner {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-
-        .footer-bottom p {
-            margin: 0;
-            font-size: 0.8rem;
-            opacity: 0.65;
-        }
-
-        .footer-bottom-links {
-            display: flex;
-            gap: 24px;
-            flex-wrap: wrap;
-        }
-
-        .footer-bottom-links a {
-            font-size: 0.8rem;
-            color: inherit;
-            text-decoration: none;
-            opacity: 0.7;
-        }
-
-        .footer-bottom-links a:hover {
-            opacity: 1;
-        }
-
-        @media (max-width: 991px) {
-            .foot>.wrap.footer-layout {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 36px;
-            }
-        }
-
-        @media (max-width: 600px) {
-            .foot {
-                padding-top: 36px;
-            }
-
-            .foot>.wrap.footer-layout {
-                grid-template-columns: 1fr 1fr;
-                gap: 32px 20px;
-            }
-
-            .footer-brand {
-                font-size: 1.4rem;
-            }
-
-            .footer-description {
-                font-size: 0.85rem;
-            }
-
-            .footer-bottom-inner {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-        }
-
-        @media (max-width: 380px) {
-            .foot>.wrap.footer-layout {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Study: канцелярия, освещение и аксессуары для удобного рабочего места.">
+  <title>Вещи для рабочего стола — Study</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Вещи для рабочего стола — Study">
+  <meta property="og:description" content="Study: канцелярия, освещение и аксессуары для удобного рабочего места.">
+  <meta property="og:image" content="https://uusuri.github.io/FrontendAndBackendDevelopment/images/preview.gif">
 </head>
-
 <body id="top">
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="site-header__logo" href="index.html">Study<span class="site-header__tagline">вещи для рабочего стола</span></a>
+    <nav class="site-nav" aria-label="Основная навигация"><ul class="site-nav__list"><li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="index.html" aria-current="page">Главная</a></li>
+<li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+<li class="site-nav__item"><a class="site-nav__link" href="category.html">Канцелярия</a></li>
+<li class="site-nav__item"><a class="site-nav__link" href="about.html">О проекте</a></li>
+<li class="site-nav__item"><a class="site-nav__link" href="guide.html">Как выбрать</a></li>
+<li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li></ul></nav>
+    <a class="button button--secondary site-header__action" href="order.html">Оставить заявку</a>
+  </div>
+</header>
+<main class="site-main">
+<p class="success-message" id="success-message" role="status" hidden>Заявка проверена. Это учебная форма: данные на сервер не отправлялись.</p>
+<section class="hero">
+  <div class="hero__content"><p class="hero__eyebrow">ДЛЯ УЧЁБЫ И РАБОТЫ</p><h1 class="hero__title">Место для<br>хороших идей.</h1><p class="hero__text">Бумага для мыслей, свет для вечерних задач и порядок на столе. Соберите рабочее место, за которым приятно начинать.</p><a class="button button--primary hero__button" href="catalog.html">Смотреть каталог <span aria-hidden="true">→</span></a><a class="hero__link" href="#popular">Начать с популярных товаров</a></div>
+  <figure class="hero__visual"><img class="hero__image" src="images/notebook.svg" alt="Синий блокнот Study в твёрдой обложке" width="500" height="360"><figcaption class="hero__caption"><span>Блокнот Study / A5</span><span>1 000 руб.</span></figcaption></figure>
+</section>
+<section class="section"><div class="section__heading"><div><p class="section__eyebrow">ТРИ КАТЕГОРИИ</p><h2 class="section__title">Что нужно вашему столу?</h2></div><a class="section__link" href="catalog.html">Весь каталог →</a></div><div class="category-grid"><a class="category-card" href="category.html"><span class="category-card__number">01</span><h3 class="category-card__title">Канцелярия</h3><p class="category-card__text">Для мыслей на бумаге</p><span class="category-card__count">3 товара <span aria-hidden="true">↗</span></span></a><a class="category-card" href="catalog.html#lighting"><span class="category-card__number">02</span><h3 class="category-card__title">Освещение</h3><p class="category-card__text">Свет для вашего ритма</p><span class="category-card__count">3 товара <span aria-hidden="true">↗</span></span></a><a class="category-card" href="catalog.html#organization"><span class="category-card__number">03</span><h3 class="category-card__title">Организация стола</h3><p class="category-card__text">Всё на своём месте</p><span class="category-card__count">3 товара <span aria-hidden="true">↗</span></span></a></div></section>
+<section class="section" id="popular"><div class="section__heading"><div><p class="section__eyebrow">С ЧЕГО НАЧАТЬ</p><h2 class="section__title">Популярные товары</h2></div><span class="section__meta">Бумага · Свет · Порядок</span></div><div class="products-grid"><article class="product-card product-card--featured" data-item="notebook">
+  <div class="product-card__media"><img class="product-card__image" src="images/notebook.svg" alt="Блокнот Study — иллюстрация товара" width="500" height="360" loading="lazy" decoding="async"><span class="product-card__badge">Выбор Study</span></div>
+  <p class="product-card__category">Канцелярия</p>
+  <h3 class="product-card__title"><a class="product-card__title-link" href="product.html#notebook">Блокнот Study</a></h3>
+  <p class="product-card__description">Твёрдая обложка, 120 листов и место для каждой новой идеи.</p>
+  <p class="product-card__price">1 000 руб.</p>
+  <button class="button button--primary product-card__button" type="button" data-product="Блокнот Study">Заказать</button>
+</article>
+<article class="product-card product-card--discount" data-item="lamp">
+  <div class="product-card__media"><img class="product-card__image" src="images/lamp.svg" alt="Настольная лампа Study — иллюстрация товара" width="500" height="360" loading="lazy" decoding="async"><span class="product-card__badge">Скидка</span></div>
+  <p class="product-card__category">Освещение</p>
+  <h3 class="product-card__title"><a class="product-card__title-link" href="product.html#lamp">Настольная лампа Study</a></h3>
+  <p class="product-card__description">Поворотный плафон направляет свет на рабочую поверхность.</p>
+  <p class="product-card__price"><del class="product-card__old-price" aria-label="Цена до скидки">1 800 руб.</del> 1 500 руб.</p>
+  <button class="button button--primary product-card__button" type="button" data-product="Настольная лампа Study">Заказать</button>
+</article>
+<article class="product-card product-card--featured" data-item="stand">
+  <div class="product-card__media"><img class="product-card__image" src="images/stand.svg" alt="Подставка для ноутбука — иллюстрация товара" width="500" height="360" loading="lazy" decoding="async"><span class="product-card__badge">Выбор Study</span></div>
+  <p class="product-card__category">Организация стола</p>
+  <h3 class="product-card__title"><a class="product-card__title-link" href="product.html#stand">Подставка для ноутбука</a></h3>
+  <p class="product-card__description">Наклонная опора для ноутбука и свободного места на столе.</p>
+  <p class="product-card__price">2 000 руб.</p>
+  <button class="button button--primary product-card__button" type="button" data-product="Подставка для ноутбука">Заказать</button>
+</article></div></section>
+<section class="section" id="advantages"><div class="section__heading"><div><p class="section__eyebrow">НАШ ПОДХОД</p><h2 class="section__title">Меньше лишнего. Больше места для дела.</h2></div></div><ul class="advantages-list"><li class="advantages-list__item"><strong class="advantages-list__title">Понятный выбор</strong>Три категории помогают быстро найти нужную вещь.</li><li class="advantages-list__item"><strong class="advantages-list__title">Детали до покупки</strong>Размеры, материалы и характеристики собраны рядом с товаром.</li><li class="advantages-list__item"><strong class="advantages-list__title">Один рабочий ритм</strong>Предметы для записей, освещения и организации сочетаются между собой.</li></ul></section>
+<aside class="aside-info"><div><p class="aside-info__eyebrow">НЕ ЗНАЕТЕ, С ЧЕГО НАЧАТЬ?</p><h2 class="aside-info__title">Соберите свой рабочий набор</h2><p class="aside-info__text">Небольшой гид по выбору блокнота, света и аксессуаров.</p></div><a class="button button--secondary" href="guide.html">Открыть гид →</a></aside>
+</main>
+<footer class="site-footer" id="contacts">
+  <div class="site-footer__inner">
+    <div><a class="site-footer__logo" href="index.html">Study</a><p class="site-footer__text">Вещи для рабочего стола.<br>Учебный интернет-магазин, 2026.</p></div>
+    <nav class="site-footer__nav" aria-label="Дополнительная навигация">
+      <a class="site-footer__link" href="product.html">Описание товаров</a>
+      <a class="site-footer__link" href="order.html">Оформление заявки</a>
+      <a class="site-footer__link" href="contacts.html">Контактная информация</a>
+    </nav>
+    <nav class="site-footer__nav" aria-label="Разделы главной страницы">
+      <a class="site-footer__link" href="index.html#advantages">Наш подход</a>
+      <a class="site-footer__link" href="index.html#popular">Популярные товары</a>
+      <a class="site-footer__link" href="index.html#contacts">Обратная связь</a>
+    </nav>
+  </div>
+  <p class="site-footer__course">Фронтенд и бэкенд разработка · РТУ МИРЭА</p>
+</footer>
+<dialog class="order-dialog" id="order-dialog" aria-labelledby="order-dialog-title">
+    <h2 class="order-dialog__title" id="order-dialog-title">Оформление заявки</h2>
 
-    <!-- Шапка -->
-    <header class="site-header sticky-top">
-        <nav class="navbar navbar-expand-lg container wrap" aria-label="Основная навигация">
+    <form class="order-form" id="order-form" action="#" method="post" novalidate>
+      <input id="selected-product" name="selected-product" type="hidden">
 
-            <a class="navbar-brand" href="index.html">
-                <span class="mark" aria-hidden="true">✳</span>
-                Зеленая комната
-            </a>
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-name">Имя</label>
+        <input
+          class="order-form__input"
+          id="order-name"
+          name="name"
+          type="text"
+          placeholder="Введите ваше имя"
+          minlength="2"
+          autocomplete="given-name"
+          required
+        >
+      </div>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
-                aria-label="Меню" aria-expanded="false" aria-controls="main-nav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-email">E-mail</label>
+        <input
+          class="order-form__input"
+          id="order-email"
+          name="email"
+          type="email"
+          placeholder="example@mail.ru"
+          autocomplete="email"
+          required
+        >
+      </div>
 
-            <div class="collapse navbar-collapse" id="main-nav">
-                <ul class="navbar-nav mx-lg-auto">
-                    <li>
-                        <a class="nav-link" aria-current="page" href="index.html">Главная</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="catalog.html">Каталог</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="guide.html">Гид</a>
-                    </li>
-                     <li>
-                        <a class="nav-link" href="diagnostic.html">
-                            Диагностика
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="about.html">О нас</a>
-                    </li>
-                     <li>
-                        <a class="nav-link" href="contacts.html">Контакты</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-phone">Телефон</label>
+        <input
+          class="order-form__input"
+          id="order-phone"
+          name="phone"
+          type="tel"
+          inputmode="tel"
+          placeholder="+7 (900) 000-00-00"
+          pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$"
+          required
+        >
+        <small class="order-form__hint">Формат: +7 (900) 000-00-00</small>
+      </div>
 
-    <main>
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-date">Дата связи</label>
+        <input
+          class="order-form__input"
+          id="order-date"
+          name="date"
+          type="date"
+        >
+      </div>
 
-        <!-- Главный экран -->
-        <section class="screen opening">
-            <img src="images/photos/fern.jpg" alt="Нефролепис" class="portrait">
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-topic">Тема заявки</label>
+        <select class="order-form__select" id="order-topic" name="topic" required>
+          <option value="">Выберите тему</option>
+          <option value="product">Заказ товара</option>
+          <option value="consultation">Консультация</option>
+          <option value="delivery">Доставка</option>
+        </select>
+      </div>
 
-            <div class="container wrap hero-text">
-                <p class="kicker">
-                    Ботанический магазин / Коллекция 01
-                </p>
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-comment">Комментарий</label>
+        <textarea
+          class="order-form__textarea"
+          id="order-comment"
+          name="comment"
+          rows="4"
+          placeholder="Укажите дополнительную информацию"
+        ></textarea>
+      </div>
 
-                <h1>
-                    Зеленая<br>
-                    <em>комната.</em>
-                </h1>
+      <div class="order-form__field order-form__field--checkbox">
+        <label class="order-form__label order-form__label--checkbox">
+          <input
+            class="order-form__checkbox"
+            id="order-agreement"
+            name="agreement"
+            type="checkbox"
+            required
+          >
+          Я согласен на обработку данных
+        </label>
+      </div>
 
-                <p>
-                    Комнатные растения для дома и офиса.
-                    Выбирайте по освещению, размеру
-                    и особенностям ухода.
-                </p>
-
-                <a class="btn btn-success" href="catalog.html">
-                    Открыть каталог
-                    <span aria-hidden="true">↗</span>
-                </a>
-            </div>
-
-            <span class="stamp">01 / 03 ↓</span>
-        </section>
-
-        <!-- Коллекция -->
-        <section id="inside" class="screen second">
-            <div class="container wrap">
-
-                <p class="kicker">02 / 03 — Из коллекции</p>
-                <h2>Три характера</h2>
-
-                <div class="row g-3 deck" aria-label="Карточки растений">
-
-                    <!-- Фикус -->
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <article class="card h-100 product-card product-card--featured">
-
-                            <div class="plate">
-                                <img src="images/photos/ficus.jpg" alt="Фикус эластика" class="card-img-top" width="500"
-                                    height="360" loading="lazy">
-
-                                <span class="badge">
-                                    Выбор редакции
-                                </span>
-                            </div>
-
-                            <div class="card-body d-flex flex-column">
-                                <small>Ficus elastica</small>
-
-                                <h3 class="card-title">
-                                    <a href="product.html#ficus">
-                                        Фикус эластика
-                                    </a>
-                                </h3>
-
-                                <p>
-                                    Крупные плотные листья
-                                    с глянцевой поверхностью.
-                                </p>
-
-                                <div class="mt-auto">
-                                    <p class="price">2 490 ₽</p>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-
-                    <!-- Эхеверия -->
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <article class="card h-100 product-card product-card--discount">
-
-                            <div class="plate">
-                                <img src="images/photos/echeveria.jpg" alt="Эхеверия" class="card-img-top" width="500"
-                                    height="360" loading="lazy">
-
-                                <span class="badge">Скидка</span>
-                            </div>
-
-                            <div class="card-body d-flex flex-column">
-                                <small>Echeveria elegans</small>
-
-                                <h3 class="card-title">
-                                    <a href="product.html#echeveria">
-                                        Эхеверия
-                                    </a>
-                                </h3>
-
-                                <p>
-                                    Компактная сизая розетка
-                                    для солнечного подоконника.
-                                </p>
-
-                                <div class="mt-auto">
-                                    <p class="price">
-                                        <del>990 ₽</del> 790 ₽
-                                    </p>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-
-                    <!-- Спатифиллум -->
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <article class="card h-100 product-card product-card--new">
-
-                            <div class="plate">
-                                <img src="images/photos/peace.jpg" alt="Спатифиллум" class="card-img-top" width="500"
-                                    height="360" loading="lazy">
-
-                                <span class="badge">Новинка</span>
-                            </div>
-
-                            <div class="card-body d-flex flex-column">
-                                <small>Spathiphyllum</small>
-
-                                <h3 class="card-title">
-                                    <a href="product.html#peace">
-                                        Спатифиллум
-                                    </a>
-                                </h3>
-
-                                <p>
-                                    Светлые покрывала возвышаются
-                                    над вытянутыми листьями.
-                                </p>
-
-                                <div class="mt-auto">
-                                    <p class="price">1 590 ₽</p>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Гид -->
-        <section class="screen journal" id="advantages">
-            <div class="container wrap spread">
-
-                <figure class="folio">
-                    <img src="images/photos/aloe.jpg" alt="Алоэ вера" class="portrait">
-
-                    <figcaption>
-                        Полевые заметки
-                        <b>№ 03</b>
-                    </figcaption>
-                </figure>
-
-                <div>
-                    <p class="kicker">
-                        03 / 03 — Полевой гид
-                    </p>
-
-                    <h2>Сначала — свет.</h2>
-
-                    <p class="lede">
-                        У окна или в глубине комнаты?
-                        Начните с места, где будет жить растение.
-                        В нашем гиде разбираем освещение,
-                        полив, влажность воздуха и основные
-                        правила ухода за комнатными растениями.
-                    </p>
-
-                    <p>
-                        Узнайте, как подобрать подходящие условия
-                        для разных видов и сохранить растения
-                        здоровыми и красивыми.
-                    </p>
-
-                    <a class="btn btn-success" href="guide.html">
-                        Читать гид
-                        <span aria-hidden="true">↗</span>
-                    </a>
-                </div>
-
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="foot"></footer>
+      <div class="order-form__actions">
+        <button class="button button--secondary" type="button" id="close-order-dialog">Закрыть</button>
+        <button class="button button--primary" type="submit">Отправить заявку</button>
+      </div>
+    </form>
+  </dialog>
+<a class="back-to-top" href="#top" aria-label="Вернуться к началу страницы"><span aria-hidden="true">↑</span> Наверх</a>
 </body>
-
 </html>

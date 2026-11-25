@@ -1,186 +1,74 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-
-    <title>Контакты — Зеленая комната</title>
-
-    <meta name="description"
-        content="Контакты магазина Зеленая комната. Телефон, электронная почта, режим работы и информация для покупателей.">
-
-    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="css/custom.css">
-
-    <script defer src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
-    <script defer src="js/main.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Контактная информация учебного проекта Study и переход к форме заявки.">
+  <title>Контакты — Study</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Контакты — Study">
+  <meta property="og:description" content="Контактная информация учебного проекта Study и переход к форме заявки.">
+  <meta property="og:image" content="https://uusuri.github.io/FrontendAndBackendDevelopment/images/preview.gif">
 </head>
-
 <body id="top">
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="site-header__logo" href="index.html">Study<span class="site-header__tagline">вещи для рабочего стола</span></a>
+    <nav class="site-nav" aria-label="Основная навигация"><ul class="site-nav__list"><li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+<li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+<li class="site-nav__item"><a class="site-nav__link" href="category.html">Канцелярия</a></li>
+<li class="site-nav__item"><a class="site-nav__link" href="about.html">О проекте</a></li>
+<li class="site-nav__item"><a class="site-nav__link" href="guide.html">Как выбрать</a></li>
+<li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="contacts.html" aria-current="page">Контакты</a></li></ul></nav>
+    <a class="button button--secondary site-header__action" href="order.html">Оставить заявку</a>
+  </div>
+</header>
+<main class="site-main">
 
-    <header class="site-header sticky-top">
-        <nav class="navbar navbar-expand-lg container wrap" aria-label="Основная навигация">
+<nav class="breadcrumbs" aria-label="Хлебные крошки"><a class="breadcrumbs__link" href="index.html">Главная</a><span class="breadcrumbs__current" aria-current="page">Контакты</span></nav>
 
-            <a class="navbar-brand" href="index.html">
-                <span class="mark" aria-hidden="true">✳</span>
-                Зеленая комната
-            </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
-                aria-label="Меню" aria-expanded="false" aria-controls="main-nav">
+    <section class="section">
+      <h1 class="section__title">Контакты</h1>
+      <p class="section__text">
+        Контактная информация демонстрационного магазина Study. Указанные данные используются только в учебном проекте.
+      </p>
 
-                <span class="navbar-toggler-icon"></span>
-            </button>
+      <ul class="contacts-list">
+        <li class="contacts-list__item">Телефон: +7 (900) 000-00-00</li>
+        <li class="contacts-list__item">E-mail: info@example.com</li>
+        <li class="contacts-list__item">Адрес: г. Москва, учебный проект</li>
+      </ul>
+    </section>
 
-            <div class="collapse navbar-collapse" id="main-nav">
-                <ul class="navbar-nav mx-lg-auto">
-                    <li>
-                        <a class="nav-link" href="index.html">
-                            Главная
-                        </a>
-                    </li>
+    <section class="section" id="feedback">
+      <h2 class="section__title">Обратная связь</h2>
+      <p class="section__text">
+        Для оформления заявки перейдите на страницу с формой.
+      </p>
+      <a class="button button--primary" href="order.html">Перейти к форме</a>
+    </section>
 
-                    <li>
-                        <a class="nav-link" href="catalog.html">
-                            Каталог
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="guide.html">
-                            Гид
-                        </a>
-                    </li>
+</main>
+<footer class="site-footer" id="contacts">
+  <div class="site-footer__inner">
+    <div><a class="site-footer__logo" href="index.html">Study</a><p class="site-footer__text">Вещи для рабочего стола.<br>Учебный интернет-магазин, 2026.</p></div>
+    <nav class="site-footer__nav" aria-label="Дополнительная навигация">
+      <a class="site-footer__link" href="product.html">Описание товаров</a>
+      <a class="site-footer__link" href="order.html">Оформление заявки</a>
+      <a class="site-footer__link" href="contacts.html">Контактная информация</a>
+    </nav>
+    <nav class="site-footer__nav" aria-label="Разделы главной страницы">
+      <a class="site-footer__link" href="index.html#advantages">Наш подход</a>
+      <a class="site-footer__link" href="index.html#popular">Популярные товары</a>
+      <a class="site-footer__link" href="index.html#contacts">Обратная связь</a>
+    </nav>
+  </div>
+  <p class="site-footer__course">Фронтенд и бэкенд разработка · РТУ МИРЭА</p>
+</footer>
 
-                     <li>
-                        <a class="nav-link" href="diagnostic.html">
-                            Диагностика
-                        </a>
-                    </li>
-
-                    <li>
-                        <a class="nav-link" href="about.html">
-                            О нас
-                        </a>
-                    </li>
-                     <li>
-                        <a class="nav-link" href="contacts.html">Контакты</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-
-        <!-- Первый экран -->
-        <section class="screen lead-screen">
-
-            <div class="container wrap spread">
-
-                <div class="lead-copy">
-                    <p class="kicker">
-                        ЗК / 08 — Связь
-                    </p>
-
-                    <h1>Поговорим?</h1>
-
-                    <p class="lede">
-                        Есть вопросы о растениях,
-                        ассортименте или уходе?
-                        Мы готовы помочь с выбором
-                        и ответить на ваши вопросы.
-                    </p>
-
-                    <a class="btn btn-success" href="#inside">
-                        Как связаться
-                        <span aria-hidden="true">↗</span>
-                    </a>
-                </div>
-
-                <figure class="folio">
-                    <img src="images/photos/violet.jpg" alt="Узамбарская фиалка" class="portrait">
-
-                    <figcaption>
-                        BOTANICAL FILE
-                        <b>№ 08</b>
-                    </figcaption>
-                </figure>
-
-            </div>
-        </section>
-
-        <!-- Контакты -->
-        <section id="inside" class="screen journal">
-
-            <div class="container wrap spread">
-
-                <div>
-                    <p class="kicker">
-                        Обратная связь
-                    </p>
-
-                    <h2>Всегда на связи.</h2>
-
-                    <p class="lede">
-                        Подскажем, какое растение выбрать,
-                        расскажем об особенностях ухода
-                        и поможем разобраться в ассортименте.
-                    </p>
-
-                    <p>
-                        Для консультации свяжитесь с нами
-                        по телефону или электронной почте.
-                        Также можно оставить заявку через
-                        форму на сайте.
-                    </p>
-
-                </div>
-
-                <aside class="contact-info" aria-label="Контактная информация">
-
-                    <div class="contact-detail">
-                        <small>ТЕЛЕФОН</small>
-
-                        <a href="tel:+74950000000">
-                            +7 (495) 000-00-00
-                        </a>
-                    </div>
-
-                    <div class="contact-detail">
-                        <small>ЭЛЕКТРОННАЯ ПОЧТА</small>
-
-                        <a href="mailto:hello@greenroom.example">
-                            hello@greenroom.example
-                        </a>
-                    </div>
-
-                    <div class="contact-detail">
-                        <small>РЕЖИМ РАБОТЫ</small>
-
-                        <span>
-                            Ежедневно, 10:00–20:00
-                        </span>
-                    </div>
-
-                    <div class="contact-detail">
-                        <small>РЕГИОН ОБСЛУЖИВАНИЯ</small>
-
-                        <span>
-                            Москва и Московская область
-                        </span>
-                    </div>
-
-                </aside>
-
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Футер создается через main.js -->
-    <footer class="foot"></footer>
-
+<a class="back-to-top" href="#top" aria-label="Вернуться к началу страницы"><span aria-hidden="true">↑</span> Наверх</a>
 </body>
-
 </html>

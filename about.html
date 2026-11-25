@@ -1,320 +1,52 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>О нас — Зелёная комната</title>
-    <meta name="description"
-        content="Зелёная комната — магазин комнатных растений. Узнайте о нашей коллекции, подходе к выбору растений и авторских правах.">
-
-    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="css/custom.css">
-
-    <script defer src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
-    <script defer src="js/main.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Концепция Study: учебный магазин канцелярии, освещения и вещей для организации рабочего стола.">
+  <title>О проекте — Study</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="О проекте — Study">
+  <meta property="og:description" content="Концепция Study: учебный магазин канцелярии, освещения и вещей для организации рабочего стола.">
+  <meta property="og:image" content="https://uusuri.github.io/FrontendAndBackendDevelopment/images/preview.gif">
 </head>
-
 <body id="top">
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="site-header__logo" href="index.html">Study<span class="site-header__tagline">вещи для рабочего стола</span></a>
+    <nav class="site-nav" aria-label="Основная навигация"><ul class="site-nav__list"><li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+<li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+<li class="site-nav__item"><a class="site-nav__link" href="category.html">Канцелярия</a></li>
+<li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="about.html" aria-current="page">О проекте</a></li>
+<li class="site-nav__item"><a class="site-nav__link" href="guide.html">Как выбрать</a></li>
+<li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li></ul></nav>
+    <a class="button button--secondary site-header__action" href="order.html">Оставить заявку</a>
+  </div>
+</header>
+<main class="site-main">
 
-    <header class="site-header sticky-top">
-        <nav class="navbar navbar-expand-lg container wrap" aria-label="Основная навигация">
+<nav class="breadcrumbs" aria-label="Хлебные крошки"><a class="breadcrumbs__link" href="index.html">Главная</a><span class="breadcrumbs__current" aria-current="page">О проекте</span></nav><section class="page-intro"><p class="page-intro__eyebrow">ИДЕЯ STUDY</p><h1 class="page-intro__title">Рабочий стол без лишнего</h1><p class="page-intro__text">Study — учебный магазин вещей, которые помогают организовать пространство для мыслей, записей и ежедневных задач.</p></section><section class="story"><div class="story__lead"><p class="story__number">01 / КОНЦЕПЦИЯ</p><h2 class="story__title">У каждой вещи есть своя задача</h2></div><div class="story__body"><p>Мы разделили каталог на три понятные части: бумага для записей, освещение и организация стола. Здесь легко собрать небольшой набор, а не потеряться в длинном списке случайных товаров.</p><p>Визуальная идея проекта — сочетание тёплого бежевого фона, тёмно-зелёного текста и светло-зелёных акцентов. Крупные заголовки задают ритм, а одинаковая структура карточек помогает сравнивать товары.</p></div></section>
+<section class="story"><div class="story__lead"><p class="story__number">02 / УЧЕБНЫЙ ПРОЕКТ</p><h2 class="story__title">От каталога до заявки</h2></div><div class="story__body"><p>Проект создан в рамках дисциплины «Фронтенд и бэкенд разработка» в РТУ МИРЭА. Каталог демонстрирует структуру магазина: категории, описание товаров и форму заявки.</p><p>Названия, цены, характеристики и контактные данные используются для учебных целей. Реальные покупки и отправка заказов здесь не выполняются.</p><a class="button button--primary" href="catalog.html">Перейти в каталог →</a></div></section>
+</main>
+<footer class="site-footer" id="contacts">
+  <div class="site-footer__inner">
+    <div><a class="site-footer__logo" href="index.html">Study</a><p class="site-footer__text">Вещи для рабочего стола.<br>Учебный интернет-магазин, 2026.</p></div>
+    <nav class="site-footer__nav" aria-label="Дополнительная навигация">
+      <a class="site-footer__link" href="product.html">Описание товаров</a>
+      <a class="site-footer__link" href="order.html">Оформление заявки</a>
+      <a class="site-footer__link" href="contacts.html">Контактная информация</a>
+    </nav>
+    <nav class="site-footer__nav" aria-label="Разделы главной страницы">
+      <a class="site-footer__link" href="index.html#advantages">Наш подход</a>
+      <a class="site-footer__link" href="index.html#popular">Популярные товары</a>
+      <a class="site-footer__link" href="index.html#contacts">Обратная связь</a>
+    </nav>
+  </div>
+  <p class="site-footer__course">Фронтенд и бэкенд разработка · РТУ МИРЭА</p>
+</footer>
 
-            <a class="navbar-brand" href="index.html">
-                <span class="mark" aria-hidden="true">✳</span>
-                Зелёная комната
-            </a>
-
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-label="Меню"
-                aria-expanded="false" aria-controls="main-nav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="main-nav">
-                <ul class="navbar-nav mx-lg-auto">
-                    <li>
-                        <a class="nav-link" href="index.html">Главная</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="catalog.html">Каталог</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="guide.html">Гид</a>
-                    </li>
-                     <li>
-                        <a class="nav-link" href="diagnostic.html">
-                            Диагностика
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav-link" aria-current="page" href="about.html">О нас</a>
-
-                    </li>
-                    <li>
-                        <a class="nav-link" href="contacts.html">Контакты</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-
-        <!-- О компании -->
-        <section class="screen lead-screen">
-            <div class="container wrap spread">
-
-                <div class="lead-copy">
-                    <p class="kicker">ЗК / 07 — О компании</p>
-
-                    <h1>Природа ближе.</h1>
-
-                    <p class="lede">
-                        «Зелёная комната» — магазин комнатных
-                        растений для дома и рабочего пространства.
-                        Мы помогаем находить растения, которые
-                        дополняют интерьер и становятся частью
-                        повседневной жизни.
-                    </p>
-
-                    <a class="btn btn-success" href="#inside">
-                        Узнать больше
-                        <span aria-hidden="true">↗</span>
-                    </a>
-                </div>
-
-                <figure class="folio">
-                    <img src="images/photos/echeveria.jpg" alt="Эхеверия из коллекции магазина" class="portrait">
-
-                    <figcaption>
-                        BOTANICAL COLLECTION
-                        <b>№ 05</b>
-                    </figcaption>
-                </figure>
-
-            </div>
-        </section>
-
-        <!-- Информация о магазине -->
-        <section id="inside" class="screen second">
-            <div class="container wrap">
-
-                <p class="kicker">Зелёная комната / Наша философия</p>
-
-                <h2>Растения с характером.</h2>
-
-                <p>
-                    Мы верим, что растения делают пространство
-                    уютнее, интереснее и живее. Даже одно
-                    небольшое растение способно преобразить
-                    привычную обстановку.
-                </p>
-
-                <p>
-                    В нашей коллекции представлены декоративно-лиственные
-                    растения, суккуленты и цветущие виды.
-                    При выборе мы обращаем внимание не только
-                    на внешний вид, но и на особенности ухода,
-                    освещения и условия содержания.
-                </p>
-
-                <p>
-                    Наша цель — сделать выбор комнатных растений
-                    понятным и удобным. В каталоге можно
-                    познакомиться с разными видами, сравнить
-                    их особенности и найти подходящий вариант.
-                </p>
-
-                <div class="mt-4 mb-5">
-                    <a class="btn btn-success" href="catalog.html">
-                        Смотреть коллекцию
-                        <span aria-hidden="true">↗</span>
-                    </a>
-                </div>
-
-                <!-- Фотографии и авторство -->
-                <div class="mt-5">
-                    <p class="kicker">Прозрачность / Источники</p>
-
-                    <h2>Фотографии коллекции</h2>
-
-                    <p>
-                        Для иллюстрации растений используются
-                        фотографии из открытых источников.
-                        Мы уважаем труд авторов и указываем
-                        авторство, условия лицензирования
-                        и ссылки на оригинальные публикации.
-                    </p>
-
-                    <p>
-                        Изображения могут быть адаптированы
-                        для отображения на сайте:
-                        изменены размеры, кадрирование
-                        или формат файлов.
-                    </p>
-
-                    <ul class="credits">
-
-                        <li>
-                            <strong>Фикус эластика</strong>
-                            · Margaret Shear
-                            · <a href="https://creativecommons.org/licenses/by-sa/4.0/">
-                                CC BY-SA 4.0
-                            </a>
-                            · <a href="https://plants.ces.ncsu.edu/plants/ficus-elastica/">
-                                Источник
-                            </a>
-                        </li>
-
-                        <li>
-                            <strong>Нефролепис</strong>
-                            · David Eickhoff
-                            · <a href="https://creativecommons.org/licenses/by/2.0/">
-                                CC BY 2.0
-                            </a>
-                            · <a href="https://plants.ces.ncsu.edu/plants/nephrolepis-exaltata/">
-                                Источник
-                            </a>
-                        </li>
-
-                        <li>
-                            <strong>Эпипремнум</strong>
-                            · Dell Enecks (Pitt County)
-                            · <a href="https://creativecommons.org/licenses/by/4.0/">
-                                CC BY 4.0
-                            </a>
-                            · <a href="https://plants.ces.ncsu.edu/plants/epipremnum-aureum/">
-                                Источник
-                            </a>
-                        </li>
-
-                        <li>
-                            <strong>Алоэ вера</strong>
-                            · Mokkie
-                            · <a href="https://creativecommons.org/licenses/by-sa/3.0/">
-                                CC BY-SA 3.0
-                            </a>
-                            · <a href="https://plants.ces.ncsu.edu/plants/aloe-vera/">
-                                Источник
-                            </a>
-                        </li>
-
-                        <li>
-                            <strong>Эхеверия</strong>
-                            · Dick Culbert
-                            · <a href="https://creativecommons.org/licenses/by/2.0/">
-                                CC BY 2.0
-                            </a>
-                            · <a href="https://plants.ces.ncsu.edu/plants/echeveria-elegans/">
-                                Источник
-                            </a>
-                        </li>
-
-                        <li>
-                            <strong>Крассула</strong>
-                            · Aniol
-                            · <a href="https://creativecommons.org/licenses/by-sa/4.0/">
-                                CC BY-SA 4.0
-                            </a>
-                            · <a href="https://plants.ces.ncsu.edu/plants/crassula-ovata/">
-                                Источник
-                            </a>
-                        </li>
-
-                        <li>
-                            <strong>Антуриум</strong>
-                            · Yercaud-elango
-                            · <a href="https://creativecommons.org/licenses/by-sa/4.0/">
-                                CC BY-SA 4.0
-                            </a>
-                            · <a
-                                href="https://commons.wikimedia.org/wiki/File:Anthurium_andraeanum_album-yercaud-salem-India.JPG">
-                                Источник
-                            </a>
-                        </li>
-
-                        <li>
-                            <strong>Узамбарская фиалка</strong>
-                            · Hope Duckworth
-                            · <a href="https://creativecommons.org/licenses/by/4.0/">
-                                CC BY 4.0
-                            </a>
-                            · <a href="https://plants.ces.ncsu.edu/plants/streptocarpus-ionanthus/">
-                                Источник
-                            </a>
-                        </li>
-
-                        <li>
-                            <strong>Спатифиллум</strong>
-                            · Cindy Christian
-                            · <a href="https://creativecommons.org/licenses/by/4.0/">
-                                CC BY 4.0
-                            </a>
-                            · <a href="https://plants.ces.ncsu.edu/plants/spathiphyllum/">
-                                Источник
-                            </a>
-                        </li>
-
-                    </ul>
-                </div>
-
-                <!-- Лицензия -->
-                <div class="mt-5 pt-4" style="border-top: 1px solid var(--line)">
-
-                    <p class="kicker">Правовая информация</p>
-
-                    <h2>Лицензия и авторские права</h2>
-
-                    <p>
-                        © 2026 «Зелёная комната».
-                    </p>
-
-                    <p>
-                        Оригинальные текстовые материалы сайта
-                        распространяются на условиях международной
-                        лицензии
-                        <a href="https://creativecommons.org/licenses/by/4.0/deed.ru" target="_blank"
-                            rel="noopener noreferrer">
-                            Creative Commons Attribution 4.0
-                            International (CC BY 4.0)
-                        </a>.
-                    </p>
-
-                    <p>
-                        Все права защищены.
-                    </p>
-
-                    <p>
-                        Указанная лицензия не распространяется
-                        на фотографии третьих лиц, товарные знаки,
-                        логотипы и другие материалы,
-                        права на которые принадлежат
-                        соответствующим правообладателям.
-                    </p>
-
-                    <p>
-                        Фотографии растений используются
-                        на условиях лицензий, указанных
-                        в разделе «Фотографии коллекции».
-                        При повторном использовании изображений
-                        необходимо соблюдать условия
-                        лицензии каждого конкретного снимка.
-                    </p>
-
-                    <p>
-                        Название «Зелёная комната»
-                        и фирменные элементы оформления
-                        не предоставляются для использования
-                        по лицензии CC BY 4.0.
-                    </p>
-                </div>
-
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="foot"></footer>
+<a class="back-to-top" href="#top" aria-label="Вернуться к началу страницы"><span aria-hidden="true">↑</span> Наверх</a>
 </body>
-
 </html>
