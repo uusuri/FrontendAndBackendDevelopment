@@ -726,3 +726,15 @@ a:focus-visible {
 }
 .back-to-top:hover { color: var(--color-white); background-color: var(--color-primary); }
 .back-to-top:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 3px; }
+
+/* Единый знак Study и расширенный подвал */
+.site-header__logo, .site-footer__logo { display: inline-flex; align-items: center; gap: 10px; }
+.study-mark { position: relative; display: inline-grid; place-items: center; width: 42px; height: 42px; flex: 0 0 42px; border: 1px solid currentColor; border-radius: 50%; font: italic 28px/1 Georgia, serif; }
+.study-mark span { position: absolute; top: 3px; right: 5px; font: 10px/1 Arial, sans-serif; }
+.site-footer__inner { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1.3fr; gap: 40px; }
+.site-footer__heading { margin: 0 0 8px; color: var(--color-bg); font: 700 14px Arial, sans-serif; }
+.site-footer__nav { font-size: 14px; }
+.site-footer__label { display: block; color: #c8d3bc; font-size: 12px; margin-bottom: 3px; }
+.site-footer__course { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+@media (max-width: 800px) { .site-footer__inner { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 480px) { .site-footer__inner { grid-template-columns: 1fr; gap: 28px; } }
